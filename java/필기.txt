@@ -1,0 +1,20 @@
+1. JDK, JRE Install
+2. 환경 변수 등록
+3. Path 설정
+4. 예제 만들고 실행
+
+JDK, Java Development Kit, 자바 개발 도구
+- JDK 1.0 ~ 15
+- JAVA 1 ~ 15 (JAVA SE 6~ 15)
+- JDK 1.8 설치(수업)
+- 프로그램 소스 -> 프로그램 실행 파일
+- 개발에 필요한 기능들을 제공하는 도구 모음(프로그램의 집합)
+
+JRE, Java Runtime Environment, 자바 실행 환경
+- 자바로 만든 프로그램이 실행할 수 있는 여러가지 환경을 제공
+
+Hello.java
+- 소스파일
+- 프로그래밍 구문 (소스)들을 적어 놓은 파일
+- 확장자(.java)
+- 포맷(.txt)
