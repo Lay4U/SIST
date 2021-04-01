@@ -1,7 +1,9 @@
 package com.test.java;
 
+import java.io.IOException;
+
 public class Ex08_Output {
-public static void main(String[] args) {
+public static void main(String[] args) throws IOException {
 			String name1 = "홍길동";
 
 			int kor1 = 98;
@@ -37,5 +39,52 @@ public static void main(String[] args) {
 			System.out.print(math1 + "\n");
 
 			System.out.println(name2 + "\t" + kor2 + "\t" + eng2 + "\t" + math2);
-}
+
+
+//		    System.out.print("\033[H\033[2J");  
+//		    System.out.flush();
+//		    
+//	        System.out.print("Everything on the console will cleared");
+//	        System.out.print("\033[H\033[2J");
+//	        System.out.flush();
+//	        System.out.printf();
+//	        System.out.println();
+//	        System.out.printf("숫자:%d입니다. \n",	10);
+	        System.out.printf("숫자:%d입니다. \n", 10);
+	        System.out.printf("숫자:%5d입니다. \n", 10);
+	        System.out.printf("숫자:%10d입니다. \n", 10);
+	        System.out.printf("숫자:%-5d입니다. \n", 10);
+	        System.out.printf("숫자:%-10d입니다. \n", 10);
+	        
+	        System.out.printf("숫자:%f입니다. \n", 123.4567);
+	        System.out.printf("숫자:%.4f입니다. \n", 123.4567);
+	        System.out.printf("숫자:%.1f입니다. \n", 123.4567);
+	        System.out.printf("숫자:%.0f입니다. \n", 123.4567);
+	        
+	        System.out.printf("숫자:%,d입니다. \n", 10000000);
+	        System.out.printf("숫자: %,10.1f\n", 1234.5678);
+	        System.out.println();
+	        System.out.println();
+	        
+	        System.out.println("======================");
+	        System.out.println("      음료 가격(단위: 천만원)");
+	        System.out.println("======================");
+	        System.out.printf("1. 콜라: %d\n",	2500);
+	        System.out.printf("2. 스무디: %d\n", 3500);
+	        System.out.printf("3. 쿠키: %d\n", 500);
+	        System.out.printf("4. 아메리카노 : %d\n", 12500);
+	        
+	        
+	        System.out.println("======================");
+	        System.out.println("      음료 가격(단위: 천만원)");
+	        System.out.println("======================");
+	        System.out.printf("1. 콜라:\t%,6d\n",	2500);
+	        System.out.printf("2. 스무디:\t%,6d\n", 3500);
+	        System.out.printf("3. 쿠키:\t%,6d\n", 500);
+	        System.out.printf("4. 아메리카노:\t%,6d\n", 12500);
+	        System.out.println();
+	        System.out.println();
+	        
+	        int a = 10;
+	}
 }
