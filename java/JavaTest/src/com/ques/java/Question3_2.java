@@ -1,6 +1,6 @@
 package com.ques.java;
 
-public class Question3 {
+public class Question3_2 {
 	public static void main(String[] args) {
 	String  date1="2020-01-01",
 			date2="2020-01-01",

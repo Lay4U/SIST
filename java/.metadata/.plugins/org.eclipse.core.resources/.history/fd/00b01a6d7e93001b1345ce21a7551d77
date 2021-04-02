@@ -1,0 +1,21 @@
+package com.test.question.q3;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Q002 {
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		System.out.println("첫번째 숫자 : ");
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		int firstNumber = Integer.parseInt(reader.readLine());
+		System.out.println("두번째 숫자 : ");
+		int secondNumber = Integer.parseInt(reader.readLine());
+		System.out.println();
+		System.out.printf("%d + %d = %d", firstNumber, secondNumber, firstNumber + secondNumber);
+		System.out.printf("%d - %d = %d", firstNumber, secondNumber, firstNumber - secondNumber);
+		System.out.printf("%d * %d = %d", firstNumber, secondNumber, firstNumber * secondNumber);
+		System.out.printf("%d / %d = %d", firstNumber, secondNumber, firstNumber / secondNumber);
+		System.out.printf("%d % %d = %d", firstNumber, secondNumber, firstNumber = secondNumber);
+	}
+}

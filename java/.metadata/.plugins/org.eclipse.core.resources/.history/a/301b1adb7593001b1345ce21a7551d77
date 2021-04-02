@@ -1,0 +1,21 @@
+# 오류 노트
+
+## Java
+
+1. 제목
+2. 코드
+3. 에러 메세지
+4. 원인
+5. 해법
+
+
+### ; 누락
+`int a = 10`
+> Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+
+원인 : 자바는 모든 문장 끝에 ;를 기재해야 한다. 빼먹으면 컴파일 오류
+
+해법 : `;`을 적는다.
+
+---
+
