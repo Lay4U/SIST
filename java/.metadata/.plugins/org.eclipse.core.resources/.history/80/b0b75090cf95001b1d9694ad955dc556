@@ -1,0 +1,22 @@
+# 코드조각
+
+#### 변수 선언하기
+```
+//자료형 변수명 상수;
+int a = 10;
+```
+
+
+#### 개행하기
+```
+//1
+System.out.println();	//메소드 자체가 개행
+//2
+System.out.print("\n");	//특수문자를 통해서 개행
+```
+
+#### 데이터 입력받기
+```
+BufferdReader reader = new BufferedReader(new InputStreamReader(System.in));	//문자 1개 읽기 -> 코드값(int) 반환
+String line = reader.readLine();	//1줄 읽기 -> 문자(String) 반환
+

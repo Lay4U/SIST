@@ -1,0 +1,19 @@
+
+//섭씨온도를 입력받아 화씨온도로 변환.
+import java.io.*;
+
+public class g {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		
+		double C,F;
+		
+		System.out.print("섭씨(C): "); C = Double.parseDouble(reader.readLine());
+		
+		F = C * 1.8 + 32;
+		
+		System.out.printf("섭씨 %.1fC는 화씨 %.1fF입니다.", C,F);
+
+	}
+}

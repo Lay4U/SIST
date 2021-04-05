@@ -1,0 +1,31 @@
+package com.test.question.q4;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Q003 {
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		while(true) {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//		System.out.println("000"+1);
+		System.out.print("숫자 입력 : ");
+		int getNum = Integer.parseInt(reader.readLine());
+		digit(getNum);
+		
+		}
+	}
+
+	public static void digit(int num) {
+		// if문을 모른다는 전제 하에
+		int chipher = (num / 10 > 0) ? (num / 100 > 0) ? (num / 1000) > 0 ? 4 : 3 : 2 : 1;
+		
+//		0~9999 유효성 검사 완료
+//		System.out.println(chipher);
+		System.out.println(chipher);
+		String result = (chipher == 1) ? (chipher == 2) ? (chipher == 3) ?  
+				"000"+chipher : "00"+chipher : "0"+chipher : Integer.toString(chipher); 
+		
+		System.out.println(result);
+		}
+}
