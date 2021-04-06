@@ -32,3 +32,7 @@ public class Q003 {
 		System.out.println(num + " -> " + result);
 	}
 }
+/*
+ * if 구문이 가독성 훨씬 높다.
+ * 성능의 차이가 나는지는 모르겠다.
+ */
