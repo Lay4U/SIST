@@ -24,9 +24,9 @@ public class Q004 {
 		int yearDay = Integer.parseInt(reader.readLine());
 		System.out.println();
 
-		//////////////////////////////////////////////////// 구분
+		///////////////////////////////////////////////////// 구분
 		Calendar now = Calendar.getInstance();
-		now.set(yearMeet, yearMonth, yearDay);
+		now.set(yearMeet, yearMonth - 1, yearDay);
 
 		System.out.printf("'%s'과(와) '%s'의 기념일\n", nameBoy, nameGirl);
 
