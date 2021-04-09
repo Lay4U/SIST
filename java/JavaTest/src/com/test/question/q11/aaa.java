@@ -17,7 +17,7 @@ public class aaa {
       // a를 숫자로 변경하는건 Integer가 아니라 형변환을 통해서 이루어 지면 될거같아요
       // java.lang.NumberFormatException: For input string: "a"
       if(alphabet >= 65 && alphabet <= 90) {
-         System.out.printf("%c\n", alphabet + 32);
+         System.out.printf("%c%n", alphabet + 32);
       } else if (alphabet >= 97 && alphabet <= 122) {
          System.out.printf("%c\n", alphabet - 32);
       }
