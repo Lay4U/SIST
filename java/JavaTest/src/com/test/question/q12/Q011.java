@@ -10,7 +10,10 @@ public class Q011 {
 		System.out.print("최대 숫자 : ");
 		int maxNum = Integer.parseInt(reader.readLine());
 		
-
+		if(String.valueOf(maxNum).length() > 3) {
+			System.out.println("최대 3자리 까지만 허용됩니다.");
+			return;
+		}
 		for (int i = 0; i < maxNum; i++) {
 			String str = String.valueOf(i);
 			Boolean flag = false;

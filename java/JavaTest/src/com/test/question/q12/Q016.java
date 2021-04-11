@@ -7,7 +7,7 @@ public class Q016 {
 		int n2 = 1;
 		int n3 = 0;
 		int sum = 1;
-		String str = "";
+		String str = "1 + ";
 		for (int i = 0; i < 100; i++) {
 
 			n3 = n1 + n2;

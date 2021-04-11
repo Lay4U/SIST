@@ -13,7 +13,13 @@ public class Q014 {
 
 		int sumEven = 0;
 		int sumOdd = 0;
+		Boolean flag = inputLen > 9 ? true : false;
+		if (flag) {
+			System.out.println("9자리가 넘어가므로 프로그램을 종료합니다.");
+			return;
+		}
 		for (int i = 1; i <= inputLen; i++) {
+
 			int tmp = (int) (input / Math.pow(10, inputLen - i)); // i자리수
 			input -= tmp * Math.pow(10, inputLen - i);
 //			System.out.println(tmp);
@@ -22,6 +28,7 @@ public class Q014 {
 			else
 				sumOdd += tmp;
 		}
+
 		System.out.println("짝수의 합 : " + sumEven);
 		System.out.println("홀수의 합 : " + sumOdd);
 	}
