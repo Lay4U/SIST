@@ -4,7 +4,7 @@ import java.util.Scanner;
 //
 //예를 들어 A = 150, B = 266, C = 427 이라면 A × B × C = 150 × 266 × 427 = 17037300 이 되고, 계산한 결과 17037300 에는 0이 3번, 1이 1번, 3이 2번, 7이 2번 쓰였다
 
-public class E2577 {
+public class E2578 {
 
 //	for(int i=0; i<10; i++)
 //		N[i] = 0;
@@ -14,26 +14,29 @@ public class E2577 {
 		for (int i = 0; i < 10; i++)
 			N[i] = 0;
 		Scanner sc = new Scanner(System.in);
-//		int n1 = sc.nextInt();
-//		int n2 = sc.nextInt();
-//		int n3 = sc.nextInt();
-		int n1 = 150;
-		int n2 = 266;
-		int n3 = 427;
+		int n1 = sc.nextInt();
+		int n2 = sc.nextInt();
+		int n3 = sc.nextInt();
+//		int n1 = 150;
+//		int n2 = 266;
+//		int n3 = 427;
 
 		int sum = n1 * n2 * n3;
 		int len = String.valueOf(sum).length();
 		int tmp = sum / (int) Math.pow(10, len - 1);
 
 		for (int i = 0; i < len; i++) {
-			tmp = sum / (int) Math.pow(10, len - 1);
+			int l = (int) Math.pow(10, len-1-i);
+			tmp = sum / (int) Math.pow(10, len - 1 - i);
+//			System.out.println(tmp);
 			gocalc(tmp, N);
-			sum = sum - tmp * (int) Math.pow(10, len - 1);
-			System.out.println(sum);
+			sum = sum - tmp * (int) Math.pow(10, len - 1 - i);
+//			System.out.println(sum);
+//			System.out.println();
 		}
 
 		for (int i = 0; i < 10; i++) {
-//			System.out.println(N[i]);
+			System.out.println(N[i]);
 		}
 	}
 
