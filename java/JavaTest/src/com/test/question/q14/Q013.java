@@ -15,6 +15,15 @@ public class Q013 {
 //		for (char a : chr)
 //			System.out.println(a);
 		for (int i = 0; i < str.length(); i++) {
+			for (int j = 0; j < 20; j++) {
+				if (chr[j] != str.charAt(j))
+					dupCnt++;
+				if (j == 19 && dupCnt == 20)
+					chr[ctrChr++] = str.charAt(i);
+			}
+			dupCnt = 0;
+		}
+		for (int i = 0; i < str.length(); i++) {
 			for (int j = 0; j < str.length(); j++) {
 				if (str.charAt(i) == str.charAt(j)) {
 					cnt++;
