@@ -10,38 +10,40 @@ public class Q009 {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("행렬의 수(NxN) n : ");
 		int n = Integer.parseInt(reader.readLine());
-		
+
 		int[][] spiralArray = new int[n][n];
 		int numConcentric = (int) Math.ceil((n) / 2.0);
 
 		int j;
-		int sideLen = n;
+		int wallLen = n;
 		int currNum = 1;
 
 		for (int i = 0; i < numConcentric; i++) {
 			// 위
-			for (j = 0; j < sideLen; j++) {
+			for (j = 0; j < wallLen; j++) {
 				spiralArray[i][i + j] = currNum++;
+//				System.out.println(i + " " + (i + j));
 			}
 
 			// 오른쪽
-			for (j = 1; j < sideLen; j++) {
+			for (j = 1; j < wallLen; j++) {
 				spiralArray[i + j][n - 1 - i] = currNum++;
+//				System.out.println((i+j) + " " + (n-1-i));
 			}
 
 			// 아래
-			for (j = sideLen - 2; j > -1; j--) {
+			for (j = wallLen - 2; j > -1; j--) {
 				spiralArray[n - 1 - i][i + j] = currNum++;
+//				System.out.println((n-1-i) + " " + (i + j));
 			}
 
 			// 왼쪽
-			for (j = sideLen - 2; j > 0; j--) {
+			for (j = wallLen - 2; j > 0; j--) {
 				spiralArray[i + j][i] = currNum++;
+//				System.out.println((i+j) + " " + i);
 			}
-
-			sideLen -= 2;
+			wallLen -= 2;
 		}
-
 		output(spiralArray);
 	}
 
@@ -53,35 +55,30 @@ public class Q009 {
 			System.out.println();
 		}
 	}
-//	(0,0)
-//	(0,1)
-//	(0,3)
-//	(0,4)
-//	(0,5)
-//	(1,5)
-//	(2,5)
-//	(3,5)
-//	(4,5)
-//	(5,5)
-//
-//	(3,4)
-//	(2,4)
-//	(1,4)
-//	(0,4)
-//	(0,3)
-//	(0,2)
-//	(0,1)
-//
-//	(1,1)
-//	(2,1)
-//	(3,1)
-//	(3,2)
-//	(3,3)
-//
-//	(2,3)
-//	(1,3)
-//	(1,2)
-//
-//	(2,2)
+//	(0, 0)
+//	(0, 1)
+//	(0, 2)
+//	(0, 3)
+//	(0, 4)
+//	(1, 4)
+//	(2, 4)
+//	(3, 4)
+//	(4, 4)
+//	(4, 3)
+//	(4, 2)
+//	(4, 1)
+//	(4, 0)
+//	(3, 0)
+//	(2, 0)
+//	(1, 0)
+//	(1, 1)
+//	(1, 2)
+//	(1, 3)
+//	(2, 3)
+//	(3, 3)
+//	(3, 2)
+//	(3, 1)
+//	(2, 1)
+//	(2, 2)
 
 }

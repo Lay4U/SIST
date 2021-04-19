@@ -2,7 +2,7 @@ public class CodeReview_Random {
 	public static void main(String[] args) {
 		//13번 -> 3,5,6,7,9,11 
 		String[] crew = { "김정은", "김형래", "문지원", "방수빈", "이준희" };
-		int numQuest = 6;
+		int numQuest = 1  ;
 		int cnt1=0, cnt2=0, cnt3=0, cnt4=0, cnt5=0;
 		int random = 0;
 		for (int i = 0; i < numQuest; i++) {
