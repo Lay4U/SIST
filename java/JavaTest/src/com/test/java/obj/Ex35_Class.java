@@ -12,8 +12,8 @@ public class Ex35_Class {
 		//g1.getName()
 		//g1.getPrice()
 		
-		g1.setColor("투명");
-		System.out.println(g1.getColor());
+//		g1.setColor("투명");
+//		System.out.println(g1.getColor());
 		
 		
 		

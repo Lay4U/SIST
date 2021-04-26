@@ -102,6 +102,8 @@ public class Note {
 					+	"주인 없는 노트\n"
 					+"■■■■■■■■■■■■■■■■■■■■■■■\n";
 		return output;
+	}
+}
       //String의 +operation
       //String + String은
       //String.append(String)으로
@@ -112,5 +114,32 @@ public class Note {
       //"가격 : ".append(Integer.toString(price)) 이런식으로 결합해나감.
 
       //성능 측면에서 문자열을 여러번 concat 하려는 경우, String + 연산 대신에 StringBuilder나 StringBuffer의 append 메서드를 이용하는 것이 적합하다.
-	}
-}
+//	}
+//	public static void main(String[] args) throws NumberFormatException, IOException {
+//		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//		System.out.print("숫자 입력 : ");
+//		int getNum = Integer.parseInt(reader.readLine());
+//		digit(getNum);
+//	}
+//
+//	public static void digit(int num) {		
+//		int chipher = (num / 10 > 0) ? (num / 100 > 0) ? (num / 1000 > 0) ? 4 : 3 : 2 : 1;
+//		String result = (chipher >= 1) ? (chipher >= 2) ? (chipher >= 3) ? (chipher == 4) ? 
+//						Integer.toString(num) : "0" + num : "00" + num : "000" + num : Integer.toString(num);
+//		System.out.println(num + " -> " + result);
+//	}
+//
+//	// public static void main(String[] args) throws IOException {
+//		
+//	// 	//숫자1개를 입력받아 2진수 4자리로 출력하는 메소드를 선언하고 호출하시오.
+//	// 	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//	// 	System.out.print("숫자를 입력하세요 : ");
+//	// 	int num = Integer.parseInt(reader.readLine());
+//	// 	digit(num);
+//	// }//main
+//
+//	// public static void digit(int num) {
+//	// 	//%04d -> 빈자리를 공백대신 0으로 
+//	// 	System.out.printf("%04d\n",num);  
+//	// }
+//}

@@ -1,4 +1,4 @@
-package com.test.question.inheritance2;
+package com.test.java.inheritance2;
 
 
 //실제 제품(X) -> 규격 역할(O) -> 모니터의 자격을 가지려면, 최소한 이런 규칙은 지키세요!!! -> 규칙의 집합 역할

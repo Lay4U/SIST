@@ -1,4 +1,4 @@
-package com.test.question.inheritance2;
+package com.test.java.inheritance2;
 
 
 //모니터 제품 - 실제 제품

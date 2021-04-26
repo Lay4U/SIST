@@ -1,4 +1,4 @@
-package com.test.question.inheritance2;
+package com.test.java.inheritance2;
 
 public class Ex49_Interface {
 	

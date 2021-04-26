@@ -1,4 +1,4 @@
-package com.test.question.inheritance;
+package com.test.java.inheritance;
 
 import java.util.Calendar;
 import java.util.Date;

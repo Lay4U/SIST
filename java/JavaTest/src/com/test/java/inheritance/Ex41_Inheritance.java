@@ -1,4 +1,4 @@
-package com.test.question.inheritance;
+package com.test.java.inheritance;
 
 public class Ex41_Inheritance {
 	

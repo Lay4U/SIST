@@ -1,4 +1,4 @@
-package com.test.question.inheritance3;
+package com.test.java.inheritance3;
 
 public class Ex53_Cast {
 
