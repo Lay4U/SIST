@@ -14,7 +14,7 @@ public class MyStack {
 	public void push(String value) {
 		if (this.index == list.length) //doubling에 넘기냐? 여기서 검사를 하느냐?
 										//push할때 무조건 doubling으로 가는것보다는 이러한 조건을 만족할때 doubling으로 간다는것을 명확하게 표현
-			doubling();
+			doubling();					//한줄 일때는 {}를 안써도 됨.
 		
 		this.list[this.index] = value;
 		this.index++;
