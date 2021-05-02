@@ -1,3 +1,6 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Contact {
@@ -57,8 +60,7 @@ public class Contact {
 //		System.out.print("직급 : ");
 //		this.position = sc.nextInt();
 		this.position = 1;
-		
-		
+		generateDB();
 	}
 	
 	@Override
@@ -66,6 +68,33 @@ public class Contact {
 		return String.format("id: %s\npassword: %s\nname: %s\nemail: %s\nphone: %s\nposition: %s\n", this.ID.getID(), this.ID.getPassWord(), this.name, this.email, this.phone, this.position);
 	}
 
+	// TODO : Contact 변수에 입력된 값을 .txt에 저장한다.
+	public void generateDB() {
+		String path = "data\\Contact.txt";
+//		File f = new File("Contact.txt");
+//		
+//		if(!f.exists()) {
+//			try {
+//				f.createNewFile();
+//				System.out.println(f.getName());
+//			} catch (IOException e1) {
+//				// TODO Auto-generated catch block
+//				e1.printStackTrace();
+//			}
+//		}
+		
+		try {
+			FileWriter fw = new FileWriter(path);
+			fw.write(String.format("%s,%s,%s,%s,%s,%d\n", this.ID.getID(), this.ID.getPassWord(), this.name, this.phone, this.position));
+			fw.close();
+		} catch (IOException e) {
+			System.out.println(e);
+		}
+		
+		
+	}
+	
+	// TODO : dump로 Contact에 여러 자료형을 채운다.
 
 	public User getID() {
 		return ID;
