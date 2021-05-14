@@ -230,30 +230,38 @@ public class Ex73_File {
 		System.out.println("[번호]\t[이름]\t[내용(일부분)]");
 		
 		for (Memo memo : list) {
+			
+			String content = memo.getContent().replace("\r\n", " ");
+			if (content.length() > 10) {
+				content = content.substring(0, 10) + "..";
+			}
+			
 			System.out.printf("%s\t%s\t%s\n"
 								, memo.getSeq()
 								, memo.getName()
-								, memo.getContent().substring(0, 10) + "..");
+								, content);
 		}
 		System.out.println("0\t목록 끝내기");
 		
 		System.out.println("자세한 메모 선택(번호): ");
 		
-		String seq = scan.nextLine();
+		String seq = scan.nextLine(); // -> \r\n -> ""
 		
-		if (!seq.equals("0")) {
-			
-			System.out.println("[메모 상세보기]");
-			
-			Memo memo = getMemo(seq);
-			
-			System.out.println("번호: " + memo.getSeq());
-			System.out.println("이름: " + memo.getName());
-			System.out.println("날짜: " + memo.getRegdate());
-			System.out.println("중요도: " + memo.getPriority());
-			System.out.println("내용: " + memo.getContent());
-			
-		} 
+		if (seq != "") {
+			if (!seq.equals("0")) {
+				
+				System.out.println("[메모 상세보기]");
+				
+				Memo memo = getMemo(seq);
+				
+				System.out.println("번호: " + memo.getSeq());
+				System.out.println("이름: " + memo.getName());
+				System.out.println("날짜: " + memo.getRegdate());
+				System.out.println("중요도: " + memo.getPriority());
+				System.out.println("내용: " + memo.getContent());
+				
+			} 
+		}
 				
 		pause();		
 	}
