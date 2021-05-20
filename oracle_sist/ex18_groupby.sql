@@ -523,8 +523,8 @@ FROM
 
 --7. tblAddressBook. 서울에 사는(where) 10대, 20대, 30대, 40대(group by) 인원수(count)를 가져오시오.
 select
-    floor(age / 10),
-    count(*)
+    floor(age / 10) * 10 || '대' as 연령,
+    count(*) as 인원수
 from tblAddressBook
     where instr(address, '서울') = 1
         group by floor(age / 10)
@@ -534,9 +534,21 @@ from tblAddressBook
 
 
 
+--17. tblAddressBook. 
+-- 이메일이 스네이크 명명법으로 만들어진 사람들 중에서(where) 
+-- 여자이며(where)
+-- , 20대이며(where)
+-- , 키가 150~160cm 사이며(where), 
+-- 고향이 서울 또는 인천인 사람들만 가져오시오.
 
-
-
+select
+    *
+from tblAddressBook
+    where instr(email, '_') > 0
+        and gender = 'f'
+        and floor(age / 10) = 2
+        and height between 150 and 160
+        and hometown in ('서울', '인천');
 
 
 

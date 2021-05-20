@@ -222,6 +222,8 @@ insert into tblMemo (seq, regdate) values (2, sysdate);
 
 select * from tblMemo;
 
+insert into tblMemo (seq, name, memo, regdate) values (seqNum.nextVal, '홍길동', '메모입니다.', sysdate); 
+
 
 /*
 
