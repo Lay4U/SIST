@@ -3,7 +3,7 @@ SELECT E.FIRST_NAME || ' ' || E.LAST_NAME,
        E.DEPARTMENT_ID,
        D.DEPARTMENT_NAME
 FROM EMPLOYEES E,
-     DEPARTMENTS D
+     DEPARTMENTS D;
 -- 34. employees, jobs. 사원들의 정보와 직위명을 가져오시오.
 SELECT EMPLOYEE_ID,
        FIRST_NAME,
@@ -49,9 +49,9 @@ FROM JOBS;
 SELECT *
 FROM EMPLOYEES E,
      JOBS J
-GROUP BY E.JOB_ID
-HAVING
-    )
+GROUP BY E.JOB_ID;
+-- HAVING
+
 
 SELECT *
 FROM EMPLOYEES E,
@@ -122,7 +122,7 @@ WHERE E.DEPARTMENT_ID = D.DEPARTMENT_ID
     FROM EMPLOYEES E,
          DEPARTMENTS D
     WHERE FIRST_NAME = 'Jonathon'
-)
+);
 -- 41. employees, departments. 사원이름과 그 사원이 속한 부서의 부서명, 그리고 월급을 출력하는데 월급이 3000이상인 사원을 가져오시오.
 SELECT E.FIRST_NAME || ' ' || E.LAST_NAME AS 이름,
        D.DEPARTMENT_NAME,
@@ -465,7 +465,7 @@ FROM EMPLOYEES E
          INNER JOIN DEPARTMENTS D on E.DEPARTMENT_ID = D.DEPARTMENT_ID
          INNER JOIN LOCATIONS L on D.LOCATION_ID = L.LOCATION_ID
 WHERE L.CITY = 'Seattle'
-ORDER BY E.EMPLOYEE_ID
+ORDER BY E.EMPLOYEE_ID;
 -- 61. employees. 2001~20003년사이에 입사한 사원의 이름(first_name), 입사일(hire_date), 관리자사번 (employee_id), 관리자 이름(fist_name)을 가져오시오.
 -- 단, 관리자가 없는 사원정보도 결과에 포함시켜 가져오시오.
 SELECT *
@@ -504,7 +504,8 @@ FROM EMPLOYEES E
 -- 63. employees. last_name 에 'u' 가 포함되는 사원들과 동일 부서에 근무하는 사원들의 사번 및 last_name을 가져오시오.
 SELECT DISTINCT DEPARTMENT_ID
 FROM EMPLOYEES E
-WHERE E.LAST_NAME LIKE '%u%'
+WHERE E.LAST_NAME LIKE '%u%';
+
 SELECT E.DEPARTMENT_ID,
        E.LAST_NAME
 FROM EMPLOYEES E
@@ -556,7 +557,7 @@ SELECT D.DEPARTMENT_NAME, TO_CHAR(E.HIRE_DATE, 'MM'), COUNT(*)
 FROM EMPLOYEES E
 INNER JOIN DEPARTMENTS D on E.DEPARTMENT_ID = D.DEPARTMENT_ID
 GROUP BY D.DEPARTMENT_ID,TO_CHAR(E.HIRE_DATE, 'MM'), D.DEPARTMENT_NAME
-HAVING COUNT(*) >= 5
+HAVING COUNT(*) >= 5;
 -- 67. employees, departments, locations, countries. 국가(country_name) 별 도시(city)별 사원수를 가져오시오.
 -- 부서정보가 없는 사원은 국가명과 도시명 대신에 ‘부서없음’을 넣어서 가져오시오.
 SELECT C2.COUNTRY_NAME, L.CITY, DECODE(D.DEPARTMENT_NAME, NULL, '부서없음', D.DEPARTMENT_NAME) AS 부서
@@ -564,7 +565,34 @@ FROM EMPLOYEES E
 INNER JOIN DEPARTMENTS D on E.DEPARTMENT_ID = D.DEPARTMENT_ID
 INNER JOIN LOCATIONS L on D.LOCATION_ID = L.LOCATION_ID
 INNER JOIN COUNTRIES C2 on L.COUNTRY_ID = C2.COUNTRY_ID
-GROUP BY C2.COUNTRY_NAME, L.CITY, D.DEPARTMENT_NAME, D.DEPARTMENT_ID
+GROUP BY C2.COUNTRY_NAME, L.CITY, D.DEPARTMENT_NAME, D.DEPARTMENT_ID;
 -- 68. employees, departments. 각 부서별 최대 급여자의 아이디(employee_id), 이름(first_name), 급여(salary)를 가져오시오.
+SELECT E1.DEPARTMENT_ID,
+       E1.FIRST_NAME,
+       E1.SALARY
+FROM EMPLOYEES E1
+INNER JOIN DEPARTMENTS D ON E1.DEPARTMENT_ID = D.DEPARTMENT_ID
+WHERE E1.SALARY = (
+    SELECT MAX(SALARY)
+    FROM EMPLOYEES E2
+    WHERE E1.DEPARTMENT_ID = E2.DEPARTMENT_ID
+)
 
--- 69. employees. 커미션(commission_pct)별 사원수를 가져오시오. 커미션은 0.2, 0.25는 모두 0.2로, 0.3, 0.35는 0.3 형태로 바꾸시오. 단, 커미션 정보가 없는 사원들도 있는 데 커미션이 없는 사원 그룹은 ‘커미션 없음’으로 바꿔 가져오시오.
+-- 69. employees. 커미션(commission_pct)별 사원수를 가져오시오. 커미션은 0.2, 0.25는 모두 0.2로, 0.3, 0.35는 0.3 형태로 바꾸시오.
+-- 단, 커미션 정보가 없는 사원들도 있는 데 커미션이 없는 사원 그룹은 ‘커미션 없음’으로 바꿔 가져오시오.
+SELECT * FROM EMPLOYEES;
+
+SELECT COMMISSION_PCT, COUNT(*)
+FROM EMPLOYEES
+GROUP BY COMMISSION_PCT;
+
+SELECT (CASE WHEN COMMISSION_PCT IN (0.20, 0.25) THEN 0.2
+             WHEN COMMISSION_PCT IN (0.30, 0.35) THEN 0.3
+             ELSE COMMISSION_PCT
+        END) AS COMMISSION_PCT,
+       COUNT(*)
+FROM EMPLOYEES E
+GROUP BY (CASE WHEN COMMISSION_PCT IN (0.20, 0.25) THEN 0.2
+               WHEN COMMISSION_PCT IN (0.30, 0.35) THEN 0.3
+               ELSE COMMISSION_PCT
+          END);
