@@ -14,6 +14,8 @@ ex20_join.sql
 
 */
 
+drop table tblStaff;
+
 create table tblStaff (
 
     seq number primary key,             --직원번호(PK)
