@@ -1,0 +1,90 @@
+1. Java
+2. Oracle
+3. Client
+    - Client
+    - Web Client
+    - Clinet-side Programming
+    - Front-end Programming
+    a. HTML
+    b. CSS
+    c. JavaScript
+    - 위의 3개 언어를 모두 합쳐 브라우저에 보이는 웹페이지를 만들게 된다.
+
+Java -> 프로그래밍 언어(O) + 제어 구조(O)
+SQL -> 프로그래밍 언어(X) + 제어 구조(X)
+PL/SQL -> 프로그래밍 언어(O) + 제어구조 (O)
+
+HTML, Hyper Text Markup Language
+- 하이퍼 텍스트 마크업 뤵기지
+- Hyper Text: 링크(Link) <a>
+- Markup Language : 태그(Tag(element))를 사용하여 문법을 구성하는 언어
+    -SGML, XML, HTML, XHTML
+- 프로그래밍 언어(X) -> 표현 언어(O) : 브라우저 화면에 무언가를 출력하는 기능만 있는 언어
+- 난이도 하 -> 개발자 입장 -> 중하
+- http://w3.org, http://w3c.org > The World Wid Web Consotium (W3C) > 웹 관련 기술 표준화 작업
+- HTML 1.0 ~ HTML 5
+
+브라우저, Web Browser
+- 웹서버에 접속해서, 필요한 자원(HTML페이지, 이미지, 동영상등)을 다운로드 받아서 처리 후(컴파일)에 화면에 결과를 출력하는 프로그램 
+- HTML 언어를 실행하는 환경(HTML 언어 분석 + 파싱 + 번역(컴파일) + 실행 + 결과)
+- Java의 JRE + JDK를 혼합한것과 유사
+
+
+HTML 개발 환경
+- 텍스트 편집기
+1. 메모장
+2. IDE: Eclipse, Visual Studio, IntelliJ 등..
+3. SublimeText, Atom, Bracket, Visual Studio Code 등..
+4. 나모 웹에디터, 프론트 앤드, 드림위버 등...
+
+실행환경
+- 브라우저
+
+
+언어 + HTML(W3C 제작) -> 브라우저 -> 실행환경(여러 기업)
+
+HTML 1.0
+    - 1993년 시작
+    - 1995년 HTML 3.0 시장규모 커짐
+    - 1997~1998 상용화 시작
+    - 브라우저
+        a. 넷스케이프 네비게이터
+        b. Microsoft Internet Explore > Window에 IE를 끼워팔기
+
+Netscape Navigator vs Internet Explore
+    - 브라우저 1차 대전
+    - 인터넷 사용자와 개발자에게 피해가 감.
+    - 개발자 -> HTML기능이 적어서 -> 기능 추가 할게 없음
+    -> 경쟁하면서 문법을 추가로 생성하고 그 회사의 브라우저에서만 동작가능하게끔 설정
+
+
+사이트 오픈 -> 웹페이지 1장 -> 순수 HTML + IE(기능 추가) -> 완성
+    - A : 맘에 들어 추천 -> IE
+    - B : 불평불만.. 에러투성 -> 비추 -> NN
+
+
+사이트 오픈 -> 웹 페이지 1장(표준 HTML) -> 오타 발생 -> 약간의 에러 -> 브라우저 처리 -> 정상 출력
+    - A(IE) : 만족 (구문 에러나도 정상처리해서 점유율 높이기 위해)
+    - B(NN) : 에러 불만족
+    - 개발 시장: 안 좋은 환경 > 최악의 환경
+
+2000초중반
+- IE 독주(80~90) 
+- 나머지 브라우저 단합 > IE 반기 > 개발 환경 표준화
+- 브라우저 2차 대전 > 웹 표준화
+- 나머지 브라우저 승 > 웹 표준화 자리 잡기 시작 > 국내 2010년 이후 활성화
+- 최근 MS 웹 표준 동참 > Edge
+
+현재 안정화 시기
+a. HTML 안정화 상
+b. CSS 안정화 상중
+c. JavaScript 안정화 중
+
+HTML 1.0 ~ HTML5
+- HTML 4.01 : 대중화 버전, 현재도 남아있음.
+- XHTML 1.0 : HTML + XML 
+- XHTML 2.0 : 새로운 문법으로 계획 발표 -> 포기
+
+ 
+
+4. CSS
