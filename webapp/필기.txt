@@ -1,0 +1,207 @@
+D:\class\client 폴더 생성
+1. HTML
+2. CSS
+3. JavaScript
+
+사용 도구
+1. Eclipse
+2. 다른 편집기 -> Visual Studio Code 
+
+이클립스
+1. 워크 스페이스 이동 -> D:\class\client
+2. 인코딩
+   - workspace > Text File Encoding
+   - CSS Files
+   - HTML Files
+   - JSP Files
+3. 폰트
+4. 나머지..
+
+http://tomcat.apache.org
+- 웹 서버(프로그램
+- 왼쪽 메뉴 > Download > Tomcat 8
+- 64-bit Windows zip (pgp, sha512)
+
+New > Dynamic Web Project > "ClientTest"
+
+
+오라클
+- 서비스 중 하나 -> 8080번 사용
+
+아파치톰캣
+- 포트번호 8080번 사용
+- 3000대 이후~ 32000번
+- 8090
+
+"hello.html"
+
+http://localhost:8090/ClientTest/hello.html
+
+내부 브라우저(내장 브라우저) -> 사용X
+
+사용 브라우저 - 수업(통일)
+1. Internet Explorer(구) -> 절대X
+2. Edge(***)
+3. Chrome(***) : 크롬 기준
+4. Fire Fox
+5. Opera
+6. Naver Whale(***)
+7. Safari
+
+
+
+Visual Studio == Eclipse : IDE
+
+SublimeText, Atom, Braket, Visual Studio Code 등...
+
+UltraEdit, Editplus, NotePad2, NotePad++...
+
+메모장
+
+
+
+
+
+
+Font Family:
+Consolas, '맑은 고딕', 'Courier New', monospace
+
+
+
+
+
+
+
+1. Java
+2. Oracle
+3. Client
+   - Client
+   - Web Client
+   - Client-side Programming
+   - Font-end Programming
+   a. HTML
+   b. CSS
+   c. JavaScript
+   - 위의 3개 언어를 모두 합쳐서 브라우저에 보이는 웹페이지를 만들게 된다.
+
+
+Java -> 프로그래밍 언어(O) + 제어 구조(O)
+SQL -> 프로그래밍 언어(X) + 제어 구조(X)
+PL/SQL -> 프로그래밍 언어(O) + 제어 구조(O)
+
+
+HTML, Hyper Text Markup Language
+- 하이퍼 텍스트 마크업 언어
+- Hyper Text: 링크(Link)
+- Markup Language: 태그(Tag)를 사용해서 문법을 표기하는 언어
+   - SGML, XML, HTML, XHTML 등...
+- 프로그래밍 언어(X) -> 표현 언어(O): 브라우저 화면에 무언가를 출력하는 기능만 있는 언어
+- 난이도 하 -> 개발자 입장 -> 중하
+- http://w3.org, http://w3c.org > The World Wide Web Consortium (W3C) > 웹 관련 기술 표준화 작업
+- HTML 1.0 ~ HTML5
+- 수업: HTML 4.01 + XHTML 1.0 + HTML5
+
+
+
+
+
+브라우저, Web Browser
+- 웹 서버에 접속해서, 필요한 자원(HTML페이지, 이미지, 동영상 등등)을 다운로드 받아서
+   처리 후에 화면에 결과를 출력하는 프로그램
+- HTML 언어를 실행하는 환경(HTML 언어 분석 + 파싱 + 번역 + 실행 + 결과)
+- 자바에 비교하면 JDK + JRE와 유사
+
+
+
+
+
+HTML 개발 환경
+- 텍스트 편집기
+1. 메모장
+2. IDE: Eclipse, Visual Studio, IntelliJ 등..
+3. SublimeText, Atom, Brackets, Visual Sutdio Code 등..
+4. 나모 웹에디터, 프론트 앤드, 드림위버 등..
+
+실행환경
+- 브라우저
+
+
+
+
+언어(문법) + HTML(w3c 제작) -> 실행 환경 + 여러 기업
+
+
+HTML 1.0
+- 1993년
+- 1995년 
+- 1997~1998년
+- 브라우저
+   a. 넷스케이프 네비게이터
+   b. 마이크로소프트 인터넷 익스플로러 > 운영체제(브라우저 내장)
+
+NN vs IE
+- 브라우저 1차 대전
+- 인터넷 사용자
+- 개발자 -> 기능 적음 -> 할게 없음
+- 문법 추가 생성 -> IE 동작 가능
+
+
+사이트 오픈 -> 웹 페이지 1장 -> 순수 HTML + IE(기능 추가) -> 완성
+- A : 맘에 든다고 함.. 추천 -> IE
+- B : 불평.. 에러 투성이... 비추천 -> NN
+
+
+사이트 오픈 -> 웹 페이지 1장(표준 HTML) -> 오타 발생 -> 약간의 에러 -> 브라우저 처리 -> 정상 출력
+- A(IE) : 만족 
+- B(NN) : 에러 불만족
+- 개발 시장 : 안 좋은 환경 > 최악의 환경
+
+
+
+2000초중반
+- IE 독주(80~90%) > 반기
+- 나머지 브라우저 단합 > 개발 환경 표준화 
+- 브라우저 2차 대전 > 웹 표준화
+- 나머지 브라우저 승 > 웹 표준화 자리 잡기 시작 > 국내 2010년 이후 활성화 > 웹 표준화 기본 능력
+- MS 최근(2~3년전) > 웹 표준화 동참 > Edge 출시
+
+
+
+현재
+- 안정화 시기
+a. HTML 안정화 상
+b. CSS 안정화 상중
+c. JavaScript 안정화 중
+
+
+
+HTML 1.0 ~ HTML5
+- HTML 4.01 : 대중화 버전, 현재까지..
+- XHTML 1.0 : HTML + XML
+- XHTML 2.0 : 계획 발표 -> 포기
+- HTML5 : 최신 버전
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

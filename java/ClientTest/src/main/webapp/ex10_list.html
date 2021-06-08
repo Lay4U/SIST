@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ex10_list.html -->
+
+    <!-- 
+
+        List 목록
+        1. <ol> + <li>
+            - 순서가 있는 목록
+            - <ol>: Ordered List
+            - <li>: List Item
+
+        2. <ul> + <li>
+            - 순서가 없는 목록
+            - <ul>: Unordered List
+            
+
+        3. <dl> + <dt> + <dd>
+            - 용어 정의 목록
+            - <dl> : Definition List
+            - <dt> : Definition Term
+            - <dd> : Definition Description
+
+     -->
+     <h1>오늘의 할일</h1>
+
+     <ol type="1">
+         <li type="A">강아지 목욕시키기</li>
+         <li type="a">장보기</li>
+         <li type="i">자바 복습하기</li>
+         <li type="I">개발 환경 설정하기</li>
+         <li>조깅하기</li>
+     </ol>
+
+     <h1>오늘의 할일</h1>
+
+     <!-- 앞의 점 : Bullet(disc, circle, square) -->
+     <ul>
+        <li>강아지 목욕시키기</li>
+        <li>장보기</li>
+        <li>자바 복습하기</li>
+        <li>개발 환경 설정하기</li>
+            <ol>
+                    <li>JDK 설치하기</li>
+                    <li>이클립스 설치하기</li>
+                        <ul>
+                            <li>설치파일 다운로드</li>
+                            <li>압축 해제</li>
+                            <li>실행</li>
+                        </ul>
+                    <li>오라클 설치하기</li>
+            </ol>
+        <li>조깅하기</li>
+    </ul>
+
+    <h1>수업</h1>
+
+    <dl>
+            <dt>Java</dt>
+            <dd>Java is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi impedit odio facere suscipit, quos libero consequuntur unde sunt debitis, magni ipsa dolor et maxime, ratione quo amet. Quos obcaecati praesentium esse. Ut totam ab excepturi temporibus esse illo itaque id minima, porro recusandae expedita velit vel voluptates ipsum architecto in sed praesentium aut. Eligendi quos quod eveniet! Sunt cum ex ullam eius nisi expedita, minima libero fugit possimus qui debitis fuga aperiam porro deleniti, temporibus provident, recusandae officia hic accusantium tenetur. Inventore quod ullam, recusandae repellendus aperiam fugit. Quam deserunt illo dolorem dolore sed dicta eius dolorum, libero quidem possimus!</dd>
+
+            <dt>Oracle</dt>
+            <dd>Orace is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid incidunt sequi amet voluptatum. Deleniti adipisci sint facilis eum officia? Amet dolor iusto ab numquam perspiciatis. Autem unde beatae tempore ipsam quibusdam tenetur, deserunt provident reprehenderit voluptate ut vero quia, maxime quaerat officiis quasi nam odio quod aliquam ipsa consectetur. Nemo atque molestiae consequuntur provident incidunt est perferendis unde odit dolores esse. Mollitia necessitatibus eveniet eius facilis. Quisquam porro assumenda non et optio dolores ex, sed repudiandae excepturi aliquid quo officia ad est dolorum possimus expedita quam error voluptates, aut incidunt tempore officiis necessitatibus? Unde ullam numquam labore consequatur! Magnam, dolor?</dd>
+
+            <dt>HTML</dt>
+            <dd>HTML is Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste atque maxime, possimus fugit dolores iure accusamus molestiae autem expedita, dolor perspiciatis ratione vero dignissimos maiores earum natus odit deserunt repellendus. Tempore fugit tenetur dolorem, saepe iusto placeat porro tempora pariatur natus. Dolor fuga tempore, quo voluptatum vero, repudiandae, nam sequi saepe laudantium obcaecati expedita totam magni ipsum. Illum necessitatibus dolorem atque molestiae praesentium fugit quos, accusamus repellat. Nisi cumque est modi, mollitia ducimus ab eos dolores minima impedit officia, enim sed vitae! Esse nam vel veritatis debitis pariatur doloribus numquam, unde officiis. Modi perspiciatis repudiandae adipisci iure molestias voluptates consequatur.</dd>
+    </dl>
+</body>
+</html>
