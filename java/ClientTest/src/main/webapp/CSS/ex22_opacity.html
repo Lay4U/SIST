@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: white;
+        color: black;
+      }
+      .box {
+        border: 1px solid black;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+
+        /* 
+          opacity, 불투명도
+          - 0~1
+          - 0이면 투명, 1이면 불투명
+         */
+
+        /* opacity: 0.5; */
+        opacity: 0;
+      }
+
+      #list {
+        border: 1px solid black;
+        width: 664.3px;
+      }
+
+      #list > img {
+        border: 1px solid blue;
+        opacity: 0.3;
+        cursor: pointer;
+      }
+
+      #list > img:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ex22_opacity.html -->
+
+    <h1>고양이</h1>
+    <div id="list">
+      <img src="images/catty01.png" />
+      <img src="images/catty02.png" />
+      <img src="images/catty03.png" />
+      <img src="images/catty04.png" />
+      <img src="images/catty05.png" />
+    </div>
+
+    test
+    <div id="box1" class="box">상자1</div>
+    test
+  </body>
+</html>

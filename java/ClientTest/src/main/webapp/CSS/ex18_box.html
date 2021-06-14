@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        /* 실무에서 많이 사용 패딩을 0으로 
+            패딩 있는, 없는 태그 외우기 힘드므로
+            마진 있는, 없는 태그 외우기 힘드므로
+            */
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: #f3f0d7;
+        color: black;
+        cursor: crosshair;
+      }
+
+      .menu {
+        /* border: 1px solid black; */
+        width: 100%;
+        /* border: spacing 0px; */
+        border-spacing: 0;
+      }
+
+      .menu td {
+        /* border: 1px solid red; */
+        width: 20%;
+        height: 60px;
+        text-align: center;
+        /* font-family: Hack bold; */
+        font-family: Arial;
+        font-size: 1.5em;
+        background-color: #5e454b;
+        color: white;
+        font-variant: small-caps;
+        cursor: pointer;
+        border-top: 5px solid transparent; /* transparent */
+        border-bottom: 5px solid transparent;
+      }
+
+      .menu td:hover {
+        background-color: #d8b384;
+        border-top-color: red;
+        border-bottom-color: red;
+      }
+
+      main {
+        width: 1000px;
+        margin: 0 auto;
+      }
+
+      section {
+        padding: 25px;
+        margin-bottom: 100px;
+      }
+
+      section > article > h1 {
+        border-bottom: 1px dashed #5e454b;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+
+      section > article > p {
+        line-height: 1.6em;
+      }
+
+      section > article {
+        margin-bottom: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ex18_box.html -->
+
+    <!-- 
+    페이지 상단 메뉴 + 컨텐츠
+
+    1. 화면 스케치
+      - Adobe XD 처음듣는데?
+      - Figma
+      - 발사믹 묵업 (*****)
+      - 카카오 오븐
+      - Visio(MS Office)
+
+    2. 색상표 구성
+      https://colorhunt.co/
+      - #cee5d0
+      - #f3f0d7
+      - #d8b384
+      - #5e454b
+
+    3. 최적 해상도 설정
+      - 다양한 device에서 사이트 접속 > 중간 해상도를 미리 선택(1000px ~ 1200px) > 화면 구현
+   -->
+    <main>
+      <header>
+        <nav>
+          <table class="menu">
+            <tr>
+              <td>Home</td>
+              <td>Employee</td>
+              <td>Department</td>
+              <td>Manager</td>
+              <td>Location</td>
+            </tr>
+          </table>
+        </nav>
+      </header>
+
+      <section>
+        <article>
+          <h1>제목입니다.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            explicabo aperiam magni nemo illo voluptatibus error harum
+            dignissimos. Explicabo, cumque quos eaque nihil necessitatibus animi
+            amet reprehenderit voluptatibus qui inventore.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            explicabo aperiam magni nemo illo voluptatibus error harum
+            dignissimos. Explicabo, cumque quos eaque nihil necessitatibus animi
+            amet reprehenderit voluptatibus qui inventore.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            explicabo aperiam magni nemo illo voluptatibus error harum
+            dignissimos. Explicabo, cumque quos eaque nihil necessitatibus animi
+            amet reprehenderit voluptatibus qui inventore.
+          </p>
+        </article>
+        <article>
+          <h1>제목입니다.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            explicabo aperiam magni nemo illo voluptatibus error harum
+            dignissimos. Explicabo, cumque quos eaque nihil necessitatibus animi
+            amet reprehenderit voluptatibus qui inventore.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            explicabo aperiam magni nemo illo voluptatibus error harum
+            dignissimos. Explicabo, cumque quos eaque nihil necessitatibus animi
+            amet reprehenderit voluptatibus qui inventore.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            explicabo aperiam magni nemo illo voluptatibus error harum
+            dignissimos. Explicabo, cumque quos eaque nihil necessitatibus animi
+            amet reprehenderit voluptatibus qui inventore.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

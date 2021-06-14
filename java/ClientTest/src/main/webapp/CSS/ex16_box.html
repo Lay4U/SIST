@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: white;
+        color: black;
+      }
+      /*
+        교재 대용
+        교재
+          - 자습서
+
+        1. w3schools
+          - 자습서 or 레퍼런스
+        2. MDN
+          - Main 레퍼런스
+      /* 
+        박스 모델
+        1. border
+        2. width, height
+        3. padding, margin
+          - padding: 가독성 여백 조절, 내부 요소의 배치(위치) 
+      */
+
+      .box {
+        border: 10px solid black;
+        width: 200px;
+        height: 100px;
+      }
+
+      #box1 {
+        border-color: red;
+        /* padding: 0px; */
+        /* height: auto; */
+
+        /* 
+          padding 방향(위, 오른쪽, 아래, 왼쪽)
+         */
+
+        /* 네방향 모두 */
+        /* text-align: justify;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px; */
+
+        /* top -> right -> bottom -> left */
+        /* padding: 10px 20px 30px 40px; */
+
+        /* top -> (right+left) -> bottom */
+        /* padding: 10px 20px 30px; */
+
+        /* top(bottom) -> right(left) ->(*****)*/
+        /* padding: 10px 30px; */
+
+        /* top(right,left,bottom) ->(*****) */
+        /* padding: 20px; */
+
+        /* padding: 5px;
+        padding-top: 20px; */
+
+        /* 라인박스(outline), 인라인박스(content) */
+
+        /* 
+          테두리 기준
+          - padding: 안쪽 여백
+          - margin: 바깥족 여백
+
+          padding
+          - 테두리와 안쪽 컨텐츠 사이의 거리
+
+          margin
+          - 해당 요소(테두리)와 외부 요소간의 거리
+          - 태그 사이 간격이 조절.. 거리 조절
+
+         */
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .txt {
+        border: 2px solid red;
+        /* padding: 10px; */
+        padding: 2px 15px;
+        outline: none;
+        border-bottom: 1px dashed grey;
+        /* padding-bottom: 5px; */
+        padding: 5px 10px;
+      }
+
+      h1 {
+        border-bottom: 1px solid black;
+        /* padding-bottom: 20px; */
+        /* text-decoration: underline; 제어 불가능 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ex16_box.html -->
+    <h1>CSS 박스 모델</h1>
+
+    <!-- 
+      블럭 요소의 수직 거리는 절대로 <br>로 조절하면 안된다!!!!! -> margin 사용
+      1. <br> 용도: 인라인 태그의 개행을 목적으로 한다.
+      2. 거리 조절이 굉장히 힘들다.
+
+     -->
+    <input type="text" value="" class="txt" />
+    <hr />
+    <div id="box1" class="box">
+      상자1 상자2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+      fugiat, eveniet id aut nobis nihil
+    </div>
+    <div id="box2" class="box"></div>
+    <div id="box3" class="box">상자3</div>
+    <hr />
+  </body>
+</html>
