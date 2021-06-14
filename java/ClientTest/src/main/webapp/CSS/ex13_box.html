@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box1 {
+        border: 1px sold black;
+      }
+      h1 {
+        border-bottom: 1px dashed black;
+      }
+
+      /* 폼태그 특징: 1개 이상의 CSS 속성을 적용하면 나머지 속성들이 브라우저 설정을 따르지 않고 기본값으로 출력된다. */
+      .txt {
+        background-color: yellow;
+      }
+
+      .txt,
+      .btn {
+        background-color: yellow;
+        border: 1px solid black;
+      }
+
+      body {
+        border: 30px solid tomato; /* 이 부분이 실제 <body>의 영역*/
+        background-color: yellow;
+        color: black;
+      }
+
+      html {
+        border: 30px solid blue;
+      }
+
+      #box3 {
+        border: 1px solid black;
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+
+    1. Selector
+    2. Box Model
+
+    박스 모델, Box Model
+    - HTML의 모든 태그는 화면에 출력될 때 직사각형 형태로 출력된다. -> 이 규칙을 기반으로 적용되는 CSS의 속성(+규칙)들을 박스 모델이라고 한다.
+    1. 테두리, border
+    2. 너비, 높이, width, height
+    3. 여백, padding, margin
+
+
+   -->
+    <h1>CSS 박스 모델</h1>
+    <div>
+      데이터 : <input type="text" class="txt" />
+      <input type="button" value="보내기" class="btn" />
+    </div>
+    <div id="box1" class="box">상자1</div>
+    <div id="box2" class="box">상자2</div>
+    <div id="box3" class="box">상자3</div>
+  </body>
+</html>
