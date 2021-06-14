@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ex23_html5.html -->
+
+    <!-- 
+
+    HTML 4.01 + 추가 기능 부재 -> 개발자 직접 -> HTML + CSS + JavaScript -> 새로운 기능 생성(15년 가까이)
+
+    HTML5 나오고 -> 기대감 만족 못함 -> HTML5의 새 기능이 -> 모두 이전에 개발자들이 직접 만들어서 사용하던 기능들..
+    플래시(Adobe Flash), 실버라이트(Microsoft Silverlight)
+   -->
+
+    <h1>HTML5</h1>
+
+    <h2>form 관련 기능</h2>
+
+    <form method="POST" action="ex23ok.jsp">
+      <h3>라벨</h3>
+      <label for="txt1">이름:</label><input type="text" id="txt1" />
+      <hr />
+      <input type="text" value="이름을 입력하세요." onfocus="this.value='';" />
+      <hr />
+      <input
+        type="password"
+        value="암호을 입력하세요."
+        onfocus="this.value='';"
+      />
+      <hr />
+
+      <input type="text" placeholder="이름을 입력하세요." />
+      <hr />
+      <input type="password" placeholder="암호를 입력하세요." />
+      <hr />
+      <textarea cols="50" rows="6" placeholder="인삿말을 적으세요."></textarea>
+
+      <h3>필수 입력값 체크</h3>
+      <input type="text" name="data" required /> ** 반드시 입력하세요
+
+      <h3>의미가 강조된 태그들 > Semantic Web(시맨틱 웹)</h3>
+
+      URL: <input type="url" />
+
+      <hr />
+
+      Email : <input type="email" />
+
+      <hr />
+
+      숫자 : <input type="number" min="10" max="100" step="10" />
+
+      <hr />
+
+      범위(슬라이더 바):
+      <!-- 원 : thumb button -->
+      <input
+        type="range"
+        min="20"
+        max="120"
+        step="20"
+        onchange="document.getElementById('rtxt').value = this.value;"
+      />
+      <input type="text" id="rtxt" />
+
+      <hr />
+
+      색상:
+      <input
+        type="color"
+        onchange="document.getElementById('ctxt').value = this.values; document.body.bgColor = this.value;"
+      />
+      <input type="text" id="ctxt" />
+
+      <hr />
+
+      날짜 시간:
+      <hr />
+      <input type="date" />
+      <hr />
+      <input type="month" />
+      <hr />
+      <input type="week" />
+      <hr />
+      <input type="time" />
+      <hr />
+      <input type="datetime" />
+      <!-- 지원 안함 -->
+      <hr />
+      <input type="datetime-local" />
+      <hr />
+
+      데이터 리스트:
+      <input type="text" list="list1" />
+
+      <datalist id="list1">
+        <option value="홍길동"></option>
+        <option value="아무개"></option>
+        <option value="하하하"></option>
+      </datalist>
+
+      <h3>진행률</h3>
+      <progress></progress>
+      <hr />
+      <progress value="0"></progress>
+      <hr />
+      <progress value="0.2"></progress>
+      <hr />
+      <progress value="0.4"></progress>
+      <hr />
+      <progress value="0.6"></progress>
+      <hr />
+      <progress value="0.8"></progress>
+      <hr />
+      <progress value="1"></progress>
+      <hr />
+      <progress value="24" max="100"></progress>
+
+      <hr />
+
+      <h3>수치</h3>
+      <meter value="0"></meter>
+      <hr />
+      <meter value="0.5"></meter>
+      <hr />
+      <meter value="1"></meter>
+      <hr />
+
+      <meter value="50" min="-100" max="100"></meter>
+      <hr />
+
+      <meter min="0" max="100" low="30" high="80" value="20"></meter>
+      <hr />
+      <meter min="0" max="100" low="30" high="80" value="50"></meter>
+      <hr />
+      <meter min="0" max="100" low="30" high="80" value="90"></meter>
+      <hr />
+
+      <details>
+        <summary>Java?</summary>
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio maiores doloremque natus illo fugiat facilis explicabo, amet illum non praesentium dolorem aspernatur tempore laudantium, sed dicta inventore soluta blanditiis in. Quasi fugit consequuntur hic laudantium ex? Id eligendi quam incidunt delectus error, veritatis quisquam doloremque corrupti ullam est atque inventore! Molestiae labore incidunt, voluptate, recusandae suscipit error odit repellat consectetur aut tempore omnis, aperiam qui nisi autem quidem. Nemo, harum itaque rerum iusto laborum quisquam quaerat excepturi, laudantium illum aut, consequuntur maiores saepe vel. Maiores corrupti soluta dolorem, reiciendis necessitatibus, harum magni deserunt molestias illum velit perferendis, adipisci quidem porro.
+        </div>
+      </details>
+
+
+      <input type="submit" value="보내기" />
+
+      <hr>
+
+
+      <!-- 
+        입력 컨트롤들을 구분짓기 위한 집합 태그 인데 요즘은 이뻐서 많이씀
+       -->
+      <filedset>
+        <legend>로그인</legend>
+        <div>
+          <div>아이디: <input type="text" size="10"></div>
+          <div>암호: <input type="text" size="10"></div>
+        </div>
+      </filedset>
+
+      <hr>
+
+      <marquee>긴급 속보</marquee>
+    </form>
+  </body>
+</html>
