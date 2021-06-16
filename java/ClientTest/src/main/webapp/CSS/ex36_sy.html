@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: white;
+        color: black;
+      }
+
+      #weather {
+        border-bottom: 1px solid #eaeef3;
+        border-right: 1px solid #eaeef3;
+        border-left: 1px solid #eaeef3;
+        width: 630px;
+        height: 183px;
+        padding: 0px 20px;
+      }
+
+      header {
+        border-top: 1px solid #eaeef3;
+        border-left: 1px solid #eaeef3;
+        border-right: 1px solid #eaeef3;
+        width: 630px;
+        height: 37px;
+        font-size: 15px;
+        line-height: 53px;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      #weather .item {
+        width: 125px;
+        height: 138.667px;
+        border-right: 1px solid whitesmoke;
+        margin-top: 20px;
+        margin-bottom: 24px;
+        text-align: center;
+        float: left;
+      }
+
+      #weather .date {
+        width: 130px;
+        height: 20.67px;
+        padding-top: 2px;
+        margin-top: -1px;
+        margin-bottom: 18px;
+        line-height: 21px;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      #weather .rainPercent {
+        width: 125px;
+        height: 30px;
+        margin-bottom: 4px;
+        text-align: center;
+        line-height: 1.6rem;
+        font-size: 10px;
+      }
+
+      #weather .temp {
+        width: 125px;
+        height: 16px;
+        font-weight: bold;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 13px;
+      }
+
+      #weather .rainPercent .img01 {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-image: url("images/icon_wt_01.svg");
+        background-size: 30px 30px;
+      }
+
+      #weather .rainPercent .img02 {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-image: url("images/icon_wt_01.svg");
+        background-size: 30px 30px;
+      }
+
+      #weather .rainPercent .img03 {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-image: url("images/icon_wt_05.svg");
+        background-size: 30px 30px;
+      }
+
+      #weather .rainPercent .img04 {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-image: url("images/icon_wt_07.svg");
+        background-size: 30px 30px;
+      }
+
+      #weather .rainPercent .img05 {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-image: url("images/icon_wt_09.svg");
+        background-size: 30px 30px;
+      }
+
+      #weather .rainPercent .img06 {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-image: url("images/icon_wt_22.svg");
+        background-size: 30px 30px;
+      }
+
+      #weather .rainPercent .img07 {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-image: url("images/icon_wt_05.svg");
+        background-size: 30px 30px;
+      }
+
+      #weather .rainPercent .img08 {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-image: url("images/icon_wt_01.svg");
+        background-size: 30px 30px;
+      }
+
+      #weather .rainPercent .img09 {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-image: url("images/icon_wt_05.svg");
+        background-size: 30px 30px;
+      }
+
+      #weather .rainPercent .img10 {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-image: url("images/icon_wt_01.svg");
+        background-size: 30px 30px;
+      }
+
+      #weather .item .rainPercent .percent {
+        width: 27.146px;
+        margin-left: 7px;
+        font-size: 13px;
+        vertical-align: top;
+      }
+
+      #weather .date .today {
+        width: 24px;
+        height: 18px;
+        border-radius: 7px;
+        color: #8f8f8f;
+        opacity: 0.9;
+        font-size: 13px;
+      }
+
+      .item .percentBlue {
+        color: lightskyblue;
+        width: 27.146px;
+        margin-left: 7px;
+        font-size: 13px;
+        vertical-align: top;
+      }
+
+      #weather .date .todayBorder {
+        /* width: 17px; */
+        /* height: 18px; */
+        /* line-height: 18px; */
+        /* font-weight: 600; */
+        /* border: 1px solid red; */
+        /* text-align: center; */
+        border-radius: 12px;
+        color: #fff;
+        /* background: url("images/btn_dday.png") 100% 0 no-repeat; */
+        /* background-color: rbg(40, 167, 69); */
+        /* background-color: rgba(255, 255, 255, 0.1); */
+        background-color: #00c63c;
+        font-family: "맑은 고딕";
+        background-size: 110px;
+        width: 1px;
+        height: 1px;
+        padding-right: 9px;
+        padding-left: 7px;
+        padding-bottom: 1px;
+        margin-left: 7px;
+        text-indent: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ex36_naver.html -->
+    <header>주간날씨</header>
+    <div id="weather">
+      <div class="item">
+        <div class="date">수 <span class="todayBorder">오늘</span></div>
+        <div class="rainPercent">
+          <span class="img01"></span>
+          <span class="percent">10%</span>
+        </div>
+        <div class="rainPercent">
+          <span class="img02"></span>
+          <span class="percent">10%</span>
+        </div>
+        <div class="temp">19°/29°</div>
+      </div>
+
+      <div class="item">
+        <div class="date">목 <span class="today">내일</span></div>
+        <div class="rainPercent">
+          <span class="img03"></span>
+          <span class="percent">20%</span>
+        </div>
+        <div class="rainPercent">
+          <span class="img04"></span>
+          <span class="percent">30%</span>
+        </div>
+        <div class="temp">18°/26°</div>
+      </div>
+
+      <div class="item">
+        <div class="date">금 <span class="today">모레</span></div>
+        <div class="rainPercent">
+          <span class="img05"></span>
+          <span class="percentBlue">60%</span>
+        </div>
+        <div class="rainPercent">
+          <span class="img06"></span>
+          <span class="percentBlue">60%</span>
+        </div>
+        <div class="temp">18°/25°</div>
+      </div>
+
+      <div class="item">
+        <div class="date">토 <span class="today">6.19.</span></div>
+        <div class="rainPercent">
+          <span class="img07"></span>
+          <span class="percent">30%</span>
+        </div>
+        <div class="rainPercent">
+          <span class="img08"></span>
+          <span class="percent">0%</span>
+        </div>
+        <div class="temp">17°/28°</div>
+      </div>
+
+      <div class="item">
+        <div class="date">
+          <span class="sunday">일</span>
+          <span class="today">6.20.</span>
+        </div>
+        <div class="rainPercent">
+          <span class="img09"></span>
+          <span class="percent">30%</span>
+        </div>
+        <div class="rainPercent">
+          <span class="img10"></span>
+          <span class="percent">0%</span>
+        </div>
+        <div class="temp">18°/29°</div>
+      </div>
+    </div>
+  </body>
+</html>
