@@ -1,0 +1,146 @@
+/* 
+  - 수업에서 자주 사용하는 서식 미리 지정
+*/
+
+/* 배경색 */
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.bgcolor-red {
+  background-color: tomato;
+}
+
+.bgcolor-blue {
+  background-color: cornflowerblue;
+}
+
+.bgcolor-yellow {
+  background-color: gold;
+}
+
+.bgcolor-green {
+  background-color: greenyellow;
+}
+
+.bgcolor-black {
+  background-color: black;
+}
+
+.bgcolor-white {
+  background-color: white;
+}
+
+.bgcolor-orange {
+  background-color: orange;
+}
+
+/* 전경색 */
+
+.color-red {
+  color: tomato;
+}
+
+.color-blue {
+  color: cornflowerblue;
+}
+
+.color-yellow {
+  color: gold;
+}
+
+.color-green {
+  color: greenyellow;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-orange {
+  color: orange;
+}
+
+/* 상자 크기*/
+
+.box-small {
+  width: 100px;
+  height: 100px;
+}
+
+.box-medium {
+  width: 200px;
+  height: 200px;
+}
+
+.box-large {
+  width: 400px;
+  height: 400px;
+}
+
+/* 상자 테두리 */
+
+.box-border1 {
+  border: 1px solid black;
+}
+
+.box-border3 {
+  border: 3px solid black;
+}
+
+.box-border5 {
+  border: 5px solid black;
+}
+
+.box-border10 {
+  border: 10px solid black;
+}
+
+/* 테이블(기본) */
+
+.table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid black;
+}
+
+.table.small {
+  width: 300px;
+}
+
+.table.medium {
+  width: 500px;
+}
+
+.table.large {
+  width: 800px;
+}
+
+.table.padding-small td,
+.table.padding-small th {
+  padding: 3px;
+}
+
+.table.padding-medium td,
+.table.padding-medium th {
+  padding: 5px;
+}
+
+.table.padding-large td,
+.table.padding-large th {
+  padding: 10px;
+}
+
+.table.header th {
+  background-color: #ddd;
+}

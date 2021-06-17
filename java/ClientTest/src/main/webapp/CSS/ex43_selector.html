@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/example.css" />
+    <style>
+      /* 
+      입력 폼 선택자
+      1. :focus
+      2. :enabled
+      3. :disabled
+      4. :checked
+      5. :required
+      6. :read-only
+      7. :optional
+    */
+
+      form:nth-child(2) > input {
+        /* border: 1px solid black; */
+        display: block;
+        margin-bottom: 5px;
+        border: 1px solid #999;
+        background-color: white;
+        outline: none;
+        padding: 5px;
+      }
+      /* form:nth-child(2) > input:focus { background-color: palegreen;} */
+      /* form:nth-child(2) > input:enabled {
+      background-color: peru;
+    }
+
+    form:nth-child(2) > input:disabled {
+      background-color: pink;
+    } */
+      /* form:nth-child(2) > input:disabled {
+        /* background-color: palevioletred; 
+        opacity: .3;
+        cursor: not-allowed;
+      } */
+
+      form:nth-child(2) > input:required {
+        background-color: gold;
+      }
+
+      form:nth-child(2) > input:optional {
+        background-color: tomato;
+      }
+
+      form:nth-child(2) > input:read-only {
+        cursor: not-allowed;
+      }
+
+      form:nth-child(4) > input {
+        /* background-color: tomato; */
+        /* width: 50px;
+        height: 50px; */
+      }
+      /* 
+      input[type="checkbox"]:checked {
+        width: 50px;
+        height: 50px;
+      }
+
+      input[type="radio"]:checked {
+        width: 50px;
+        height: 50px;
+      } */
+
+      input.cat + img {
+        opacity: 0.3;
+      }
+
+      input.cat:checked + img {
+        opacity: 1;
+      }
+
+      #cb1 {
+        display: none;
+      }
+
+      #cb1 + label + div {
+        visibility: hidden;
+      }
+
+      #cb1:checked + label + div {
+        visibility: visible;
+      }
+
+      #cb1 + label > span:nth-child(2) {
+        display: inline;
+      }
+
+      #cb1 + label > span:nth-child(1) {
+        display: none;
+      }
+
+      #cb1 + label > span:nth-child(2) {
+        display: none;
+      }
+
+      .item {
+        border: 1px solid #ccc;
+        width: 200px;
+        font-size: 14px;
+        color: #444;
+        line-height: 1.5em;
+        float: left;
+        margin-right: 10px;
+      }
+
+      .item > input[type="checkbox"] {
+        display: none;
+      }
+
+      .item > label {
+        display: block;
+        background-color: #eee;
+        padding: 5px;
+        padding-left: 8px;
+        font-weight: bold;
+        font-variant: small-caps;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .item > div {
+        padding: 10px;
+      }
+
+      .item > input[type="checkbox"]:checked + label + div {
+        display: none;
+      }
+
+      .item > input[type="checkbox"]:checked + label {
+        color: #ccc;
+        border-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="item">
+      <input type="checkbox" class="cb" id="item1" />
+      <label for="item1">Class</label>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, est
+        eum! Id itaque aliquam dolor, voluptates natus libero. In, suscipit eius
+        nesciunt veritatis, fugiat nam nulla, assumenda porro voluptate
+        provident fuga libero ut. Dolore enim excepturi sint? Magnam consectetur
+        quod nulla repellat perspiciatis dicta blanditiis itaque ullam. Est,
+        perferendis nulla?
+      </div>
+    </div>
+    <div class="item">
+      <input type="checkbox" class="cb" id="item2" />
+      <label for="item2">Method</label>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, est
+        eum! Id itaque aliquam dolor, voluptates natus libero. In, suscipit eius
+        nesciunt veritatis, fugiat nam nulla, assumenda porro voluptate
+        provident fuga libero ut. Dolore enim excepturi sint? Magnam consectetur
+        quod nulla repellat perspiciatis dicta blanditiis itaque ullam. Est,
+        perferendis nulla?
+      </div>
+    </div>
+    <div class="item">
+      <input type="checkbox" class="cb" id="item3" />
+      <label for="item3">Interface</label>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, est
+        eum! Id itaque aliquam dolor, voluptates natus libero. In, suscipit eius
+        nesciunt veritatis, fugiat nam nulla, assumenda porro voluptate
+        provident fuga libero ut. Dolore enim excepturi sint? Magnam consectetur
+        quod nulla repellat perspiciatis dicta blanditiis itaque ullam. Est,
+        perferendis nulla?
+      </div>
+    </div>
+    <div style="clear: both"></div>
+    <!-- <details>
+      <summary>클래스</summary>
+      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam amet inventore unde beatae? Pariatur tempore provident eum numquam corrupti earum culpa atque ad, expedita magnam reiciendis explicabo rem alias qui a ea, doloremque harum. Saepe, quia earum impedit provident asperiores vero quidem vel ab odit tenetur corporis adipisci consequuntur mollitia quis blanditiis veritatis eligendi iure, molestiae consequatur reiciendis eveniet. Voluptatem, provident nesciunt debitis obcaecati iste hic. Nam sint repellat beatae enim distinctio pariatur veritatis, facere exercitationem quas porro molestias itaque eaque error quisquam id voluptas impedit maxime culpa laborum laboriosam cupiditate tenetur voluptatibus eius eum. Sapiente magni corrupti odio quisquam!</div>
+    </details> -->
+
+    <input type="checkbox" id="cb1" />
+    <label for="cb1"><span>▶</span><span>▼</span>클래스</label>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident
+      ipsam odit vel dolorum laborum neque architecto exercitationem dolorem a?
+      Repellat tempora provident recusandae et nobis officia est obcaecati
+      asperiores quos, sit blanditiis tempore, aperiam commodi quas, ab nam ut
+      optio cum rem itaque voluptatibus magni! Minima quibusdam ad explicabo
+      mollitia? Esse impedit asperiores earum fugiat nesciunt consequatur, illo
+      est. Voluptatibus repellendus in dolor eius. Quibusdam, nihil provident?
+      Sint alias esse reprehenderit adipisci nulla obcaecati officiis rerum
+      mollitia sunt deserunt dicta voluptatem doloribus nostrum, quis
+      perspiciatis nisi officia repudiandae modi beatae. Voluptatem delectus
+      voluptatum incidunt beatae vel excepturi atque eius?
+    </div>
+
+    <h1>입력 폼</h1>
+    <form>
+      <!-- <input type="text" required />
+      <input type="text" readonly />
+      <input type="text" disabled />
+      <input type="text" required />
+      <input type="text" />
+      <input type="text" />
+      <input type="text" readonly />
+      <input type="text" required />
+      <input type="text" />
+      <input type="text" disabled /> -->
+    </form>
+    <h1>체크박스 + 라디오버튼</h1>
+    <form>
+      <input type="checkbox" />
+      <input type="checkbox" />
+      <input type="checkbox" />
+      <input type="radio" name="rb" />
+      <input type="radio" name="rb" />
+      <input type="radio" name="rb" />
+    </form>
+
+    <form>
+      <div>
+        <input type="checkbox" class="cat" id="cat1" />
+        <label for="cat1"><img src="images/catty01.png" /></label>
+      </div>
+      <div>
+        <input type="checkbox" class="cat" id="cat2" />
+        <img src="images/catty02.png" />
+      </div>
+      <div>
+        <input type="checkbox" class="cat" id="cat3" />
+        <img src="images/catty03.png" />
+      </div>
+      <div>
+        <input type="checkbox" class="cat" id="cat4" />
+        <img src="images/catty04.png" />
+      </div>
+      <div>
+        <input type="checkbox" class="cat" id="cat5" />
+        <img src="images/catty05.png" />
+      </div>
+    </form>
+  </body>
+</html>
