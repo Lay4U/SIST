@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: white;
+        color: black;
+      }
+
+      #weather {
+        width: 680px;
+        /* border: 1px solid black; */
+      }
+
+      .item {
+        /* border: 1px solid red; */
+        width: 125px;
+        height: 170px;
+        text-align: center;
+        margin-left: 10px;
+        border-right: 1px solid #ddd;
+        float: left;
+      }
+
+      header {
+        /* border: 1px solid green; */
+        width: 670px;
+        height: 27px;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .item .day {
+        color: #242424;
+        margin-bottom: 20px;
+        font-size: 15px;
+      }
+
+      .item .am {
+        /* border: 1px solid blue; */
+        color: #242424;
+        font-size: 15px;
+        margin-bottom: 15px;
+      }
+
+      .item .pm {
+        /* border: 1px solid blue; */
+        color: #242424;
+        margin-bottom: 15px;
+        font-size: 15px;
+      }
+
+      .item .am img,
+      .item .pm img {
+        /* border: 1px solid green; */
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+      }
+
+      .item .temper {
+        color: #242424;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .item .today .today {
+        /* color: white; */
+        /* background-color: green; */
+        /* background-image: url(images/btn_dday.png) 100% 0 ; */
+        /* display: inline-box;
+        background: url(images/btn_dday.png) 100% 0 no-repeat; */
+        /* margin-left: 7px; */
+        /* background-size: 46px 37px; */
+        /* background-position: right; */
+        /* <a href="#" class="badge badge-success">Success</a> */
+        border-radius: 12px;
+        color: #fff;
+        background-color: #00c63c;
+        font-family: "맑은 고딕";
+        background-size: 110px;
+        width: 1px;
+        height: 1px;
+        padding-right: 9px;
+        padding-left: 7px;
+        padding-bottom: 1px;
+        margin-left: 7px;
+        text-indent: 0;
+      }
+
+      .item .day .dayafter {
+        color: #8f8f8f;
+        font-size: 13px;
+      }
+
+      .item .rain {
+        color: #73b9ff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 네이버 날씨 화면 만들기 -->
+    <div id="weather">
+      <header>주간날씨</header>
+      <div class="item">
+        <div class="day today">수 <a href="#" class="today">오늘</a></div>
+        <div class="am"><img src="images/wt_sunny.svg" /> 10%</div>
+        <div class="pm"><img src="images/wt_sunny.svg" /> 10%</div>
+        <div class="temper">19°/29°</div>
+      </div>
+      <div class="item">
+        <div class="day">목 <span class="dayafter">내일</span></div>
+        <div class="am"><img src="images/wt_cloudysunny.svg" /> 20%</div>
+        <div class="pm"><img src="images/wt_cloud.svg" /> 30%</div>
+        <div class="temper">18°/26°</div>
+      </div>
+      <div class="item">
+        <div class="day dayafter">금 <span class="dayafter">모레</span></div>
+        <div class="am rain"><img src="images/wt_rain.svg" /> 60%</div>
+        <div class="pm rain"><img src="images/wt_cloudysunny.svg" /> 60%</div>
+        <div class="temper">18°/25°</div>
+      </div>
+      <div class="item">
+        <div class="day dayafter">토 <span class="dayafter">6.19</span></div>
+        <div class="am"><img src="images/wt_cloudysunny.svg" /> 30%</div>
+        <div class="pm"><img src="images/wt_sunny.svg" /> 0%</div>
+        <div class="temper">17°/28°</div>
+      </div>
+      <div class="item">
+        <div class="day dayafter">일 <span class="dayafter">6.20</span></div>
+        <div class="am"><img src="images/wt_cloudysunny.svg" /> 30%</div>
+        <div class="pm"><img src="images/wt_sunny.svg" /> 0%</div>
+        <div class="temper">18°/29°</div>
+      </div>
+      <!-- 요일()
+    오전날시(아이콘, %)
+    오후날씨(아이콘, %)
+    온도 -->
+    </div>
+  </body>
+</html>
