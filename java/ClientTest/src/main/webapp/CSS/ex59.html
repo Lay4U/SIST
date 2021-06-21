@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/example.css" />
+    <style>
+      .desc {
+        border-left: 3px dotted grey;
+      }
+
+      body {
+        width: 750px;
+        margin: 0px auto;
+      }
+
+      .item {
+        float: left;
+        width: 126px;
+        height: 126px;
+        border: 10px solid black;
+        overflow: hidden;
+        margin-bottom: 30px;
+      }
+
+      .item1 > img {
+        transform: translate(-126px, 0px);
+        transition: all 0.5s;
+      }
+
+      .item1:hover > img {
+        transform: translate(0px, 0px);
+      }
+
+      .item2 > img {
+        opacity: 0;
+        transition: all 0.5s;
+      }
+
+      .item2:hover > img {
+        opacity: 1;
+      }
+
+      .item3 > img {
+        transform: scale(0, 0);
+        transition: all 0.5s;
+      }
+
+      .item3:hover > img {
+        transform: scale(1, 1);
+      }
+
+      .item4 > img {
+        transform: translate(150px, -150px);
+        transition: all 0.5s;
+      }
+
+      .item4:hover > img {
+        transform: translate(0, 0) rotate(360deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>:hover + transform + transition</h1>
+    <div class="desc">마우스를 올리면 반응하시오.</div>
+
+    <div class="item item1"><img src="images/rect_icon01.png" /></div>
+    <div class="item item1"><img src="images/rect_icon02.png" /></div>
+    <div class="item item1"><img src="images/rect_icon03.png" /></div>
+    <div class="item item1"><img src="images/rect_icon04.png" /></div>
+    <div class="item item1"><img src="images/rect_icon05.png" /></div>
+    <div style="clear: both"></div>
+
+    <div class="item item2"><img src="images/rect_icon01.png" /></div>
+    <div class="item item2"><img src="images/rect_icon02.png" /></div>
+    <div class="item item2"><img src="images/rect_icon03.png" /></div>
+    <div class="item item2"><img src="images/rect_icon04.png" /></div>
+    <div class="item item2"><img src="images/rect_icon05.png" /></div>
+    <div style="clear: both"></div>
+
+    <div class="item item3"><img src="images/rect_icon01.png" /></div>
+    <div class="item item3"><img src="images/rect_icon02.png" /></div>
+    <div class="item item3"><img src="images/rect_icon03.png" /></div>
+    <div class="item item3"><img src="images/rect_icon04.png" /></div>
+    <div class="item item3"><img src="images/rect_icon05.png" /></div>
+    <div style="clear: both"></div>
+
+    <div class="box">
+      <!-- (div#item$.item>img[src=images/rect_icon$$.png])*5 -->
+      <div class="item item4"><img src="images/rect_icon01.png" /></div>
+      <div class="item item4"><img src="images/rect_icon02.png" /></div>
+      <div class="item item4"><img src="images/rect_icon03.png" /></div>
+      <div class="item item4"><img src="images/rect_icon04.png" /></div>
+      <div class="item item4"><img src="images/rect_icon05.png" /></div>
+      <div style="clear: both"></div>
+    </div>
+
+    <!-- <div class="box">
+      <img src="images/rect_icon01.png" class="item item3" />
+      <img src="images/rect_icon02.png" class="item item3" />
+      <img src="images/rect_icon03.png" class="item item3" />
+      <img src="images/rect_icon04.png" class="item item3" />
+      <img src="images/rect_icon05.png" class="item item3" />
+    </div>
+
+    <div class="box">
+      <span class="item item4"><img src="images/rect_icon01.png" /></span>
+      <span class="item item4"><img src="images/rect_icon02.png" /></span>
+      <span class="item item4"><img src="images/rect_icon03.png" /></span>
+      <span class="item item4"><img src="images/rect_icon04.png" /></span>
+      <span class="item item4"><img src="images/rect_icon05.png" /></span>
+    </div> -->
+  </body>
+</html>

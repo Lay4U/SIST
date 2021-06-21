@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/example.css" />
+    <style>
+      body {
+        margin-left: 30px;
+      }
+
+      .cbox {
+        left: 0px;
+        width: 1400px;
+        height: 150px;
+        border: 1px solid black;
+        transition: all 5s;
+      }
+
+      .box1 {
+        border: 1px solid green;
+      }
+
+      .box1 > div {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: red;
+      }
+
+      .box2 > div {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: yellow;
+      }
+
+      .box3 > div {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: orange;
+      }
+
+      .box4 > div {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: greenyellow;
+      }
+
+      .box5 > div {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: cornflowerblue;
+      }
+      /* #box {
+        transition: all 5s;
+      } */
+
+      .cbox > div {
+        left: 0px;
+        border: 10px solid red;
+      }
+
+      #box:hover .cbox > div {
+        left: 1298px;
+        transform: rotate(3600deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="title">
+      :hover + position(absolute) + transform(rotate) + transition
+    </h1>
+    <div class="desc">공을 회전시키면서 우측으로 이동하시오.</div>
+    <div id="box">
+      <div class="box1 cbox">
+        <div>A</div>
+      </div>
+      <div class="box2 cbox">
+        <div>B</div>
+      </div>
+      <div class="box3 cbox">
+        <div>C</div>
+      </div>
+      <div class="box4 cbox">
+        <div>D</div>
+      </div>
+      <div class="box5 cbox">
+        <div>E</div>
+      </div>
+    </div>
+  </body>
+</html>

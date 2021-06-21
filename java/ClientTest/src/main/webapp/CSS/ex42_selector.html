@@ -39,6 +39,16 @@
         /* content: ']' */
         content: close-quote;
       }
+
+      #list .item {
+        float: left;
+      }
+
+      #list::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
     </style>
   </head>
 
@@ -72,6 +82,8 @@
       <div class="item box box-small bgcolor-red">아이템</div>
       <div class="item box box-small bgcolor-yellow">아이템</div>
       <div class="item box box-small bgcolor-blue">아이템</div>
+      <!-- <div style="clear:both;"></div> -->
     </div>
+    다른 요소
   </body>
 </html>

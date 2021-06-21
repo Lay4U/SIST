@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+
+
+   </style>
+</head>
+<body>
+   <!-- emmet.html -->
+   <!--  
+
+      Emmet, Zen-Coding
+      - 대다수 프로그램 편집기가 이 기능을 지원
+      - CSS 선택자를 사용해서 HTML/CSS 코드를 빠르게 작성하는 기능
+      - http://emmet.io
+
+   -->
+
+   <!-- 태그 선택자 -->
+
+   div {}
+   <div></div>
+
+   div
+   <div></div>
+   
+   p
+   <p></p>
+
+   a
+   <a href="test.htm">링크</a>
+
+   img
+   <img src="images/catty01.png" alt="고양이">
+
+   input
+   <input type="color">
+
+
+   <!-- ID 선택자 -->
+
+   div#box1 {} 
+   <div id="box1"></div>
+
+   div#box1
+   <div id="box1"></div>
+
+   input#txtName
+   <input type="text" id="txtName">
+
+   h1#title
+   <h1 id="title"></h1>
+
+   #test
+   <div id="test"></div>
+
+
+   <!-- class 선택자 -->
+   div.item
+   <div class="item"></div>
+
+   img.pet
+   <img src="images/catty01.png" alt="고양이" class="pet">
+
+   div.one.two
+   <div class="one two"></div>
+
+   input#txtName.txt.red
+   <input type="text" id="txtName" class="txt red">
+
+
+   <!-- 속성 선택자 -->
+   div[title]
+   <div title=""></div>
+
+   div[title=상자]
+   <div title="상자"></div>
+
+   img[width height]
+   <img src="catty01.png" alt="고양이" width="200" height="300">
+
+
+   <!-- PCDATA(CSS X) -->
+   div{상자}
+   <div>상자</div>
+
+   h1{제목입니다.}
+   <h1>제목입니다.</h1>
+
+
+   div#box1.box[title=상자입니다.]{상자1}
+   <div id="box1" class="box" title="상자입니다.">상자1</div>
+
+
+   <!-- 반복 기능 -->
+
+   div*5
+
+   div{상자입니다.}*5
+
+   div.box*5
+   
+   div.box{상자입니다.}*5
+   
+   div.box[title=상자]{상자입니다.}*5
+
+   div#box1*5
+   
+   div#box$*5
+   
+   div#box$.box{상자$}*3
+   
+   div{상자$}*20
+   div{상자$$}*20
+   div{상자$$$}*20
+
+   <!-- 형제 선택자 -->
+   a~b: X
+   a+b: O
+
+   h1+p
+   h1 + p
+
+   h1+p+p
+   
+   h1+p*5
+
+   (h1+p)*5
+   
+   h1#title{HTML}+p.desc*3
+   
+
+   <!-- 자식 선택자 -->
+   a b: X
+   a>b: O
+
+   div>span
+   
+   ul>li
+
+   ul#list1>li.item{항목$}*5
+   
+   h1#title{할일}+ul#list1>li.item{항목$}*5
+
+   table>tr>td
+   table>tr*10>td*5
+
+   table#table1.table.medium.padding5>tr*20>td.cell${항목}*5
+   
+
+   ipsum lorem
+   - 더미 텍스트
+
+   div{더미텍스트}
+   div{lorem}
+   
+   div>lorem
+   <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ratione officiis quisquam ab iusto doloribus quae, incidunt nulla culpa maxime possimus! Esse iusto eum minima ut quos quo consequuntur minus.</div>
+
+   div>lorem5
+   
+   h1>lorem5+p>lorem50*3
+   (h1>lorem5)+(p>lorem50)*3
+   
+   <h1>Lorem ipsum dolor sit amet.</h1>
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem esse quasi at harum voluptas? Minus, ipsum! Neque, enim voluptas! Illo at odio adipisci autem minima, eligendi ex minus atque recusandae suscipit ab expedita corporis quas. Ut placeat repellendus excepturi explicabo iure dolorem. Expedita, ipsam quo. Repellat aliquam recusandae quam? Pariatur.</p>
+   <p>Nulla numquam, aliquam, magnam, incidunt ex aspernatur illo fugit id molestias dicta iusto eligendi obcaecati? Ab voluptatum in facere? Esse consectetur in sint ullam eaque ab, accusamus, aut quisquam velit, eveniet quibusdam. Voluptas magnam sunt tenetur molestias facilis impedit soluta rerum sed, excepturi quis et blanditiis fugit vitae labore nulla?</p>
+   <p>Illo, doloribus aspernatur ex autem sunt nesciunt ipsam laboriosam modi vero veritatis officia. Eveniet dolorem repellendus magni consequatur tempore facere, pariatur obcaecati. Sapiente aperiam commodi dolorem minima voluptatum ab natus rerum magnam incidunt, velit tempora quae! Aspernatur illo amet beatae? Natus unde, cupiditate nam dolorem suscipit soluta qui dolores? Quod.</p>
+   
+
+
+   
+
+
+   
+
+
+
+
+
+</body>
+</html>
+
+
+
