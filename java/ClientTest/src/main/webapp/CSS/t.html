@@ -2,111 +2,94 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <script
-      type="text/javascript"
-      src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=r5yDf6a0W5jKr9acj9XyWPzPJZLMZ0tRzPrr2yL2I5_TmzndiNNhmMBtvevMnniRyVh_S3SjfHbKy8ZMiCcWE42XVhLm_v-PWi96svxXkiU"
-      charset="UTF-8"
-    ></script>
     <style>
-      #list {
-        border: 1px solid black;
-        width: 1400px;
-        height: 750px;
-        position: relative;
-        left: 0px;
-        top: 0px;
+      #main {
+        width: 700px;
+        margin: 100px auto;
       }
 
-      #list .line {
-        height: 149px;
-        border-bottom: 1px solid black;
+      input[type='checkbox'] {
+        display: none;
       }
 
-      #list .line:last-child {
-        border-bottom: 0px;
+      #box {
+        display: flex;
       }
 
-      #list .ball {
-        border: 1px solid black;
-        border-radius: 50%;
+      label {
         width: 100px;
-        height: 100px;
-        position: absolute;
+        height: 50px;
+        border: 1px solid black;
         text-align: center;
-        font-size: 4.4em;
+        padding: 12px 0px;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+
+      input[type='checkbox']:checked + label {
+        background-color: black;
+        color: white;
+        font-size: 18px;
+      }
+
+      #txt {
+        margin: 20px 0px;
+        text-align: justify;
+      }
+
+      #cb1:checked ~ #txt {
         font-weight: bold;
-        transition: all 5s;
       }
 
-      #list .ball:nth-child(1) {
-        background-color: tomato;
-        left: 0px;
-        top: 47px;
-        transition-duration: 7s;
-      }
-
-      #list .ball:nth-child(2) {
-        background-color: gold;
-        left: 0px;
-        top: 197px;
-        transition-duration: 4s;
-      }
-
-      #list .ball:nth-child(3) {
-        background-color: orange;
-        left: 0px;
-        top: 347px;
-      }
-
-      #list .ball:nth-child(4) {
-        background-color: greenyellow;
-        left: 0px;
-        top: 497px;
-        transition-duration: 8s;
-      }
-
-      #list .ball:nth-child(5) {
-        background-color: cornflowerblue;
-        left: 0px;
-        top: 647px;
-        transition-duration: 4.5s;
-      }
-
-      #list:hover > .ball {
-        left: px;
-        transform: rotate(3600deg);
+      #cb2:checked ~ #txt {
+        font-style: italic;
       }
     </style>
   </head>
 
   <body>
-    <div style="width: 1400px; margin: 30px auto">
-      <h1 style="margin-top: 0px">
-        :hover + position(absolute) + transform(rotate) + transition
-      </h1>
-      <div
-        style="
-          margin: 20px 0px;
-          border-left: 3px dotted gray;
-          padding-left: 10px;
-        "
-      >
-        공를 회전시키면서 우측으로 이동하시오.
-      </div>
-      <div id="list">
-        <div class="ball">A</div>
-        <div class="ball">B</div>
-        <div class="ball">C</div>
-        <div class="ball">D</div>
-        <div class="ball">E</div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+    <!-- 19번 문제 ex71.html -->
+
+    <div id="main">
+      <h1>Text</h1>
+
+      <input type="checkbox" id="cb1" /><label for="cb1">두껍게</label>
+      <input type="checkbox" id="cb2" /><label for="cb2">이탤릭</label>
+      <input type="checkbox" id="cb3" /><label for="cb3">밑줄</label>
+      <input type="checkbox" id="cb4" /><label for="cb4">크게</label>
+      <input type="checkbox" id="cb5" /><label for="cb5">작게</label>
+      <input type="checkbox" id="cb6" /><label for="cb6">그림자</label>
+      <input type="checkbox" id="cb7" /><label for="cb7">꾸미기</label>
+
+      <div id="txt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt minus
+        dicta tenetur fugit repellat nihil commodi. Ex dignissimos quas esse
+        quasi non sunt voluptatum facilis ipsam, accusantium nobis? Quod vitae
+        cumque optio magni dolor, dolores similique ipsa porro doloremque quia
+        inventore architecto nobis debitis nam. Voluptas molestias esse
+        quibusdam facere nemo incidunt temporibus dolor! Molestiae ipsum rerum a
+        veritatis voluptas odio exercitationem perspiciatis recusandae corrupti,
+        excepturi harum dolorem quos aliquam fugit nostrum suscipit! Aliquid
+        corrupti dolorum, pariatur officia facere culpa? Repellat asperiores ad
+        mollitia, temporibus consequatur tempora quia aliquid modi deserunt
+        saepe dignissimos distinctio id iste blanditiis a labore ullam quas
+        suscipit. Doloribus, dolor alias eveniet iusto explicabo sint
+        reprehenderit dolorum perferendis beatae quae error provident in maxime,
+        temporibus rerum, nam praesentium. Iure asperiores modi magni
+        repellendus laudantium eveniet laboriosam placeat ratione totam quo
+        animi, voluptate labore hic, blanditiis ea. Minus rem culpa qui ad
+        consequatur facere corporis at fuga temporibus et sunt, nam eveniet!
+        Facere reprehenderit deserunt possimus atque consequatur ipsum numquam
+        dolorem magni. Alias fugit voluptas inventore esse accusamus? Eligendi
+        nihil accusantium assumenda accusamus porro perferendis perspiciatis
+        quis, itaque inventore commodi, odit culpa tempore enim iure expedita
+        totam exercitationem magni suscipit praesentium nostrum recusandae
+        possimus eaque aut at. Quisquam nostrum excepturi dignissimos, sequi
+        facere alias laudantium perferendis quibusdam, earum commodi quam
+        explicabo ut non temporibus facilis velit fugiat accusamus.
       </div>
     </div>
   </body>

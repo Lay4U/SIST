@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <img src="images/cat01.jpg" name="cat01" />
+        <img src="images/cat02.jpg" name="cat02" />
+        <img src="images/cat03.jpg" name="cat03" />
+        <img src="images/cat04.jpg" name="cat04" />
+        <img src="images/cat05.jpg" name="cat05" />
+    </div>
+
+    <script>
+        var c1 = window.document.images.cat01;
+        var c2 = window.document.images.cat02;
+        var c3 = window.document.images.cat03;
+        var c4 = window.document.images.cat04;
+        var c5 = window.document.images.cat05;
+        // console.log(c1);
+        // c1.onmouseover(function() {
+        //     console.log('mouse overed');
+        //     c1.src = 'images/dog01.jpg';
+        // });
+        c1.onmouseover = function() {
+            // console.log('mouse overed');
+            c1.src = 'images/dog01.jpg';
+        };
+        c1.onmouseout = function() {
+            // console.log('mouse outted');
+            c1.src = 'images/cat01.jpg';
+        };
+
+        c2.onmouseover = function() {
+            // console.log('mouse overed');
+            c2.src = 'images/dog02.jpg';
+        };
+        c2.onmouseout = function() {
+            // console.log('mouse outted');
+            c2.src = 'images/cat02.jpg';
+        };
+
+        c3.onmouseover = function() {
+            // console.log('mouse overed');
+            c3.src = 'images/dog03.jpg';
+        };
+        c3.onmouseout = function() {
+            // console.log('mouse outted');
+            c3.src = 'images/cat03.jpg';
+        };
+
+        c4.onmouseover = function() {
+            // console.log('mouse overed');
+            c4.src = 'images/dog04.jpg';
+        };
+        c4.onmouseout = function() {
+            // console.log('mouse outted');
+            c4.src = 'images/cat04.jpg';
+        };
+
+        c5.onmouseover = function() {
+            // console.log('mouse overed');
+            c5.src = 'images/dog05.jpg';
+        };
+        c5.onmouseout = function() {
+            // console.log('mouse outted');
+            c5.src = 'images/cat05.jpg';
+        };
+    </script>
+</body>
+
+</html>
