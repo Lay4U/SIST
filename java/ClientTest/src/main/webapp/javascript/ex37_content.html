@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        background-color: gold;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ex37_content.html -->
+    <h1>조작</h1>
+
+    <input type="button" value="버튼1" id="btn1" />
+    <hr />
+    <div id="div1"></div>
+
+    <script>
+      var btn1 = document.getElementById("btn1");
+      var div1 = document.getElementById("div1");
+
+      // <div>
+
+      btn1.onclick = function () {
+        // div1.innerText = "홍길동"; -> 비표준(MS)
+        div1.innerText = "<b>안녕하세요</b>";
+
+        div1.innerHTML = "아무개";
+        div1.innerHTML = "<b>안녕하세요</b>";
+
+        // 동적 컨트롤 생성
+        div1.innerHTML += "<input type='txt'><br>";
+
+        div1.innerHTML = "<img src='images/catty01.png'>";
+
+        div1.innerHTML =
+          "<input type='button' value='버튼' onclick='alert(100);'>";
+
+        var n = parseInt(Math.random() * 5) + 1;
+        div1.innerHTML += "<img src='images/catty01.png'>";
+      };
+      //개발자도구 element는 dom tree임.
+    </script>
+  </body>
+</html>

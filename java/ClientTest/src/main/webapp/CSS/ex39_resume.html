@@ -1,202 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body {
-        background-color: #b3c5dc;
-        color: #000000;
-        font-family: "맑은 고딕";
-        font-size: 14px;
-        width: 900px;
-        margin: 0px auto;
-      }
-
-      .left {
-        background-color: #344f71;
-        width: 250px;
-        height: 1200px;
-        float: left;
-        /* text-align: center; */
-      }
-
-      .img1 {
-        width: 128px;
-        height: 128px;
-        background-color: rgba(255, 255, 255, 0.3);
-        border: 5px dashed rgba(255, 255, 255, 0.5);
-        text-align: center;
-        margin: 30px 45px;
-        padding: 8px 5px;
-      }
-
-      .name {
-        color: #f7f7f7;
-        font-size: 27.2px;
-        font-weight: bold;
-        font-family: "Arial Black";
-        margin-bottom: 20px;
-        text-align: center;
-      }
-
-      .desc {
-        color: #f7f7f7;
-        text-align: left;
-        margin: 20px;
-        margin-bottom: 200px;
-      }
-
-      .birth,
-      .email,
-      .tel,
-      .addr {
-        color: #f7f7f7;
-        font-weight: bold;
-        font-style: italic;
-        /* margin:20px; */
-        margin-bottom: 10px;
-        padding-left: 20px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #f7f7f7;
-      }
-
-      .right {
-        background-color: #fffeff;
-        width: 610px;
-        padding: 20px;
-        height: 1160px;
-        /* border: 1px solid red; */
-        float: left;
-        /* padding-left: 100px; */
-        /* display: block; */
-      }
-
-      .rtitle {
-        font-variant: small-caps;
-        font-weight: bold;
-        font-size: 32px;
-        margin: 20px;
-        color: #666;
-      }
-
-      .rtitle2 {
-        font-size: 22.4px;
-        color: #888;
-      }
-
-      .rhead {
-        /* border: 1px solid green; */
-        font-size: 24px;
-        border-left: 10px solid rgba(52, 79, 113, 0.8);
-        margin: 20px 20px;
-        padding-left: 15px;
-        color: #666;
-      }
-
-      .rlist li {
-        font-size: 14px;
-        color: #888;
-      }
-
-      .last {
-        padding-bottom: 50px;
-        border-bottom: 1px dashed grey;
-      }
-
-      .footer {
-        color: #888;
-      }
+        body {
+            background-color: #b3c5dc;
+            color: #000000;
+            font-family: "맑은 고딕";
+            font-size: 14px;
+            width: 900px;
+            margin: 0px auto;
+        }
+        
+        .left {
+            background-color: #344f71;
+            width: 250px;
+            height: 1200px;
+            float: left;
+            /* text-align: center; */
+        }
+        
+        .img1 {
+            width: 128px;
+            height: 128px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border: 5px dashed rgba(255, 255, 255, 0.5);
+            text-align: center;
+            margin: 30px 45px;
+            padding: 8px 5px;
+        }
+        
+        .name {
+            color: #f7f7f7;
+            font-size: 27.2px;
+            font-weight: bold;
+            font-family: "Arial Black";
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .desc {
+            color: #f7f7f7;
+            text-align: left;
+            margin: 20px;
+            margin-bottom: 200px;
+        }
+        
+        .birth,
+        .email,
+        .tel,
+        .addr {
+            color: #f7f7f7;
+            font-weight: bold;
+            font-style: italic;
+            /* margin:20px; */
+            margin-bottom: 10px;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f7f7f7;
+        }
+        
+        .right {
+            background-color: #fffeff;
+            width: 610px;
+            padding: 20px;
+            height: 1160px;
+            /* border: 1px solid red; */
+            float: left;
+            /* padding-left: 100px; */
+            /* display: block; */
+        }
+        
+        .rtitle {
+            font-variant: small-caps;
+            font-weight: bold;
+            font-size: 32px;
+            margin: 20px;
+            color: #666;
+        }
+        
+        .rtitle2 {
+            font-size: 22.4px;
+            color: #888;
+        }
+        
+        .rhead {
+            /* border: 1px solid green; */
+            font-size: 24px;
+            border-left: 10px solid rgba(52, 79, 113, 0.8);
+            margin: 20px 20px;
+            padding-left: 15px;
+            color: #666;
+        }
+        
+        .rlist li {
+            font-size: 14px;
+            color: #888;
+        }
+        
+        .last {
+            padding-bottom: 50px;
+            border-bottom: 1px dashed grey;
+        }
+        
+        .footer {
+            color: #888;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- 3번문제 250, 650 x 1200 -->
     <div class="left">
-      <div class="img1"><img src="images/man_03 (1).png" /></div>
-      <div class="name">Hong Gil Dong</div>
-      <div class="desc">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, id nobis
-        saepe natus iste doloremque!
-      </div>
-      <div class="birth">♨ 1995-05-25</div>
-      <div class="email">▣ hong@gmail.com</div>
-      <div class="tel">☎ 010-5874-5984</div>
-      <div class="addr">♬ Teheran-ro, Gangnam-gu, Seoul, Republic of Korea</div>
+        <div class="img1"><img src="images/man_03 (1).png" /></div>
+        <div class="name">Hong Gil Dong</div>
+        <div class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, id nobis saepe natus iste doloremque!
+        </div>
+        <div class="birth">♨ 1995-05-25</div>
+        <div class="email">▣ hong@gmail.com</div>
+        <div class="tel">☎ 010-5874-5984</div>
+        <div class="addr">♬ Teheran-ro, Gangnam-gu, Seoul, Republic of Korea</div>
     </div>
     <div class="right">
-      <div class="rtitle">
-        Resume
-        <span class="rtitle2">Lorem ipsum dolor sit.</span>
-      </div>
-      <h2 class="rhead">Lorem, ipsum.</h2>
-      <ul class="rlist">
-        <li>2019.02.22 - 2019.03.04</li>
-        <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          distinctio commodi eveniet asperiores illum in ut praesentium, nam
-          architecto quas similique. Natus cupiditate quisquam, placeat modi
-          corporis voluptates porro reiciendis!
-        </li>
-        <li>
-          Officia, et, pariatur minima officiis iusto, accusamus eligendi
-          tempore adipisci alias quos esse porro ab non architecto expedita
-          omnis libero magnam sed similique illo perferendis quae sapiente amet.
-          Optio, mollitia.
-        </li>
-        <li>
-          Facilis, tempora laboriosam aliquid debitis, laudantium, natus rerum
-          ipsa voluptatibus molestiae distinctio provident eveniet impedit harum
-          itaque. Veniam, explicabo dicta aliquam, reprehenderit saepe quas
-          dignissimos placeat enim perspiciatis repellendus harum?
-        </li>
-        <li>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
-          reiciendis, voluptate, provident hic beatae dolores quo quam est
-          nostrum quidem obcaecati illo soluta exercitationem molestiae ipsa non
-          esse recusandae quia!
-        </li>
-      </ul>
-      <h2 class="rhead">Eum, imp dolor sit amet.</h2>
-      <ul class="rlist">
-        <li>2019.03.20 - 2019.04.11</li>
-        <li>
-          Rerum adipisci perspiciatis ipsa sequi rem minus eligendi hic
-          provident error modi! Repudiandae commodi, nulla expedita pariatur
-          neque ab dolor earum nobis adipisci aperiam nisi inventore debitis
-          officiis sunt eaque?
-        </li>
-        <li>
-          Quibusdam fugit temporibus aliquid odit in dolore maxime nisi quae id,
-          accusantium, ea maiores distinctio magnam? Vel, harum ducimus sapiente
-          voluptatem natus corrupti laborum animi labore veritatis. Veniam,
-          libero. Nemo!
-        </li>
-        <li>
-          Sed aliquam harum, ducimus numquam illo, est culpa atque quisquam
-          eveniet aperiam tempore voluptate, consequatur dolor fuga quod
-          nesciunt sapiente quas minima cum? At aut ducimus minus ad, adipisci
-          saepe!
-        </li>
-      </ul>
-      <h2 class="rhead">Sint, excepturi? aliquam</h2>
-      <ul class="rlist last">
-        <li>
-          Iste voluptatem aperiam, sint nostrum odit facilis? Est esse fugit
-          aspernatur ex molestiae, nam voluptatem accusamus numquam officia quas
-          beatae autem illum nesciunt vitae totam quae sunt, optio explicabo
-          eos!
-        </li>
-        <li>
-          Illum nostrum voluptate, nam, obcaecati error, et nemo animi
-          consectetur commodi tempora dolorem. Nostrum nobis vero at, modi quas
-          harum voluptates voluptatem possimus molestias, et velit mollitia
-          quasi earum molestiae!
-        </li>
-      </ul>
-      <div class="footer">©Copyright 2021 test.com All rights reserved.</div>
+        <div class="rtitle">
+            Resume
+            <span class="rtitle2">Lorem ipsum dolor sit.</span>
+        </div>
+        <h2 class="rhead">Lorem, ipsum.</h2>
+        <ul class="rlist">
+            <li>2019.02.22 - 2019.03.04</li>
+            <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur distinctio commodi eveniet asperiores illum in ut praesentium, nam architecto quas similique. Natus cupiditate quisquam, placeat modi corporis voluptates porro reiciendis!
+            </li>
+            <li>
+                Officia, et, pariatur minima officiis iusto, accusamus eligendi tempore adipisci alias quos esse porro ab non architecto expedita omnis libero magnam sed similique illo perferendis quae sapiente amet. Optio, mollitia.
+            </li>
+            <li>
+                Facilis, tempora laboriosam aliquid debitis, laudantium, natus rerum ipsa voluptatibus molestiae distinctio provident eveniet impedit harum itaque. Veniam, explicabo dicta aliquam, reprehenderit saepe quas dignissimos placeat enim perspiciatis repellendus
+                harum?
+            </li>
+            <li>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, reiciendis, voluptate, provident hic beatae dolores quo quam est nostrum quidem obcaecati illo soluta exercitationem molestiae ipsa non esse recusandae quia!
+            </li>
+        </ul>
+        <h2 class="rhead">Eum, imp dolor sit amet.</h2>
+        <ul class="rlist">
+            <li>2019.03.20 - 2019.04.11</li>
+            <li>
+                Rerum adipisci perspiciatis ipsa sequi rem minus eligendi hic provident error modi! Repudiandae commodi, nulla expedita pariatur neque ab dolor earum nobis adipisci aperiam nisi inventore debitis officiis sunt eaque?
+            </li>
+            <li>
+                Quibusdam fugit temporibus aliquid odit in dolore maxime nisi quae id, accusantium, ea maiores distinctio magnam? Vel, harum ducimus sapiente voluptatem natus corrupti laborum animi labore veritatis. Veniam, libero. Nemo!
+            </li>
+            <li>
+                Sed aliquam harum, ducimus numquam illo, est culpa atque quisquam eveniet aperiam tempore voluptate, consequatur dolor fuga quod nesciunt sapiente quas minima cum? At aut ducimus minus ad, adipisci saepe!
+            </li>
+        </ul>
+        <h2 class="rhead">Sint, excepturi? aliquam</h2>
+        <ul class="rlist last">
+            <li>
+                Iste voluptatem aperiam, sint nostrum odit facilis? Est esse fugit aspernatur ex molestiae, nam voluptatem accusamus numquam officia quas beatae autem illum nesciunt vitae totam quae sunt, optio explicabo eos!
+            </li>
+            <li>
+                Illum nostrum voluptate, nam, obcaecati error, et nemo animi consectetur commodi tempora dolorem. Nostrum nobis vero at, modi quas harum voluptates voluptatem possimus molestias, et velit mollitia quasi earum molestiae!
+            </li>
+        </ul>
+        <div class="footer">©Copyright 2021 test.com All rights reserved.</div>
     </div>
-  </body>
+</body>
+
 </html>

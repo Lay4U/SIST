@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      fieldset {
+        width: 200px;
+      }
+
+      fieldset > div {
+        margin: 5px;
+      }
+
+      #tbl1 {
+        border: 1px solid gray;
+        border-collapse: collapse;
+        margin: 20px;
+        width: 400px;
+      }
+
+      #tbl1 td {
+        border: 1px solid gray;
+        padding: 4px 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ex33_content.htm -->
+    <h1>테이블</h1>
+
+    <fieldset>
+      <legend>색상 입력</legend>
+      <div><label>색상 : </label><input type="color" id="txtColor" /></div>
+      <div>
+        <label>이름 : </label><input type="text" id="txtName" size="15" />
+      </div>
+      <div><input type="button" value="추가하기" id="btnAdd" /></div>
+    </fieldset>
+
+    <table id="tbl1">
+      <thead>
+        <tr>
+          <th>색상명</th>
+          <th>미리보기</th>
+        </tr>
+      </thead>
+      <tbody id="tbody1">
+        <tr>
+          <td>자주색</td>
+          <td bgcolor="#EC45AC">#EC45AC</td>
+        </tr>
+        <tr>
+          <td>풀색</td>
+          <td bgcolor="#ACEF12">#ACEF12</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      var txtColor = document.getElementById("txtColor");
+      var txtName = document.getElementById("txtName");
+      var btnAdd = document.getElementById("btnAdd");
+      var tbody1 = document.getElementById("tbody1");
+
+      btnAdd.onclick = function () {
+        console.log("a");
+        var temp = "";
+        temp += "<tr>";
+        temp += "<td>";
+        temp += txtName.value;
+        temp += "</td>";
+        temp += "<td bgcolor=" + txtColor.value + ">";
+        temp += txtColor.value;
+        temp += "</td>";
+        tbody1.innerHTML += temp + "<style background";
+      };
+    </script>
+  </body>
+</html>

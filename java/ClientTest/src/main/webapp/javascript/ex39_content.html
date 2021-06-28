@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      fieldset {
+        border: 1px solid #999;
+        width: 200px;
+      }
+
+      fieldset > div {
+        margin: 5px;
+      }
+
+      #tbl1 {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      #tbl1 td {
+        border: 1px solid black;
+        padding: 5px 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ex39_content.html -->
+    <fieldset>
+      <legend>행x열</legend>
+      <div>
+        <label
+          >행:
+          <select id="selRow"></select
+        ></label>
+      </div>
+      <div>
+        <label
+          >열:
+          <select id="selColumn"></select
+        ></label>
+      </div>
+      <div><input type="button" value="생성하기" id="btnCreate" /></div>
+    </fieldset>
+
+    <table id="tbl1">
+      <tbody id="tbody1"></tbody>
+    </table>
+    <script>
+      var selRow = document.getElementById("selRow");
+      var selColumn = document.getElementById("selColumn");
+      var btnCreate = document.getElementById("btnCreate");
+      var tbody1 = document.getElementById("tobdy1");
+      for (var i = 1; i <= 30; i++) {
+        var op = new Option();
+        op.text = i;
+        op.value = i;
+        selRow.options.add(op);
+      }
+
+      selRow.value = 5;
+
+      for (var i = 1; i <= 10; i++) {
+        selColumn.innerHTML += "<option value='" + i + "'>" + i + " </option>";
+
+        selColumn.value = 3;
+      }
+
+      btnCreate.onclick = function () {
+        tbody1.innerHTML = "";
+
+        // 사용자 선택: 행 x 열 -> 테이블 추가
+        for (var i = 0; i < selRow.value; i++) {
+          // 행 -> <tr>
+          var temp = "";
+          temp += "<tr>";
+          for (var j = 0; j < selColumn; j++) {
+            temp += "<td>";
+            temp += i + "," + j;
+            temp += "</td>";
+          }
+          temp += "</tr>";
+
+          tbody1.innerHTML += temp; // tr 동적 추가
+        }
+      };
+    </script>
+  </body>
+</html>
