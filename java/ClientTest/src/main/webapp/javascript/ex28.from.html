@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            margin-bottom: 500px;
+        }
+        
+        #tbl1 {
+            border: 1px solid balck;
+            border-collapse: collapse;
+        }
+        
+        #tbl1 th,
+        #tbl1 td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ex28.from.html -->
+
+    <!-- 
+    BOM
+    - window
+    - screen, history, location, document
+    - image, link, form
+    - text, button, radio, checkbox
+   -->
+
+    <h1>폼</h1>
+
+    <form name="form1">
+        <h2>텍스트 박스</h2>
+        <input type="text" name="txt1" />
+        <input type="button" value="버튼" name="btn1" />
+    </form>
+
+    <h2>로그인</h2>
+    아이디:<input type="text" name="txtID" /><br /> 암호: <input type="password" name="txtPW" /><br />
+    <input type="button" value="로그인" name="btnLogin" />
+
+    <h2>체크박스</h2>
+    <label>동의: <input type="checkbox" name="cb1" /></label>
+    <input type="button" value="확인" name="btn2" />
+
+    <h2>약관</h2>
+    <fieldset>어쩌구 저쩌구..</fieldset>
+    <label>약관 동의: <input type="checkbox" name="cb2" /></label>
+    <input type="button" value="다음 단계로" name="btn3" disabled />
+
+    <table id="tbl1">
+        <tr>
+            <th><input type="checkbox" name="cbAll" /></th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>날짜</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="cbItem" /></td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>홍길동</td>
+            <td>2021-06-25</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="cbItem" /></td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>홍길동</td>
+            <td>2021-06-25</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="cbItem" /></td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>홍길동</td>
+            <td>2021-06-25</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="cbItem" /></td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>홍길동</td>
+            <td>2021-06-25</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="cbItem" /></td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>홍길동</td>
+            <td>2021-06-25</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="cbItem" /></td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>홍길동</td>
+            <td>2021-06-25</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="cbItem" /></td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>홍길동</td>
+            <td>2021-06-25</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="cbItem" /></td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>홍길동</td>
+            <td>2021-06-25</td>
+        </tr>
+        value
+        <tr>
+            <td><input type="checkbox" name="cbItem" /></td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>홍길동</td>
+            <td>2021-06-25</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="cbItem" /></td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>홍길동</td>
+            <td>2021-06-25</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="cbItem" /></td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>홍길동</td>
+            <td>2021-06-25</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="cbItem" /></td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>홍길동</td>
+            <td>2021-06-25</td>
+        </tr>
+    </table>
+
+    <h2>라디오버튼</h2>
+    <div>
+        <h3>선호하는 언어를 선택하세요.</h3>
+        <label><input type="radio" name="rb" value="Java" />Java</label><br />
+        <label><input type="radio" name="rb" value="SQL" />SQL</label><br />
+        <label><input type="radio" name="rb" value="HTML" />HTML</label><br />
+        <label><input type="radio" name="rb" value="CSS" />CSS</label><br />
+        <label><input type="radio" name="rb" value="JavaScript" />JavaScript</label
+      ><br />
+      <br />
+      <input type="button" value="확인" name="btn4" />
+    </div>
+
+    <div>
+      <h2>색상을 선택하세요.</h2>
+      <label><input type="radio" name="rbColor" value="tomato" />빨강</label
+      ><br />
+      <label><input type="radio" name="rbColor" value="gold" />노랑</label
+      ><br />
+      <label
+        ><input type="radio" name="rbColor" value="cornflowerblue" />파랑</label
+      ><br />
+      <label
+        ><input type="radio" name="rbColor" value="white" checked />하양</label
+      ><br />
+      <label><input type="radio" name="rbColor" value="black" />검정</label
+      ><br />
+    </div>
+
+    <div>
+      <label>동물: </label>
+    </div>
+
+    <script>
+        var txt1 = document.form1.txt1;
+        var btn1 = document.form1.btn1;
+
+        var txtID = document.form1.txtID;
+        var txtPW = document.form1.txtPW;
+        var btnLogin = document.form1.btnLogin;
+
+        var btn2 = document.form1.btn2;
+        var cb1 = document.form1.cb1;
+
+        var btn3 = document.form1.btn3;
+        var cb2 = document.form1.cb2;
+
+        var cbAll = document.form1.cbAll; //단수
+        var cbItem = document.form1.cbItem; //복수 -> 배열
+
+        var rb = document.form1.rb; //복수 -> 배열
+        var btn4 = document.form1.btn4;
+
+        var rbColor = document.form1.rbColor; //복수 -> 배열
+        // 텍스트 박스 조작
+        // 1. 텍스트 박스 자체
+        // 2. 텍스트 박스의 값 > 문자열 조작 *****
+
+        btn1.onclick = function() {
+            // txt1.readOnly = true;
+            txt1.value;
+        };
+
+        btnLogin.onclick = function() {
+            // 유효성 검사
+            // - 유효성 검사는 되도록 유효하지 않은 걸 찾아야 로직 구현이 편하다.
+            // 1. 아이디: 필수 입력, 4~12자 이내
+            // 2. 암호: 필수 입력, 4~12자 이내
+
+            if (txtID.value.trim() == '') {
+                alert('아이디를 반드시 입력하세요');
+                txtID.focus(); //onfocus 텍스트박스로 포커스
+                return; //함수 종료
+            }
+
+            if (txtID.value.trim().length < 4 || txtID.value.trim().length > 12) {
+                alert('아이디를 4~12자 이내로 입력하세요.');
+                // txtID.focus();
+                txtID.select(); // 선택된 상태로 포커스가 간다.
+                return;
+            }
+
+            if (txtPW.value.trim() == '') {
+                alert('패스워드를 반드시 입력하세요');
+                txtPW.focus(); //onfocus 텍스트박스로 포커스
+                return; //함수 종료
+            }
+
+            if (txtPW.value.trim().length < 4 || txtPW.value.trim().length > 12) {
+                alert('패스워드를 4~12자 이내로 입력하세요.');
+                // txtID.focus();
+                txtPW.select(); // 선택된 상태로 포커스가 간다.
+                return;
+            }
+
+            //여기에 도착
+
+            alert('success');
+        };
+
+        btn2.onclick = function() {
+            //체크박스의 상태?
+            alert(cb1.checked);
+        };
+
+        // 체크박스를 클릭해서 체크 상태를 변화할 때 > 어떤 이벤트?
+        // 1. onclick
+        // 2. onchange //권장
+        cb2.onchange = function() {
+            // alert(cb2.checked);
+
+            if (cb2.checked) {
+                btn3.disabled = false;
+            } else {
+                btn3.disabled = true;
+            }
+        };
+
+        btn3.onclick = function() {
+            location.href = '다음페이지';
+        };
+
+        cbAll.onchange = function() {
+            // cbItem 몇개?? -> for문
+            if (cbAll.checked) {
+                for (var i = 0; i < cbItem.length; i++) {
+                    cbItem[i].checked = true;
+                }
+            } else {
+                for (var i = 0; i < cbItem.length; i++) {
+                    cbItem[i].checked = false;
+                }
+            }
+
+            for (var i = 0; i < cbItem.length; i++) {
+                cbItem[i].checked = cbAll.checked;
+            }
+        };
+
+        btn4.onclick = function() {
+            rb.forEach(function(item, index) {
+                // alert(item.checked);
+                // alert(item.value);
+
+                if (item.checked) {
+                    alert(item.value);
+                }
+            });
+        };
+
+        rbColor.forEach(function(rb, index) {
+            rb.onclick = function() {
+                // alert(rb);
+                // alert(event.srcElement.value); //권장!!
+                document.body.bgColor = event.srcElement.value;
+            };
+        });
+
+        btn6.onclick = function() {
+            // <option> 태그의 index
+            // alert(sel1.selectedIndex); // 선택된 <option>의 index
+            sel1.selectedIndex = 2;
+
+            // 셀렉트 박스 > 선택 항목 조작
+            // 1. value
+            // 2. selectedIndex
+            //
+        };
+        btn7.onclick = function() {
+            var flag = false;
+
+            for (var i = 0; i < sel1.options.length; i++) {
+                if (sel1.options[i].txt == '햄스터') {
+                    // flag = true;
+                    // break;
+                    return;
+                }
+            }
+
+            // if(!flag){
+            // <option> 동적 추가
+            // var op = new Option();  <option> 태그 생성
+            op.value = 6;
+            op.text = '햄스터'; //<option value="6">햄스터</option>
+            //메모리 어딘가에 햄스터가 존재하고, option 안에는 존재치 아니한다.
+
+            // <select>에 <option> 추가
+            sel1.options.add(op);
+            //계속누르면 누를때마다 무제한으로 증가..
+            //flag를 사용하거나, return으로 나간다.
+        };
+
+        btn8.onclick = function() {
+            // <option> 삭제
+            // sel1.options.remove(0);
+
+            // 선택된 item remove
+            // sel1.options.remove(선택한 옵션의 index);
+            if (sel.options.length > 1) {
+                sel1.options.remove(sel1.selectedIndex);
+            }
+        };
+
+        btn9.onclick = function() {
+            // 다중 선택 > 선택한 항목들?
+            for (var i = 0; i < sel1.options.length; i++) {
+                alert(sel1.options[i].selected);
+            }
+        };
+        // };
+
+        /* 
+          1. JavaScript Core
+            - 수업O(일부)
+
+          2. BOM
+            - 수업O
+
+          ---------------------
+
+          3. DOM
+            - 수업(다음주부터)
+
+          4. jQuery
+
+          5. JavaScript Core
+            - 나머지
+        */
+    </script>
+</body>
+
+</html>

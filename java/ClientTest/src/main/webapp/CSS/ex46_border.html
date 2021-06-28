@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/example.css" />
+  </head>
+  <style>
+    #box2 {
+      /* border: 10px solid black; */
+      /* 
+      border : 부피가짐 -> 다른 요소 밀어냄
+      outline : 부피없음 -> 다른요소 밀어내지않음
+    */
+      outline: 10px solid black;
+    }
+
+    .txt {
+      display: block;
+      outline: none;
+    }
+
+    .txt:focus {
+      background-color: gold;
+      outline: 5px solid red;
+    }
+    /* 
+      border-radius
+      - 모서리를 둥글게 만드는 속성
+      - px, %
+      - px : 0px ~ 사각형의 짧은 축 / 2 px
+      - % : 0%~50%
+    */
+  </style>
+
+  <body>
+    <h1>a</h1>
+    <input type="text" class="txt" />
+    <input type="text" class="txt" />
+    <input type="text" class="txt" />
+    <input type="text" class="txt" />
+    <input type="text" class="txt" />
+    <input type="text" class="txt" />
+    <input type="text" class="txt" />
+    <input type="text" class="txt" />
+    <input type="text" class="txt" />
+    <input type="text" class="txt" />
+
+    <div id="box1" class="box box-medium bgcolor-red">상자1</div>
+    <div id="box2" class="box box-medium bgcolor-yellow">상자2</div>
+    <div id="box3" class="box box-medium bgcolor-blue">상자3</div>
+  </body>
+</html>

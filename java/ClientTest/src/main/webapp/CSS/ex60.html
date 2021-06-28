@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/example.css" /> -->
+    <style>
+      #main {
+        /* border: 10px solid green; */
+        width: 600px;
+        /* height: 650px; */
+        margin: 0px auto;
+        /* padding: 25px; */
+      }
+
+      .box {
+        padding: 25px;
+        transition: all 0.5s;
+      }
+
+      #main .desc {
+        border-left: 3px dotted grey;
+      }
+
+      #main #one {
+        border: 1px solid red;
+        width: 550px;
+        height: 550px;
+        background-color: red;
+      }
+
+      #main #two {
+        width: 500px;
+        height: 500px;
+        background-color: orange;
+      }
+
+      #main #three {
+        width: 450px;
+        height: 450px;
+        background-color: yellow;
+      }
+
+      #main #four {
+        width: 400px;
+        height: 400px;
+        background-color: green;
+      }
+
+      #main #five {
+        width: 350px;
+        height: 350px;
+        background-color: blue;
+      }
+
+      #main #six {
+        width: 300px;
+        height: 300px;
+        background-color: indigo;
+      }
+
+      #main #seven {
+        width: 250px;
+        height: 250px;
+        background-color: violet;
+      }
+
+      #one:hover .box {
+        border-radius: 10%;
+      }
+
+      #two:hover .box {
+        border-radius: 15%;
+      }
+
+      #two:hover .box {
+        border-radius: 20%;
+      }
+
+      #three:hover .box {
+        border-radius: 25%;
+      }
+
+      #four:hover .box {
+        border-radius: 30%;
+      }
+
+      #five:hover .box {
+        border-radius: 40%;
+      }
+
+      #six:hover .box {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="main">
+      <h1>transition + :hover + border-radius</h1>
+      <div class="desc">아래 상자에 마우스를 올리면 변화를 주시오.</div>
+      <div id="one" class="box">
+        <div id="two" class="box">
+          <div id="three" class="box">
+            <div id="four" class="box">
+              <div id="five" class="box">
+                <div id="six" class="box">
+                  <div id="seven" class="box"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

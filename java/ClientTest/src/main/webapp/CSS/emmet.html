@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- 
+
+    Emmet, Zen-Coding
+    - 대다수 프로그램 편집기 기능 지원
+    - CSS 선택자를 사용해서 HTML/CSS 코드를 빠르게 작성하는 기능
+    - http://emmet.io
+
+   -->
+
+    <!-- 태그 선택자 -->
+    div
+    <a href="#">link</a> img <img src="images/adf" alt="cat" /> input
+    <input type="text" /> div#box
+    <div id="box"></div>
+
+    input#txtName
+    <input type="text" id="txtName" /> h1#title
+    <h1 id="title"></h1>
+
+    #test
+    <div id="test"></div>
+
+    <!-- class 선택자 -->
+    div.item
+    <div class="item"></div>
+
+    img.pet
+    <img src="images/catty01.png" alt="고양이" class="pet" /> div.one.two
+    <div class="one two"></div>
+
+    input#txtName.txt.red
+    <input type="text" id="txtName2" class="txt red" />
+
+    <!-- 속성선택자 -->
+    div[title]
+    <div title=""></div>
+
+    div[title=상자]
+    <div title="상자"></div>
+
+    <img src="a" alt="b" width="c" height="d" /> div{상자}
+    <div>상자</div>
+
+    h1{제목입니다.}
+    <h1>제목입니다.</h1>
+
+    div#box1.box[title=상자입니다.]{상자입니다.}
+    <div id="box1" class="box" title="상자입니다.">상자입니다.</div>
+
+    <!-- 반복기능 -->
+
+    div*5
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    div{상자입니다.}*5
+    <div>상자입니다.</div>
+    <div>상자입니다.</div>
+    <div>상자입니다.</div>
+    <div>상자입니다.</div>
+    <div>상자입니다.</div>
+
+    div.box*5
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    div.box{상자입니다.}*5
+    <div class="box">상자입니다.</div>
+    <div class="box">상자입니다.</div>
+    <div class="box">상자입니다.</div>
+    <div class="box">상자입니다.</div>
+    <div class="box">상자입니다.</div>
+
+    div.box[title=상자]{상자입니다.}*5
+    <div class="box" title="상자">상자입니다.</div>
+    <div class="box" title="상자">상자입니다.</div>
+    <div class="box" title="상자">상자입니다.</div>
+    <div class="box" title="상자">상자입니다.</div>
+    <div class="box" title="상자">상자입니다.</div>
+
+    div#box$*5
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+
+    div#box$.box{상자$}*3
+    <div id="box1" class="box">상자1</div>
+    <div id="box2" class="box">상자2</div>
+    <div id="box3" class="box">상자3</div>
+
+    div{상자$}*20
+    <div>상자1</div>
+    <div>상자2</div>
+    <div>상자3</div>
+    <div>상자4</div>
+    <div>상자5</div>
+    <div>상자6</div>
+    <div>상자7</div>
+    <div>상자8</div>
+    <div>상자9</div>
+    <div>상자10</div>
+    <div>상자11</div>
+    <div>상자12</div>
+    <div>상자13</div>
+    <div>상자14</div>
+    <div>상자15</div>
+    <div>상자16</div>
+    <div>상자17</div>
+    <div>상자18</div>
+    <div>상자19</div>
+    <div>상자20</div>
+    div{상자$$}*20
+    <div>상자01</div>
+    <div>상자02</div>
+    <div>상자03</div>
+    <div>상자04</div>
+    <div>상자05</div>
+    <div>상자06</div>
+    <div>상자07</div>
+    <div>상자08</div>
+    <div>상자09</div>
+    <div>상자10</div>
+    <div>상자11</div>
+    <div>상자12</div>
+    <div>상자13</div>
+    <div>상자14</div>
+    <div>상자15</div>
+    <div>상자16</div>
+    <div>상자17</div>
+    <div>상자18</div>
+    <div>상자19</div>
+    <div>상자20</div>
+
+    <!-- 형제 선택자 -->
+    a~b: X a+b: O h1+p
+    <h1>a</h1>
+    <p>b</p>
+
+    h1+p+p
+    <h1></h1>
+    <p></p>
+    <p></p>
+
+    h1+p*5
+    <h1></h1>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+    h1#title{html}+p.desc*3
+    <h1 id="title">html</h1>
+    <p class="desc">a</p>
+    <p class="desc">b</p>
+    <p class="desc">c</p>
+
+    <!-- 자식 선택자 -->
+    a b : X a>b : O div>span
+    <div><span>a</span></div>
+
+    <ul>
+      <li></li>
+    </ul>
+
+    ul#list1>li.item{항목$}*5
+    <ul id="list1">
+      <li class="item">항목1</li>
+      <li class="item">항목2</li>
+      <li class="item">항목3</li>
+      <li class="item">항목4</li>
+      <li class="item">항목5</li>
+    </ul>
+
+    table>tr>td
+    <table>
+      <tr>
+        <td></td>
+      </tr>
+    </table>
+
+    table#table1.table.medium.padding5>tr*20>td.cell${항목$}*5 ipsum lorem
+    div>lorem
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quis
+      voluptatum placeat blanditiis nulla itaque culpa? A placeat libero nam
+      molestias quam, debitis exercitationem, quis amet esse mollitia quisquam
+      similique?
+    </div>
+
+    (h1>lorem5)+(p>lorem50)*3
+  </body>
+</html>

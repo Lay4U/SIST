@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ex06.css" />
+    <style>
+      .desc {
+        border-left: 3px dotted grey;
+      }
+
+      .box {
+        border: 1px solid red;
+        width: 500px;
+        height: 120px;
+        overflow: hidden;
+      }
+
+      .content {
+        height: 20px;
+        transition: all 5s;
+        transition-timing-function: linear;
+      }
+
+      .box:hover > .content {
+        transform: translate(0px, -2000px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="header">transition</h1>
+    <div class="desc">아래 상자에 마우스를 올리면 내용을 스크롤 하시오.</div>
+    <div class="box">
+      <div class="content">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          maiores error quaerat odio perspiciatis, consequatur soluta vitae
+          magni voluptatibus omnis qui quasi quo dicta possimus voluptas
+          recusandae eaque quas itaque? Qui fugit animi autem ab repellendus
+          expedita esse fuga, iure, fugiat reiciendis laudantium pariatur neque
+          eveniet id exercitationem dolorem error!
+        </p>
+        <h1>Fuga consequuntur perferendis at beatae.</h1>
+        <p>
+          Possimus quam neque aliquid maxime, cupiditate consectetur magni ab
+          expedita blanditiis sint itaque. Dicta tempora porro facilis laborum,
+          quo ut cupiditate. Ex laborum rerum at atque, ipsam nemo eius
+          consequatur deleniti tenetur! Autem, magnam? Commodi impedit soluta
+          tempore hic, eos quidem sunt sit nemo voluptate error quia non
+          similique ut.
+        </p>
+        <h1>Perferendis maxime facere labore fugiat.</h1>
+        <p>
+          Ut, cupiditate architecto similique voluptas quasi rerum ab harum
+          quos, officiis nemo reiciendis excepturi, autem reprehenderit quisquam
+          animi eos accusantium nulla tenetur natus sint placeat! Unde facere
+          vitae accusantium? Fugiat nesciunt, soluta doloremque dignissimos
+          dicta ex tempore, assumenda illum impedit nam at sequi! Libero nulla
+          veritatis nihil dolorem eos neque?
+        </p>
+        <h1>Quas soluta eligendi aut non.</h1>
+        <p>
+          Vel, dolorem odio? Sapiente dicta quos, maxime eius quisquam
+          perspiciatis eveniet. A vitae, distinctio quos, tempore eius numquam
+          accusamus dolor eligendi totam recusandae corporis commodi nostrum vel
+          porro assumenda rerum in minus eum sint error dolore doloremque sequi.
+          Deleniti similique alias dolorum reprehenderit facilis. Quibusdam
+          natus incidunt quisquam voluptate delectus?
+        </p>
+        <h1>Perspiciatis, assumenda veniam? Blanditiis, officiis?</h1>
+        <p>
+          Sit excepturi ex culpa at architecto incidunt veritatis maiores
+          aliquid, expedita perferendis nostrum dignissimos quos dolorem, unde,
+          iste nam provident consectetur eaque est ut vitae nihil alias totam
+          porro? Facilis, voluptates? Excepturi aspernatur nulla ad, repellat
+          repellendus explicabo maxime pariatur optio quos? Consequatur, illo
+          deleniti consequuntur sit eos iure minus.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

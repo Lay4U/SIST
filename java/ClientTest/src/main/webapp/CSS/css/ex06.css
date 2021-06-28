@@ -1,0 +1,15 @@
+.desc {
+  border-left: 1px dotted grey;
+}
+
+.box {
+  border: 1px solid red;
+  width: 500px;
+  height: 200px;
+  overflow: hidden;
+  transition: height 5s;
+}
+
+.box:hover > .content {
+  height: 2000px;
+}

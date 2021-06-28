@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/example.css" />
+    <link rel="stylesheet" href="css/tistory.css" />
+    <style>
+      /* 
+        전후 선택자
+        1. ::before
+        2. ::after
+
+        전후 선택자에서 사용하는 content 속성의 속성값
+        1. none 
+        2. 문자열
+        3. open-quote
+        4. close-quote
+
+      */
+
+      p > span {
+        color: tomato;
+      }
+      /* p > span::before{
+        content: 'aaa';
+        color: blue;
+        text-decoration: underline;
+      } */
+
+      p > span::before {
+        /* content: '[' */
+        content: open-quote;
+      }
+
+      p > span::after {
+        /* content: ']' */
+        content: close-quote;
+      }
+
+      #list .item {
+        float: left;
+      }
+
+      #list::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>전후 선택자</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+      doloribus iste fuga commodi, vero non facere inventore cumque veniam
+      tenetur maiores quidem <span>HTML</span>tempora, nemo modi magni quos
+      minus reprehenderit repellendus temporibus? Laborum provident corporis
+      adipisci, amet quam delectus quos non unde! Commodi praesentium<span
+        >CSS</span
+      >
+      velit veniam sapiente voluptatum temporibus, consectetur alias quos odio
+      nostrum dolorum consequatur vel fugit quibusdam expedita laborum, qui
+      atque nulla nobis iusto? Facilis doloremque impedit sequi fugit deserunt
+      quidem debitis ipsum laboriosam iste nesciunt, minima alias repellendus
+      nostrum dolor tempora quisquam! Culpa, <span>JavaScript</span>nostrum nisi
+      minima molestiae, ullam, aliquid quidem laborum quod doloremque veniam sit
+      modi hic mollitia.
+    </p>
+
+    <hr />
+    <blockquote class="tistory">
+      HTML은 웹 페이지 를 만드는 언어입니다. - 위키백과 발췌
+    </blockquote>
+
+    <hr />
+    <div id="list" class="box box-border5">
+      <div class="item box box-small bgcolor-red">아이템</div>
+      <div class="item box box-small bgcolor-yellow">아이템</div>
+      <div class="item box box-small bgcolor-blue">아이템</div>
+      <!-- <div style="clear:both;"></div> -->
+    </div>
+    다른 요소
+  </body>
+</html>

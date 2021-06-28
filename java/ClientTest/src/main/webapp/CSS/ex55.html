@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/example.css" />
+    <!-- 현재 회수 대기중인 신일 냉풍기 3대와 삼성 모니터 한대의 소유권을 포기하고 쿠팡측에게 소유권을 양도함을 고지합니다. 쿠팡측에서 이를 확인해주시길 바랍니다.-->
+    <style>
+      .box {
+        margin-bottom: 5px;
+      }
+
+      #box1 {
+        width: 300px;
+        height: 150px;
+        border: 10px solid black;
+        padding: 20px;
+        background-color: gold;
+        /* 테두리와 여백은 제외한 컨테츠 크기를 width, height로 하겠다. */
+        box-sizing: content-box;
+      }
+
+      #box2 {
+        width: 300px;
+        height: 150px;
+        border: 10px solid black;
+        padding: 20px;
+        background-color: greenyellow;
+        /* 테두리와 여백을 모두 포함한 크기를 width, height로 하겠다. */
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+    <div id="box3" class="box"></div>
+  </body>
+</html>

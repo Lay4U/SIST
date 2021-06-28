@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/example.css" />
+    <style>
+      #main {
+        width: 500px;
+        margin: 0 auto;
+      }
+
+      #main .item {
+        width: 350px;
+        /* height: 150px; */
+        /* border: 1px solid green; */
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+
+      #main .item input {
+        display: none;
+      }
+
+      #main .item label {
+        width: 150px;
+        height: 130px;
+        /* border: 1px solid red; */
+        background-color: #eee;
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+        font-variant: small-caps;
+        border-radius: 5px;
+        padding-top: 20px;
+        cursor: pointer;
+      }
+
+      #main .item .disc {
+        width: 150px;
+        height: 150px;
+        background-size: 100% 100%;
+        border-radius: 50%;
+        margin: 0 20px;
+        /* border: 1px solid blue; */
+      }
+
+      #main .item #disc1 {
+        width: 150px;
+        height: 150px;
+        /* max-width: 150px;
+      height: auto; */
+        background-image: url(images/lp01.png);
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+      }
+
+      #main .item #disc2 {
+        width: 150px;
+        height: 150px;
+        background-image: url(images/lp02.png);
+        background-repeat: no-repeat;
+      }
+
+      #main .item #disc3 {
+        width: 150px;
+        height: 150px;
+        background-image: url(images/lp03.png);
+        background-repeat: no-repeat;
+      }
+
+      #main .item #disc4 {
+        width: 150px;
+        height: 150px;
+        background-image: url(images/lp04.png);
+        background-repeat: no-repeat;
+      }
+
+      #main .item input[type="radio"]:checked + label {
+        background-color: tomato;
+        color: white;
+      }
+
+      #main .item input[type="radio"]:checked + label + div {
+        animation-name: move;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes move {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="main">
+      <h1>Music</h1>
+      <div class="item">
+        <input type="radio" name="rb" id="rb1" checked />
+        <label for="rb1">Play</label>
+        <div class="disc" id="disc1"></div>
+      </div>
+      <div class="item">
+        <input type="radio" name="rb" id="rb2" />
+        <label for="rb2">Play</label>
+        <div class="disc" id="disc2"></div>
+      </div>
+      <div class="item">
+        <input type="radio" name="rb" id="rb3" />
+        <label for="rb3">Play</label>
+        <div class="disc" id="disc3"></div>
+      </div>
+      <div class="item">
+        <input type="radio" name="rb" id="rb4" />
+        <label for="rb4">Play</label>
+        <div class="disc" id="disc4"></div>
+      </div>
+    </div>
+  </body>
+</html>

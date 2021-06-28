@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/example.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+        background-color: #8fd1d8;
+      }
+
+      #main {
+        width: 570px;
+        margin: 0 auto;
+      }
+
+      #main > h1 {
+        font-size: 48px;
+        font-variant: small-caps;
+      }
+
+      #main > #tape {
+        width: 570px;
+        height: 360px;
+        /* border: 1px solid red; */
+        background-image: url("images/tape.png");
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+
+      #main > #tape > #lefthole {
+        position: absolute;
+        top: 120px;
+        left: 125px;
+        animation-name: move;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      #main > #tape > #righthole {
+        position: absolute;
+        top: 120px;
+        left: 361px;
+        animation-name: move;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      #main > #tape > #line {
+        width: 133px;
+        height: 64px;
+        background-image: url("images/tapeline.png");
+        /* border: 1px solid red; */
+        position: absolute;
+        left: 218px;
+        top: 128px;
+        animation-name: move2;
+        animation-direction: alternate;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes move {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes move2 {
+        from {
+          background-position: -50px 0px;
+        }
+        to {
+          background-position: 0px 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="main">
+      <h1><i class="fas fa-headphones-alt"></i> Music</h1>
+      <div id="tape">
+        <img id="lefthole" src="images/tapehole.png" />
+        <img id="righthole" src="images/tapehole.png" />
+        <div id="line"></div>
+      </div>
+      <hr
+        style="margin-top: 200px; border: 0px; border-top: 1px dashed white"
+      />
+      <a
+        href="images/tape.zip"
+        style="text-decoration: none; color: #4e4e4e; font-weight: bold"
+        >Image Download</a
+      >
+    </div>
+  </body>
+</html>

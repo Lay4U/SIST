@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/example.css" />
+    <style>
+      /* 너비: 1000px + 가운데 정렬 */
+
+      #menu {
+        /* width: 1000px; */
+        width: 630px;
+        margin: 0 auto;
+        font-size: 0px;
+        /* border: 1px solid black; */
+        /* text-align: center; */
+        transform: translate(0px, -90px);
+      }
+      /* #menu:hover {
+        transform: translate(0px, -10px);
+      } */
+
+      #menu > img:hover {
+        transform: translate(0px, 90px);
+      }
+      /* #menu > img{
+        float: left;
+      }
+
+      #menu::after{
+        content:''; 
+        display: block;
+        clear:both
+      } */
+
+      section {
+        width: 1000px;
+        margin: 0 auto;
+      }
+      /* 
+
+     */
+
+      #submenu {
+        /* border: 3px solid green; */
+        width: 126px;
+        font-size: 0;
+        transform: translate(-110px, 0px);
+      }
+
+      #submenu > img:hover {
+        transform: translate(100px, 0px);
+      }
+    </style>
+    <!-- 
+      인접한 인라인 태그 사이의 공백을 없애는 방법
+      1. 직접 공백을 지운다. > 비권장
+      2. float > 추가 비용 발생
+      3. font-size: 0; > 제일 쉽다.
+     -->
+  </head>
+
+  <body>
+    <nav id="menu">
+      <img src="images/rect_icon01.png" alt="" />
+      <img src="images/rect_icon02.png" alt="" />
+      <img src="images/rect_icon03.png" alt="" />
+      <img src="images/rect_icon04.png" alt="" />
+      <img src="images/rect_icon05.png" alt="" />
+    </nav>
+
+    <nav id="submenu">
+      <img src="images/rect_icon01.png" alt="" />
+      <img src="images/rect_icon02.png" alt="" />
+      <img src="images/rect_icon03.png" alt="" />
+      <img src="images/rect_icon04.png" alt="" />
+      <img src="images/rect_icon05.png" alt="" />
+    </nav>
+
+    <section>
+      <h1>Transform Menu</h1>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+        deserunt accusamus vitae non voluptates beatae ipsum earum unde! Minima
+        aliquam eligendi debitis rem recusandae ipsam quia laboriosam ab ex
+        labore! Labore, hic quam voluptatibus eaque quod quidem necessitatibus
+        recusandae tempora laudantium veniam molestias dignissimos suscipit est
+        pariatur dolorem placeat quasi.
+      </p>
+      <p>
+        Ab, vel. Reiciendis sequi minus hic esse atque quibusdam reprehenderit
+        harum ad nobis provident dolore quam doloribus, officiis explicabo enim
+        amet voluptatem necessitatibus accusamus sunt excepturi placeat porro ex
+        tempora corrupti? Magnam praesentium cumque ducimus. Doloribus, adipisci
+        molestias quo odio, repellendus aperiam fugit nostrum iste ad aspernatur
+        porro facilis tempora?
+      </p>
+      <p>
+        Non eligendi sed, in ipsa tenetur nihil eos, beatae expedita ab,
+        doloremque architecto facere voluptatem fugiat distinctio quaerat
+        reprehenderit! Amet quisquam dolor vero nulla labore dolorem, nisi rem
+        iste cum aliquam. Consequuntur suscipit ut quas quia dolorem, dicta
+        neque tempore. Porro autem, excepturi eveniet aut sed enim vero unde
+        minus.
+      </p>
+      <h2>Necessitatibus voluptates aut veniam dolorum.</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magnam
+        possimus provident veniam id eum dolorem nisi, ab ullam rerum officiis
+        sapiente odio harum. Error rerum ut rem dolorum animi at, maxime placeat
+        dolores laborum aut eum, fugiat suscipit quidem. Optio eaque nobis
+        repudiandae libero voluptate, a fugiat aut blanditiis?
+      </p>
+      <p>
+        Suscipit veritatis aspernatur sapiente dolore, similique libero mollitia
+        inventore nobis. Ad dolorum, magnam sit, hic iste vero praesentium,
+        ducimus blanditiis explicabo provident optio? Ducimus, commodi odit
+        veritatis at culpa, et dolores quidem ut ipsum architecto maiores!
+        Perspiciatis, enim voluptas. Maiores et quasi quos adipisci similique
+        debitis voluptatum nostrum assumenda aliquam.
+      </p>
+      <p>
+        Eligendi ipsa officia pariatur saepe, commodi iusto quia corrupti sequi
+        temporibus voluptatibus exercitationem! Molestiae, necessitatibus ea. Ab
+        maxime incidunt provident obcaecati! Culpa sint nulla nemo autem harum
+        cum, voluptatem, debitis, distinctio ducimus quod nisi at iste. Velit
+        quae culpa repudiandae laboriosam debitis dicta quas, sunt ratione
+        doloremque aspernatur fugit exercitationem?
+      </p>
+      <h2>Cumque suscipit laborum non facere.</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+        pariatur autem sunt facere vero consequatur natus dignissimos ad neque
+        eius repudiandae quidem soluta exercitationem doloremque ipsa inventore,
+        assumenda provident iste voluptas ea quae optio maiores aut cumque.
+        Dignissimos, reprehenderit officia saepe magni, deserunt praesentium
+        quidem sit atque nemo quis provident?
+      </p>
+      <p>
+        Laborum quidem quos maxime mollitia voluptatem dicta impedit commodi
+        sint accusantium? Explicabo, eum? Repellat, delectus qui dicta, illum
+        aliquam id corrupti rem doloribus odio atque itaque sapiente optio
+        nesciunt molestiae? Maxime rerum suscipit, excepturi quidem distinctio
+        ut architecto. Tenetur odio nam quo non sint incidunt quos minus aut,
+        beatae aliquam.
+      </p>
+      <p>
+        Aliquid ipsum earum, rem exercitationem corporis, incidunt officiis
+        dolorum, corrupti accusantium velit sapiente laborum veniam deserunt
+        asperiores. Voluptatum perspiciatis deleniti recusandae illo at, ipsam
+        adipisci quidem qui consequatur harum velit fuga optio amet tenetur
+        voluptates atque sunt. Quis nihil alias sunt quia atque vel, culpa,
+        repellat voluptate commodi molestias maxime.
+      </p>
+      <h2>Quaerat excepturi enim eveniet commodi?</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam beatae
+        id voluptatibus distinctio? Eum non voluptatem, numquam officiis odit
+        sequi. Labore quam id exercitationem eum? Unde quaerat distinctio atque
+        ipsam earum in voluptatem, quibusdam quam delectus nostrum quos corrupti
+        dolorum sunt, ipsa dolore pariatur maxime eaque saepe vero repellat
+        laboriosam.
+      </p>
+      <p>
+        Vero necessitatibus est hic culpa dolore, perspiciatis saepe odit
+        repudiandae soluta deleniti sunt earum, quisquam id modi sit aut totam
+        nisi quia, cumque dignissimos. Vero qui est assumenda ad odit fugiat
+        libero iste at, tempora dignissimos dolorem officiis, veritatis nulla
+        beatae ratione dolor aspernatur nostrum eius quos quidem nam enim.
+      </p>
+      <p>
+        Quaerat illo ad explicabo alias voluptatem error voluptatibus, dicta
+        atque deleniti dignissimos voluptates, animi soluta, harum fuga? Officia
+        illo quod, vitae et cupiditate mollitia, impedit sequi quisquam quis,
+        nobis molestias! Aut voluptatum dolorem molestiae. Aperiam inventore,
+        similique eaque rem aliquid doloribus quia incidunt debitis accusamus
+        nobis in exercitationem alias voluptate!
+      </p>
+      <h2>Illum dolorum inventore at repellendus!</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        quibusdam commodi rerum veritatis error fuga aspernatur molestias
+        corrupti ullam cupiditate ab harum sint a asperiores nihil laborum
+        quaerat, debitis aperiam velit veniam culpa! Sint cum soluta fuga vel
+        possimus voluptates eum deserunt explicabo rerum consectetur, ab velit,
+        facere nesciunt laudantium!
+      </p>
+      <p>
+        Suscipit saepe adipisci dolores alias quisquam animi quas ea, maiores
+        nostrum eius quis debitis ratione, reiciendis esse repellat molestiae
+        repudiandae? Temporibus dolore porro ut voluptates repellat cumque
+        aperiam expedita ipsa facere! Nulla, et nobis soluta perferendis,
+        necessitatibus cumque in eius nihil consequuntur alias sed ut quidem,
+        impedit ipsam sint veniam?
+      </p>
+      <p>
+        Maxime, magni iure tempora laboriosam eius quasi, illum facere,
+        repudiandae accusamus numquam eveniet tenetur asperiores? Eum quod
+        nesciunt non ullam laudantium neque, molestiae beatae corporis,
+        veritatis illo molestias quia doloremque repellendus adipisci quas sint
+        iure enim aliquam, esse ipsum commodi a! Illo quod suscipit deleniti quo
+        libero. Molestiae, pariatur tenetur.
+      </p>
+    </section>
+  </body>
+</html>
