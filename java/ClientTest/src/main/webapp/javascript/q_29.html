@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Author" content="in" />
+    <meta name="Generator" content="Visual Studio Code" />
+    <title>JavaScript</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="basic.css" />
+    <style></style>
+  </head>
+
+  <body
+    oncontextmenu="return false"
+    ondragstart="return false"
+    onselectstart="return false"
+  >
+    <style>
+      #tbl {
+        border: 1px solid #999;
+        border-collapse: collapse;
+        width: 805px;
+      }
+
+      #tbl th,
+      #tbl td {
+        border: 1px solid #999;
+      }
+
+      #tbl th {
+        background-color: #444;
+        color: white;
+        padding: 7px;
+      }
+
+      #tbl td {
+        height: 80px;
+        width: 115px;
+        vertical-align: top;
+        padding: 15px;
+        position: relative;
+      }
+
+      #tbl .no {
+        position: absolute;
+        right: 10px;
+        top: 9px;
+      }
+
+      #tbl td div {
+        font-size: 0.9em;
+      }
+
+      #tbl td:first-child .no {
+        color: tomato;
+      }
+
+      #tbl td:last-child .no {
+        color: cornflowerblue;
+      }
+    </style>
+    <div class="main m800">
+      <div class="mainHeader">
+        <h1>달력</h1>
+        <div>달력을 출력하시오.</div>
+        <ul>
+          <li>만년 달력</li>
+        </ul>
+        <div class="code"></div>
+      </div>
+
+      <h1 id="title"></h1>
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th>SUN</th>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+          </tr>
+        </thead>
+        <tbody id="tbody1"></tbody>
+      </table>
+    </div>
+
+    <script>
+      var title = document.getElementById('title');
+      var tbody1 = document.getElementById('tbody1');
+
+      var now = new Date();
+
+      var lastDay = new Date(
+        now.getFullYear(),
+        now.getMonth() + 1,
+        0
+      ).getDate();
+      var firstDay = new Date(now.getFullYear(), now.getMonth(), 1).getDay();
+
+      title.textContent = now.getFullYear() + '.' + (now.getMonth() + 1);
+
+      var temp = '';
+      temp = '<tr>';
+
+      for (let i = 0; i < firstDay; i++) {
+        temp += '<td></td>';
+      }
+      for (let i = 1; i <= lastDay; i++) {
+        temp += '<td>';
+        temp += "<span class='no'>" + i + '</span>';
+        temp += '<div>할일</div>';
+        temp += '<div>또 할일</div>';
+        temp += '<div>더 많은할일</div>';
+        temp += '</td>';
+        if ((i + firstDay) % 7 == 0) {
+          temp += '</tr><tr>';
+        }
+      }
+
+      var seed = 7;
+
+      if (7 - ((lastDay % 7) + firstDay) < 0) {
+        seed = 14;
+      }
+
+      for (let i = 0; i < seed - ((lastDay % 7) + firstDay); i++) {
+        temp += '<td></td>';
+      }
+      temp += '</tr>';
+
+      tbody1.innerHTML = temp;
+    </script>
+
+    <script src="basic.js"></script>
+  </body>
+</html>

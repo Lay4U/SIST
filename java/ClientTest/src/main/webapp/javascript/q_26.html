@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Author" content="in" />
+    <meta name="Generator" content="Visual Studio Code" />
+    <title>JavaScript</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="basic.css" />
+    <style></style>
+  </head>
+
+  <body
+    oncontextmenu="return false"
+    ondragstart="return false"
+    onselectstart="return false"
+  >
+    <style type="text/css">
+      .item {
+        position: absolute;
+      }
+    </style>
+    <div class="main m800">
+      <div class="mainHeader">
+        <h1>마우스 + 동적 이미지 추가하기</h1>
+        <div>마우스를 클릭하면 이미지를 추가하시오.</div>
+        <ul>
+          <li>최대 10개까지만 출력하시오.(오래된 순으로 삭제)</li>
+        </ul>
+        <div class="code"></div>
+      </div>
+    </div>
+
+    <script>
+      var cnt;
+      var imgfirst;
+      var img;
+      window.onload = function () {
+        window.onmousedown = function () {
+          cnt = 0;
+          var n = Math.floor(Math.random() * 9) + 1;
+
+          img = document.createElement('img');
+          img.setAttribute('class', 'item');
+          img.setAttribute('src', 'images/m0' + n + '.png');
+          img.style.left = event.clientX - 64 + 'px';
+          img.style.top = event.clientY - 64 + 'px';
+
+          document.body.appendChild(img);
+          console.log(document.body.children.length);
+          for (var i = 0; i < document.body.children.length; i++) {
+            console.log(document.body.children[i].nodeName);
+            if (document.body.children[i].nodeName == 'IMG') {
+              if (imgfirst == null) {
+                imgfirst = document.body.children[i];
+              }
+              cnt++;
+            }
+          }
+          console.log(cnt);
+          if (cnt > 10) {
+            document.body.removeChild(imgfirst);
+            imgfirst = null;
+          }
+        };
+      };
+    </script>
+    <!-- <script type="text/javascript">
+      var item;
+      var imgCount = 0;
+      var firstImage = null;
+
+      window.onload = function () {
+        window.onmousedown = function () {
+          imgCount = 0;
+          var n = Math.floor(Math.random() * 9) + 1;
+
+          img = document.createElement('img');
+          img.setAttribute('class', 'item');
+          img.setAttribute('src', '../images/m0' + n + '.png');
+          img.style.left = event.clientX - 64 + 'px';
+          img.style.top = event.clientY - 64 + 'px';
+
+          document.body.appendChild(img);
+
+          //최대 10개까지만
+          for (var i = 0; i < document.body.children.length; i++) {
+            if (document.body.children[i].nodeName == 'IMG') {
+              if (firstImage == null) {
+                firstImage = document.body.children[i];
+              }
+              imgCount++;
+            }
+          }
+
+          if (imgCount > 10) {
+            document.body.removeChild(firstImage);
+            firstImage = null;
+          }
+        };
+      };
+    </script> -->
+
+    <script src="basic.js"></script>
+  </body>
+</html>

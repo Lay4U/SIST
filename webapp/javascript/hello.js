@@ -17,3 +17,5 @@
 console.log('hello');
 
 alert('안녕');
+
+a = 10;

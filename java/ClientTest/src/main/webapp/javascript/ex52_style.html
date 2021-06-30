@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>뉴스</h1>
+    <fieldset>
+      <button type="button" id="big">크게</button>
+      <button type="button" id="small">작게</button>
+    </fieldset>
+    <p id="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eligendi
+      illo hic officiis cupiditate voluptas debitis velit ducimus quas impedit
+      placeat dolorem, odio libero unde id eos vel autem et illum sequi. Magnam
+      eum ratione neque quidem saepe dolore fugit quas cumque architecto,
+      nesciunt nihil fuga ab quibusdam reiciendis aliquam mollitia eligendi.
+      Nisi sequi consectetur sit ex vel quae, iure omnis obcaecati alias
+      delectus quos quibusdam esse aliquam voluptates ab impedit maxime nulla
+      accusamus. Quasi quidem, doloribus labore expedita alias iusto amet libero
+      corporis nostrum tenetur vitae atque placeat at enim recusandae ad,
+      eveniet voluptatibus? Praesentium maxime ipsam ex voluptate velit non
+      quibusdam, possimus earum quis autem explicabo sequi voluptates nulla
+      nesciunt totam consectetur atque! Consequatur eius in, iure facere culpa
+      ratione consectetur deserunt iste tenetur rem placeat totam praesentium.
+      At quos accusamus cum culpa perspiciatis debitis quas, totam dicta sed
+      dolore repudiandae vitae a repellat obcaecati doloremque dolor labore!
+      Molestiae voluptatum inventore culpa sed possimus dicta deserunt nam
+      voluptates, modi suscipit porro debitis ullam natus architecto labore
+      neque exercitationem! Natus cumque quos beatae, dolore dolor quibusdam
+      tenetur saepe consequuntur molestiae facilis iure earum doloribus labore
+      obcaecati eum amet? Natus incidunt suscipit quis! Voluptas magni vero
+      praesentium nisi atque blanditiis veritatis commodi. Voluptatum nesciunt
+      consectetur, dolores sunt a molestiae deserunt neque voluptate dicta
+      inventore iste. Facilis quis dignissimos labore, pariatur asperiores
+      perferendis. Corporis placeat, cumque pariatur est, inventore, dolore
+      facilis eos corrupti temporibus unde saepe odit aperiam ut praesentium
+      nihil dolor ipsa qui. Qui molestiae provident blanditiis ea possimus
+      minima amet saepe animi eius sit sunt quas quis eligendi laborum dolor ex
+      atque voluptatum accusamus, velit unde cumque. Excepturi veniam
+      repudiandae nesciunt dignissimos voluptatem odit explicabo nulla autem ad
+      harum dolorum laborum quisquam sed voluptas, mollitia accusamus quia
+      deleniti voluptate. Excepturi tempore doloremque ducimus consectetur
+      temporibus. Iusto laboriosam iure accusantium?
+    </p>
+    <script>
+      var big = document.getElementById('big');
+      var small = document.getElementById('small');
+      var content = document.getElementById('content');
+
+      big.onclick = function () {
+        var fontSize = window.getComputedStyle(content).fontSize;
+        fontSize += 2;
+
+        content.style.foncSize = fontSize + 'px';
+      };
+
+      small.onclick = function () {
+        var fontSize = window.getComputedStyle(content).fontSize;
+        fontSize += 2;
+
+        content.style.foncSize = fontSize + 'px';
+      };
+    </script>
+  </body>
+</html>

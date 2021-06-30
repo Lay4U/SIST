@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <!-- ex54_style.html -->
+
+   <h1>뉴스</h1>
+   <fieldset>
+      <button type="button" id="big">크게</button>
+      <button type="button" id="small">작게</button>
+   </fieldset>
+   <p id="content">
+      (서울=뉴스1) 박형기 기자 = 비트코인이 3만6000달러를 돌파하는 등 연이틀 랠리하고 있다.
+
+특히 비트코인은 저항선으로 여겨졌던 3만6000달러를 돌파함에 따라 추가 상 여력이 있다는 분석이 나오고 있다.
+
+비트코인은 30일 오전 6시 현재(한국시간 기준) 글로벌 코인시황 중계 사이트인 코인마켓캡에서 24시간 전보다 4.83% 급등한 3만6219달러를 기록하고 있다. 수시간 전 비트코인은 3만6542달러까지 올랐었다.
+
+이날 비트코인이 급등한 것은 미국의 투자은행 모건스탠리가 암호화폐(가상화폐)를 취급하는 ‘그레이스케일 비트코인 트러스트’의 지분 2만8000주를 인수했다는 소식과 월가의 '돈나무 언니'로 불리는 캐시 우드가 비트코인 ETF(상장지수펀드)를 신청했기 때문으로 분석된다.
+
+비트코인이 20일 이평선을 돌파함에 따라 3만8000달러까지 상승할 수 있다는 전망이 나오고 있다.
+
+비트코인 이외의 다른 암호화폐도 일제히 상승하고 있다.
+
+같은 시각 한국의 거래사이트인 업비트에서 비트코인은 24시간 전보다 4.89% 급등한 4191만4000원에 거래되고 있다.
+   </p>
+
+   <script>
+      var big = document.getElementById('big');
+      var small = document.getElementById('small');
+      var content = document.getElementById('content');
+
+      big.onclick = function() {
+         //현재 크기?
+         //alert(window.getComputedStyle(content).fontSize);
+         
+         var fontSize = parseInt(window.getComputedStyle(content).fontSize);
+         fontSize += 2;
+         content.style.fontSize = fontSize + 'px';
+         
+      };
+
+      small.onclick = function() {
+
+         var fontSize = parseInt(window.getComputedStyle(content).fontSize);
+         fontSize -= 2;
+         content.style.fontSize = fontSize + 'px';
+
+      };
+
+   </script>
+
+</body>
+</html>
