@@ -21,7 +21,25 @@
 
         for (var i = 0; i < img.length; i++) {
             img[i].onclick = function() {
-                alert();
+                // alert();
+                // 누가 나를 불렀냐?
+                // - 3개의 이미지중 어떤 이미지를 클릭했을 때 이 함수가 호출 되었는가?
+
+                // 지금 이벤트(onclick)을 발생시킨 주체? -> 이벤트중 하나
+                console.log(event.srcElement.src);
+                event.srcElement.width = 500;
+
+                console.log(img[i].src);
+                console.log(i);
+
+                // - 나중에 이미지를 클락할 때 클릭한 이미지를 접근하기 위해서 img[i] 사용 
+                // - 루프 변수의 i의 상태가 루프를 진핼할 때 당시의 값이 아니기 때문에 사용 불가능
+                
+
+                // i가 왜 0,1,2가 아닌가?
+                // -> 시간차 때문에... 사건의 발생 순서때문에..
+                // i가 왜있어?? i가 왜 살아있냐??
+                // -> 전역변수 (Closer)
             };
         }
     </script>

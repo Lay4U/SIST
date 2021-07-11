@@ -1,0 +1,709 @@
+"3R(Reverse, \we-engineering, Reuse)"
+객체지향프로그래밍 (OOP, Object-Oriented Programming)  기출
+결합도 (Coupling)
+기술 부채 (Technical debt)
+다중 정의 (Overloading)
+다형성 (Polymorphism)
+동료검토 (Peer Review)  기출
+디자인 패턴 (Design pattern)  기출
+리팩토링 (Refactoring)   기출
+매개변수 (Parameter)
+모듈화 (Modularization)
+바이너리 난독화 (Binary Obfuscation)
+배포 (Deploy)
+버전관리 시스템 (VCS, Version Control System)
+버퍼 오버플로우 (Buffer Overflow)   기출
+서블릿 (Servlet)
+서블릿 컨테이너 (Servlet Container)
+세션 (Session)
+소셜코딩 (Social Coding)
+소프트웨어 아키텍처 (SW Architecture)
+스크럼 (SCRUM)
+스프링 프레임워크 (Spring Framework)
+애자일 방법론 (Agile)  기출
+워크 스루 (Walk Through)  기출
+BaaS(Backend as a Service)
+위험 (Risk)
+위험원 (Hazard)
+응집도 (Cohension)  기출
+의사코드 (Pseudocode)
+인스턴스 (Instance)
+인터페이스 (Interface)
+인터프리터 (Interpreter)
+재정의 (Overriding)
+제품 백로그 (Product Backlog)
+캡슐화 (Encapsulation)
+코드 난독화 (Code Obfuscation)
+쿠키 (Cookie)
+파이썬 (Python)  기출
+프로그램 평가 검토 기법 (PERT, Program Evaluation&Review Technique)
+플랫폼 (Platform)
+형상관리 (Configuration Management)
+Adapter
+Agile Test
+"AJAX
+(Asynchronous Javascript And XML)  기출"
+"ALM
+(Application Lifecycle Management)"
+"AOP
+(Aspect Oriented Programming, 관점지향 프로그래밍)"
+Baseline
+Build
+"CASE
+(Computer Aided System Engineering)  기출"
+"CBD
+(Component Based Development)  기출"
+"CD
+(Continuous Delivery / Deployment)"
+"CI
+(Continuous Integration)"
+Component
+CRUD Matrix
+Debugging
+DevOps
+Dispatcher Servlet
+E-R 모델
+Framework 프레임워크
+GitHub
+Go언어
+GS 인증 (Good Software)
+"ISO 9126
+(SW 품질)  기출"
+Iterative Development Model
+"JSON
+(JavaScript Object Notation)
+기출"
+"JVM
+(Java Virtual Machine)"
+Kanban
+Mapping
+"MDA
+(Model-Driven Architecture)"
+"MDD
+(Model-Driven Development)"
+Method
+Middleware
+Model and View
+"MSA
+(MicroService Architecture)"
+"MVC
+(Model-View-Controller)
+기출"
+Node.js
+"ORM
+(Object-relational mapping)"
+"PMO
+(Project Management Office)"
+"POJO
+(Plain Old Java Object)"
+PreparedStatement
+RACI Matrix
+"RAD
+(Rapid Application Development)"
+Reengineering
+Release
+"REST
+(Representational State Transfer)"
+RESTful API
+"SDLC 모델 (Software Development
+LifeCycle)"
+"SOA
+(Service Oriented Architecture)"
+"SOAP
+(Simple Object Access Protocol)"
+Software Bug
+"SP 인증 (Software Process
+Authentication)"
+"SPICE
+(ISO 15504)  기출"
+"SSO
+(Single Sign On)"
+"SWEBOK
+(Software Engineering Body of Knowledge)"
+"TDD
+(Test Driven Development)"
+"UDDI
+(Universal Description, Discovery and Integration)"
+"UML
+(Unified Modeling Language)"
+UML Profile
+"WBS
+(Work Breakdown Structure)"
+"WSDL
+(Web Services Description Languasge)"
+"XP
+(eXtreme Programming)
+기출"
+검증 / 확인 (Verification / Validation)
+루프백 테스트 (Loop Back Test)
+리스크 기반 테스트 (Risk Based Testing)
+살충제 패러독스 (Pesticide Paradox)
+오류 부재의 궤변 (Absence of error fallacy)
+테스트 더블 (Test Double)
+테스트 베이시스 (Test Basis)
+테스트 오라클 (Test Oracle)
+"BMT
+(Benchmark Test)"
+"PoC
+(Proof of Concept)"
+"PT
+(Pilot Test)"
+5 Force 분석
+7S Model
+규제 샌드박스 (Regulatory Sandbox )
+그로스 해킹 (Growth Hacking)
+"디자인 씽킹
+(DT, Design Thinking)"
+롱테일 법칙 (Long Tail law)
+린 스타트업 (Lean Startup)
+베조스의 법칙 (Bezos's law)
+암달의 법칙 (Amdahl's law )
+인스펙션 (Inspection)  기출
+인시던트 (Incident)
+"재해복구
+(DR, Disaster Recovery)"
+캐즘(Chasm) 이론
+콘웨이 법칙 (Conway's law)
+파레토 법칙 (Pareto's law)  기출
+"BCP
+(Business Continuity Plan)"
+"BIA
+(Business Impact Analysis)"
+"BPM
+(Business Process Management)"
+"BPR
+(Business Process Reengineering)"
+"BSC
+(Balanced Scorecard)"
+"CMMI
+(Capability Maturity Model Integration)  기출"
+Death Valley
+"EA
+(Enterprise Architecture)"
+"EAI
+(Enterprise Application Integration)  기출"
+"ERP
+(Enterprise resource planning)"
+"ESB
+(Enterprise Service Bus)"
+"ETL
+(Extract, Transformation, Loading)"
+Innovator 이론
+"ISMP
+(Information System Master Plan)"
+"ISP
+(Information Strategy Planning)"
+"ITIL
+(IT Infrastructure Library)"
+"RPO
+(Recovery Point Objective)"
+"RTO
+(Recovery Time Objective)"
+"SLA
+(Service Level Agreement)"
+"SOW
+(Statement of Work)"
+SWOT분석 (Strength, Weakness, Opportunity, Threat)
+"TOC
+(Theory of Constraints)"
+개념적 설계 (Conceptual Design)
+개체 무결성 (Entity integrity)
+갱신 손실 (LOST UPDATE)
+검사합 (Checksum)
+관계대수 (Relational Algebra)
+관계해석 (Relational Calculus)
+관계형 데이터 모델 (Relation Data Model)
+그림자 페이지 (Shadow Paging)
+기본키 (Primary Key)
+내부조인 (INNER JOIN)
+논리적 설계 (Logical Design)
+다차원 모델링 (Dimensional Modeling)
+"데이터 독립성
+(Data Independence)  기출"
+데이터 마트 (Data Mart)
+데이터 모델링 (Data Modeling)
+데이터 무결성 (Data Integrity)
+데이터 사전 (Data Dictionary)
+데이터 이행 (Data Migration)
+데이터 정제 (Data Cleansing)
+데이터 호수 (Data Lake)
+데이터베이스 모순성 (INCONSISTENCY)
+데이터베이스 백업 (Database Backup)
+데이터베이스 이중화 (Database Replication)
+데이터베이스 장애 (Database Failure)
+데이터베이스 회복 (Database Recovery)
+동거자 (SYNONYM)
+로킹 (Locking)  기출
+릴레이션 (Relation)
+물리적 설계 (Physical Design)
+"반정규화
+(De-Normalization)"
+병행제어 (Concurrency Control)
+분산 데이터베이스 (Distributed Database)
+뷰 (View)  기출
+비완료 의존성 (UNCOMMITTED DEPENDENCY)
+샤딩 (Sharding)
+서브 쿼리 (Subqueries)
+스키마 (Schema)
+암스트롱의 추론규칙 (Armstrong's Axioms) 기출
+엔티티 (Entity)
+연쇄복귀 / 회복 불능 CASCADING ROLLBACK / UNRECOVERABILITY
+옵티마이저 (Optimizer)
+외래키 (Foreign Key)
+외부 조인 (OUTER JOIN)
+윈도우 함수 (Window Function)
+이상 현상 (Anomaly)
+자기 참조 조인 SELF JOIN
+자료구조 (Data Structure)
+정규화 (Normalization)  기출
+즉시 갱신 기법 (Immediate Update)
+지연 갱신기법 (Deferred Update)
+질의어 처리기 (Query Processor)
+집계 함수 (Aggregate Function) 기출
+집합 연산자 (SET OPERATOR)
+참조 무결성 (Referential Integrity)
+카디널리티 (Cardinality)
+키 (Key)  기출
+타임스탬프 기법 (Timestamp Ordering)
+튜플(행) (Tuple)
+트랜잭션 (Transaction)
+트랜잭션 속성 (ACID)  기출
+트리거 (Trigger)  기출
+파티셔닝 (Partitioning)
+프로시저 (Procedure)
+함수 종속성 (FD, Functional Dependency)
+현황파악의 오류 (DIRTY READ)
+Attribute (속성)
+"CAP 이론 (Consistency, Availability,
+Partition tolerance)"
+CASCADE
+"CDC
+(Change Data Capture)"
+"CEP
+(Complex Event Processing"
+
+
+Check Point
+Commit
+DBMS(Database Management System)
+"DCL
+(Data Control Language)
+기출"
+"DDL
+(Data Definition Language) 데이터 정의어  기출"
+DECLARE
+"DML
+(Data Manipulation Language)  기출"
+"DQL
+(Data Query Language)"
+GRANT
+GROUP BY
+Group Function
+Index
+JOIN
+NoSQL
+Null
+"ODS
+(Operational Data Store)"
+"OLAP
+(Online Analytical Processing)  기출"
+ORDER BY
+ROLLBACK
+SAVEPOINT
+"SQL
+(Structured Query Language)"
+TRUNCATE
+WITH GRANT OPTION
+가상 근거리 통신망 (VLAN, Virtual LAN)
+"가상 사설망 (VPN, Virtual Private
+Network)"
+근거리 무선 통신 (NFC, Near Field Communication)
+기가 와이파이 (Giga Wi-Fi)
+네트워크 슬라이싱 (Network Slicing)
+"단거리 무선망 (WPAN, Wireless Personal
+Area Network)"
+라우팅 프로토콜 (Routing Protocol)
+리졸버(해석기) (Resolver)
+메시 네트워크 (Mesh Network)
+"무선랜
+(WLAN ,Wireless Local Area Network)"
+방화벽 (Firewall)
+슈퍼 와이파이 (Super Wi-Fi)
+오픈플로 (OpenFlow)
+저전력 광역 통신망 (LPWAN, Low-Power Wide-Area Network)
+지그비 (ZigBee)
+"차량 · 사물 통신 (V2X, Vehicle to Everything
+communication)"
+"초광대역
+(UWB, Ultra WideBand)"
+클러스터링 (Clustering)
+프로토콜 (Protocol)
+피코넷 (PICONET)  기출
+"협대역 사물 인터넷 (NB-IoT,
+NarrowBand-Internet of Thing)"
+Ad-hoc NW
+"BLE
+(Bluetooth Low Energy) 저전력 블루투스 기술"
+"Cat.M1
+(LTE Category M1)"
+"CDN
+(Content Delivery Network)"
+"CIDR
+(Classless Inter- Domain Routing)"
+"DNS
+(Domain Name Server)"
+"IPv6
+(Internet protocol version 6)"
+"ISM
+(Industrial, Scientific, Medical)"
+LoRa (Long Range)
+"M2M
+(Machine to Machine)"
+"MPTCP
+(Multipath TCP)"
+"MQTT
+(Message Queuing Telemetry Transport)"
+"NAT
+(Network Address Translation)"
+Network Storage
+Network Virtualization
+"NFV
+(Network Function Virtualization)"
+OneM2M (one Machine- To-Machine)
+Overlay Network
+QoS (Quality of Service)
+"QUIC
+(Quick UDP Internet Connection)"
+"SCTP
+(Stream Control Transmission Protocol)"
+"SDN
+(Software Defined Networking)"
+"SON
+(Self Organizing Network)"
+"SPF
+(Send Policy Framework)"
+"SSL
+(Secure Socket Layer)
+기출"
+Teardrop
+"USN
+(Ubiquitous Sensor Network)"
+"WBAN
+(Wireless Body Area Network)"
+Wi-Sun
+개방 주소법 (Open Addressing)
+개인정보 비식별화 (De-Identification)
+개인정보 영향평가 제도 (PIA, Privacy Impact Assessment)
+공개키 기반구조 (PKI, Public Key Infrastructure)
+공개키(비대칭키) 암호화 (Public-key Cryptography)
+공인인증서 (X.509)
+데이터 3법
+데이터베이스 암호화 (Database Encryption)
+랜섬웨어 (Ransomware)  기출
+랜섬웹 (Ransomeweb)
+루트킷 (Rootkit)
+마이데이터 (MyData)
+망분리
+망연계
+멀웨어 (Malware)
+멀티 채널 인증 (Multi Channel Authentication)
+"멀티 팩트 인증
+(Multi Factor Authentication)"
+민감정보 (Sensitive information)
+백도어 (Backdoor)
+보안 3요소 (CIA)  기출
+보안토큰 (HSM, Hardware Security Module)
+부인방지 (Non-repudiation)
+비밀키(대칭키) 암호화 Secret Key encryption
+사회공학적 기법 (Social Engineering)
+스턱스넷 (Stuxnet)
+스푸핑 (Spoofing)
+시큐어 코딩 (Secure Coding)
+안티 포렌식 (Anti-Forensics)
+암호화 (Encryption)
+"웹방화벽
+(WAF, Web Application Firewall)"
+이상금융거래 탐지 시스템 (FDS, Fraud Detect System)
+익명화 (Anonymization)
+익스플로잇 (Exploit)
+전자봉투 (Digital Envelope)
+전자서명 (Electronic Signatures)
+"침입 방지 시스템, (IPS, Intrusion Prevention
+System)"
+"침입 탐지 시스템 (IDS, Intrusion Detection
+System)"
+토큰화 (Tokenization)
+파밍 (Pharming)
+피싱 (Phishing)
+핑거 프린팅 (Finger Printing)
+"APT
+(Advanced Persistent Threats,
+공격 지능적 지속 위협)"
+ARP Spoofing
+"CAPTCHA
+(Completely Automated Public Turing test to tel Computers and Human Apart)"
+"CSRF
+(Cross Site Request Forgery)"
+"DAC
+(Discretionary Access Control)"
+"DDoS 공격 (Distributed
+Denial-of-Service attack)"
+DevSecOps
+"DRDOS
+(Distributed Reflection DoS)"
+"DRM
+(Digital Rights Management)
+기출"
+"ECC
+(타원 곡선 암호 방식, Elliptic Curve Cryptosystem)"
+"ESM
+(Enterprise Security Management)"
+"FIDO
+(파이도, Fast IDentity Online)"
+Forensic 포렌식
+"GDPR
+(General Data Protection Regulation)"
+Hacking
+Hash Function
+"IAM
+(Identity Access Management)"
+ISMS-P
+"ISO 27001
+(정보보호 관리체계
+국제 표준)"
+"ITSM
+(Information Technology Service Management)"
+K-익명성 (Anonymity)
+L-다양성 (Diversity)
+"Land Attack (Local Area Network
+Denial Attack)"
+"MAC
+(Mandatory Access Control)"
+"NAC
+(Network Access Control)"
+"OAuth 2.0 (Open
+Authorization 2.0)"
+"OTP
+(One Time Password)"
+"PDoS
+(Permanent Denial of Service)"
+"RBAC
+(Role-Based Access Control)"
+RSA 암호화
+Scam
+SDLC Secure 코딩
+"SIEM
+(Security Information & Event Management)"
+SQL 인젝션 (SQL Injection)
+T-근접성 (Closeness)
+WannaCry
+Watering hole
+Watermarking
+"XSS
+(Cross Site Scripting)
+기출"
+데이터 마이닝 (Data Mining)
+연관 분석 (Association Analysis)
+오피니언 마이닝 (Opinion Mining)
+최소신장트리 (MST, Minimum Spanning Tree)
+
+그리드 컴퓨팅 (Grid Computing)
+기계학습, 머신러닝 (Machine Learning)
+다크 데이터 (Dark Data)
+데스크탑 가상화 기술 (VDI, Virtual Desktop Infrastructure)
+디지털 사이니지 (Digital Signage)
+디지털 트윈 (Digital Twin)  기출
+리빙랩 (LivingLab)
+머신러닝 파이프라인 (Machine Learning pipeline
+
+
+멀티모달 인터페이스 (Multimodal Interface)
+메이커 운동 (Maker Movement)
+무선 충전 (Wireless Charging)
+반응형웹 (Responsive Web)
+"분산원장 기술 (DLT, Distributed Ledger
+Technology)"
+블록체인 (Blockchain)
+"사물인터넷
+(IoT, Internet of Things)"
+생체인증 (Biometrics)
+서버리스 컴퓨팅 (Serverless Computing)
+설명 가능한 인공지능 (XAI, eXplainable AI)
+"소물인터넷
+(IoST, Internet of Small Things"
+"순환 신경망 (RNN, Recurrent Neural
+Network)"
+스마트 그리드 (Smart Grid)
+스마트 시티 (Smart City)
+스마트 컨트랙트 (Smart Contract)
+스마트 팜 (Smart Farm)
+스마트 팩토리 (Smart Factory)
+스마트 헬스케어 (Smart Healthcare)
+스마트시티 플랫폼 (Smart City Platform)
+시맨틱 웹 Semantic Web
+양자 컴퓨터 (Quantum Computer)
+"양자암호통신 (Quantum Cryptography and
+Communications)"
+온톨로지 (Ontology)
+웹 신디케이션 (Web Syndication)
+유비쿼터스 (Ubiquitous)
+유틸리티 컴퓨팅 (Utility Computing)
+인터클라우드 컴퓨팅 (Inter-Cloud Computing)
+작업 증명 (PoW, Proof of Work)
+지분 증명 (PoS, Proof of Stake)
+텐서플로 (TensorFlow)
+하둡 (Hadoop)
+Ambient Computing
+"BEMS
+(Building Energy Management System)"
+"C-ITS
+(Cooperative Intelligent Transport Systems)"
+"CASB
+(Cloud Access Security Broker)"
+"CEMS
+(Cluster/Community Energy Management System)"
+Cloud Computing
+"CNN
+(Convolutional Neural Network)"
+"CoAP
+(Constrained Application Protocol)"
+"CPS
+(Cyber-Physical System)"
+"CSS
+(Cascading Style Sheets)"
+"DAS
+(Direct-Attached Storage)"
+Deep Learning
+Digital Transformation
+Digital Twin
+Docker
+Edge Computing
+Fog computing
+GAN(Generative Adversaria Network)
+"HDFS
+(Hadoop Distributed File System)"
+"HEMS
+(Home Energy Managemen System)"
+"HTML5
+(HyperText Markup Language version 5)"
+"HTTP
+(HyperText Transfer Protocol"
+"HTTP/2
+(HyperText Transfer Protoco Version 2.0)"
+IaaS (Infrastructure as a Service
+Kubernetes
+"LOD
+(Linked Open Data)"
+Mashup
+Mobile Edge Computing
+"Open API (Open Application
+Programming interface)"
+"OSS
+(Open Source Software)"
+PaaS (Platform as a Service)
+"RDF
+(Resource Description Framework)"
+"RPA
+(Robotic Process Automation"
+SaaS (Service as a Service)
+"SDDC
+(Software-defined Data
+Center)  기출"
+SECaaS (Security as a Service)
+Smart Dust
+U-Healthcare (ubiquitous Healthcare)
+Web Socket
+"XML
+(eXtensible Markup
+Language)"
+"XMPP
+(Extensible Messaging And
+Presence Protocol)"
+"증강현실
+(AR, Augmented Reality)"
+"크롤러
+(Crawler)"
+웹 마이닝 (Web Mining)
+
+가상 기억 접근 방식 (VSAM, Virtual Storage Access Method)
+가상메모리 (Virtual Memory)
+가상화 기술 (Virtualization)
+고가용성 HA(High Availability)
+교착상태 (Deadlock)  기출
+그래픽 처리 장치 (GPU)
+기아상태 (Starvation)
+디스크 스케줄링 (Disk Scheduling)
+리눅스 컨테이너 (LXC, LinuX Containers)
+메모리 인터리빙 (Memory Interleaving)
+"상호배제
+(Mutex, Mutual exclusion)"
+색인 순차 파일 (Indexed Sequential File)
+서버 가상화 (Server Virtualization)
+세마포어 (Semaphore)
+스레드 (Thread)  기출
+스레싱 (Thrashing)
+스토리지 가상화 (Storage Virtualization)
+시스템 버스 (System Bus)
+오픈스텍 (OpenStack)
+유닉스 (Unix)
+인터럽트 (Interrupt)
+임계구역 (Critical Section)
+작업 스케쥴러 (Job Scheduler)
+컨테이너 (Container)
+컴퓨터 스토리지 (Storage)
+킬 스위치 (Kill Switch)
+하이퍼바이저 (Hypervisor)
+Banker’s Algorithm
+Cache Memory
+"DMA
+(Direct Memory Access)"
+Embedded OS
+FT(Fault Tolerant) 결함 내성
+"GUI
+(Graphical user interface)"
+InsurTech 인슈어테크
+Linux
+Logfile
+"MEMS
+(Micro-Electro-Mechanical Systems)"
+"NAS
+(Network Attached Storage)"
+"RAID
+(Redundant Array of Independent Disks)"
+"RTOS
+(Real Time Operating System"
+"SAN
+(Storage Area Network)"
+"SSD
+(Solid State Disk)"
+"TP Monitor (Transaction Processing
+Monitor)  기출"
+TrustZone
+프레임워크 (Framework)
+Apriori 알고리즘 (Apriori Algorithm)
+"BI
+(Business Intelligence)"
+격리성, 독립성 (Isolation)
+일관성 (Consistency)
+지속성, 영속성 (Durability)
+"원자성
+(Atomicity)"
+"외부 스키마
+(External Scheme)"
+"개념 스키마
+(Conceptual Schema)"
+"내부 스키마
+(Internal Schema)"
+"시스템 카탈로그
+(System Catalog)"
+"메타데이터
+(Metadata)"
+"메타데이터 레지스트리
+(MDR, Meta Data Registry"
+"데이터 사이언티스트
+(Data Scientist)"
+"알고리미스트
+(Algorithmist)"
+"마이 데이터
+(MyData)"
+연관규칙
