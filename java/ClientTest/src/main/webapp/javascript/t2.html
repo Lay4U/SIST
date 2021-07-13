@@ -1,0 +1,44 @@
+<script>
+  var title = document.getElementById('title');
+  var tbody1 = document.getElementById('tbody1');
+
+  var now = new Date();
+
+  var lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate(); //해당월의 마지막날
+  var firstDay = new Date(now.getFullYear(), now.getMonth(), 1).getDay(); //해당월 1일의 요일
+
+  title.textContent = now.getFullYear() + '.' + (now.getMonth() + 1);
+
+  //공백 채우기
+  var temp = '';
+  temp = '<tr>';
+
+  for (var i = 0; i < firstDay; i++) {
+    temp += '<td></td>';
+  }
+
+  for (var i = 1; i <= lastDay; i++) {
+    temp += '<td>';
+    temp += "<span class='no'>" + i + '</span>';
+    temp += '<div>할일</div>';
+    temp += '<div>또 할일</div>';
+    temp += '<div>더 많은 할일</div>';
+    temp += '</td>';
+    if ((i + firstDay) % 7 == 0) {
+      temp += '</tr><tr>';
+    }
+  }
+
+  var seed = 7;
+
+  if (7 - ((lastDay % 7) + firstDay) < 0) {
+    seed = 14;
+  }
+
+  for (var i = 0; i < seed - ((lastDay % 7) + firstDay); i++) {
+    temp += '<td></td>';
+  }
+  temp += '</tr>';
+
+  tbody1.innerHTML = temp;
+</script>
