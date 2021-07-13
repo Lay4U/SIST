@@ -1,0 +1,33 @@
+1. D:\class\server 폴더 생성
+2. 이클립스 실행 > 1번 폴더 워크스페이스 지정
+3. 인코딩 설정
+    - Window > Preferences > "encoding" 검색
+    a. General > Workspace > Text file encoding > Other > "UTF-8"
+    b. Web > CSS Files > Encoding > "UTF-8"
+    c. Web > HTML Files > Encoding > "UTF-8"
+    d. Web > JSP Files > Encoding > "UTF-8"
+4. 톰캣 다운로드 + 설치
+   - 이전 수업에서 설치했음. 안되있으면 설치(이전 설치된 버전이 8.5.XX 라면 문제 없음)
+   a. https://tomcat.apache.org/download-80.cgi > "64-bit Windows zip" 다운로드
+   b. "64-bit Windows zip" 압축 해제 > "apache-tomcat-8.5.68" 폴더를 C드라이브 루트로 이동 > "C:\apache-tomcat-8.5.68"
+5. 이클립스 + 톰캣 연동
+   - 이전 수업에서 설치했음. 안되있으면 설치
+   - Window > Preferences > "runtime" 검색 > Server > Runtime Environments > "Add" 버튼 클릭
+     > "Apaceh Tomcat v8.5" 선택 > Next > "Browse" 버튼 클릭 > "C:\apache-tomcat-8.5.68" 폴더 선택
+     > "Finish" 버튼 클릭 > "Apply and Close" 버튼 클릭
+   - Window > Show View > Servers 선택 >  "No severs ara available	." 클릭 > "Apaceh Tomcat v8.5" 선택 > Next
+     > "Finish" 버튼 클릭
+   - Servers 창의 "Tomcat v8.5" 더블클릭 > "Ports" > "HTTP/1.1" Port Number > "8080"을 "8090" 으로 수정 > 저장(Ctrl+S)
+
+6. 프로젝트 생성
+   a. File > New > Other > Web > Dynamic Web Project 선택 > Next
+   b. Project name > "ServletTest" > Next > Finish
+
+
+
+
+
+
+
+
+

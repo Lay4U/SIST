@@ -9,7 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f7c6435-025a-49d0-b2cf-f950467dc1f3" name="Default Changelist" comment="" />
+    <list default="true" id="9f7c6435-025a-49d0-b2cf-f950467dc1f3" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/../one/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../one/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../server/JSPTest/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../server/JSPTest/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../server/JSPTest/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../server/JSPTest/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../server/Servers/Tomcat v8.5 Server at localhost-config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../server/Servers/Tomcat v8.5 Server at localhost-config/server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../server/ServletTest/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../server/ServletTest/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../server/ServletTest/src/main/java/com/test/servlet/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../server/ServletTest/src/main/java/com/test/servlet/Hello.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,17 +50,6 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.46" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.46" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/qna_war/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -154,6 +151,8 @@
       <workItem from="1621509065231" duration="750000" />
       <workItem from="1621509836517" duration="443000" />
       <workItem from="1621510312238" duration="1373000" />
+      <workItem from="1626050964421" duration="595000" />
+      <workItem from="1626051914471" duration="594000" />
     </task>
     <servers />
   </component>
