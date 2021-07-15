@@ -43,7 +43,7 @@
 	<div class="container">
 
 		<!-- 무조건 POST 선택!!! -->
-		<form method="POST" action="/jsp/jdbc/addok.jsp">
+		<form method="POST" action="/jsp/addok.do">
 			<h1 class="page-header">Address Book</h1>
 			<table class="table table-bordered">
 				<tr>
