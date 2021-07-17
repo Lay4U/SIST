@@ -1,41 +1,47 @@
-<%@page import="com.test.jsp.jdbc.DBUtil"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.Statement"%>
-<%@page import="java.sql.Connection"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="com.test.jsp.jdbc.DBUtil"%>
+<%@ page import="java.sql.ResultSet"%>
+<%@ page import="java.sql.Statement"%>
+<%@ page import="java.sql.PreparedStatement"%>
+<%@ page import="java.sql.Connection"%>
 <%
+
+	//데이터 가져오기
 	String seq = request.getParameter("seq");
-	/* System.out.println(seq); */
-	
-	
+
+	//DB 작업
 	Connection conn = null;
-	Statement stat = null;
+	PreparedStatement stat = null;
 	ResultSet rs = null;
 	
+	//결과
 	String todo = "";
-	int complete = 0;
-	String regdate = ""; 
 	
-	try{
+	try {
+		
+		String sql = "select todo from tblTodo where seq = ?";
+		
 		conn = DBUtil.open();
-		stat = conn.createStatement();
-		String sql = "select * from tblAddress where seq = " + seq;
+		stat = conn.prepareStatement(sql);
 		
-		rs = stat.executeQuery(sql);
+		stat.setString(1, seq);
 		
-		if (rs.next()){
-			todo= rs.getString("todo");
-			complete = rs.getInt("complete");
-			regdate = rs.getString("regdate");
+		rs = stat.executeQuery();
+		
+		if (rs.next()) {
+			todo = rs.getString("todo"); 
+		} else {
+			response.sendRedirect("todo_list.jsp");
 		}
 		
 		rs.close();
 		stat.close();
 		conn.close();
-	} catch(Exception e){
+		
+	} catch (Exception e) {
 		System.out.println(e);
 	}
-	
+
 %>
 <!DOCTYPE html>
 <html>
@@ -91,7 +97,7 @@
 	<div class="container">
 		<h1 class="page-header">Todo List <small>Edit</small></h1>		
 		
-		<form method="POST" action=todo_editok.jsp>
+		<form method="POST" action="todo_editok.jsp">
 			<table class="table table-bordered">
 				<tr>
 					<th>Todo</th>

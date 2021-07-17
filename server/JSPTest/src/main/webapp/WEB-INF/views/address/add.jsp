@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -7,25 +6,26 @@
 <meta charset="UTF-8">
 <title></title>
 
-<%@ include file="/inc/asset.jsp"%>
+<%@ include file="/inc/asset.jsp" %>
 
 <style>
+	
 </style>
+
 </head>
 <body>
 	<div class="container">
-		<h1 class="page-header"></h1>
-		<form method="POST" action="/jsp/addok.do">
+		<h1 class="page-header"></h1>		
+		<form method="POST" action="/jsp/address/addok.do">
 			<table class="table table-bordered">
 				<tr>
 					<th>이름</th>
-					<td><input type="text" name="name" class="form-control" autocomplete="off">
-					</td>
+					<td><input type="text" name="name" class="form-control" autocomplete="off"></td>
 				</tr>
 				<tr>
 					<th>나이</th>
 					<td>
-					<input type="number" name="age" min="19" max="" class="form-control">
+						<input type="number" name="age" min="19" max="" class="form-control">
 					</td>
 				</tr>
 				<tr>
@@ -46,17 +46,25 @@
 			</table>
 			
 			<div class="btns">
-				<input type="submit" value="추가하기" class="btn btn-default">
-				<input type="button" value="목록보기" class="btn btn-default"
-				onclick="history.back();">
+				<input type="submit" value="추가하기" class="btn btn-defualt">
+				<input type="button" value="목록보기" class="btn btn-default">
 			</div>
 		</form>
-	</div>
+	</div>	
 	<script>
 		
 	</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
 
 

@@ -14,21 +14,19 @@
 
 </head>
 <body>
-	<!-- delok.jsp -->
 	<div class="container">
-		<h1 class="page-header">DelOk</h1>		
-		
+		<h1 class="page-header"></h1>		
 		
 	</div>	
-	
 	<script>
 		<c:if test="${result == 1}">
-			location.href = '/jsp/list.do';
+			location.href = '/jsp/address/list.do';
 		</c:if>
 		
 		<c:if test="${result != 1}">
 			history.back();
 		</c:if>
+		
 	</script>
 </body>
 </html>

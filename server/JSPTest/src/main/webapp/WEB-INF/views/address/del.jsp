@@ -14,20 +14,17 @@
 
 </head>
 <body>
-	<!-- del.jsp -->
 	<div class="container">
-		<h1 class="page-header">Del</h1>
+		<h1 class="page-header">Del</h1>		
 		
 		<div class="confirm">
 			<div class="alert alert-danger">정말 삭제하시겠습니까?</div>
 			<input type="button" value="삭제하기" class="btn btn-default"
-					onclick="location.href='/jsp/delok.do?seq=${seq}';">
+			onclick = "location.href='/jsp/delok.do?seq=${seq}';">
 			<input type="button" value="목록보기" class="btn btn-default"
-					onclick="location.href='/jsp/list.do';">
-		</div>		
-		
+			onclick = "location.href='/jsp/list.do';">
+		</div>
 	</div>	
-	
 	<script>
 		
 	</script>

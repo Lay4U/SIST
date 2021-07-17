@@ -1,10 +1,9 @@
-<%@page import="java.io.File"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<%@ page import="java.io.File"%>
 <%
 //디렉토리 목록 읽기
-String path = application.getRealPath("/Files");
+String path = application.getRealPath("/files");
 
 File dir = new File(path);
 File[] list = dir.listFiles();
@@ -20,91 +19,130 @@ File[] list = dir.listFiles();
 <style>
 .list {
 	margin: 20px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .list .item {
 	width: 200px;
 	height: 200px;
 	border: 1px solid #AAA;
+	border-radius: 5px;
+	margin: 10px;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
-	background-color: #777;
 	cursor: pointer;
-	
+	/* background-color: #000; */
 }
 
 .img1 {
 	display: block;
-	margin: 20px auto;
+	margin: 30px auto;
 }
+
 </style>
+
 </head>
 <body>
+	<!-- ex18_view.jsp -->
 	<div class="container">
-		<h1 class="page-header"></h1>
+		<h1 class="page-header">Gallery</h1>
 
 		<div class="list">
+
 			<%
 			for (File f : list) {
 			%>
 			<div class="item"
-				style="background-image:url(/jsp/files/<%=f.getName()%>);"
-				data-toggle="modal"
-				data-target="#myModal"
-				onclick="view('<%=f.getName()%>');">
-				</div>
-			<%-- <img src="/jsp/files/<%= f.getName() %>"> --%>
+				 style="background-image:url(/jsp/files/<%=f.getName()%>);" 
+				 data-toggle="modal" 
+				 data-target="#myModal"
+				 onclick="view('<%=f.getName()%>');"></div>
 			<%
 			}
 			%>
+
 		</div>
 
 		<div class="btns">
-			<input type="button value=" Add Image" class="btn btn-default">
+			<input type="button" value="Add Image" class="btn btn-default"
+				onclick="location.href='ex18_file_form.jsp';">
 		</div>
 
 	</div>
 
-	<!-- Button trigger modal -->
-	<button type="button" class="btn btn-primary btn-lg"
-		data-toggle="modal" data-target="#myModal">Launch demo modal
-	</button>
+
 
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
 		aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
-				</div>
+							
 				<div class="modal-body">
 					<img class="img1">
 				</div>
+				
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-danger">Delete</button>
+					<button type="button" class="btn btn-danger btnDelete">Delete</button>
 				</div>
+				
 			</div>
 		</div>
 	</div>
+
+
+
 	<script>
-		function vew(img){
+	
+		function view(img) {
+			
 			//alert(img);
+			
 			$('.img1').attr('src', '/jsp/files/' + img);
 			
-			setTimeout(function(){
-				// alert($('.img1').width()); 
+			/* 
+			setTimeout(function() {
+				//alert($('.img1').width());
+				
 				if ($('.img1').width() > 800) {
-					tmp = $('.img1').width();
 					$('.img1').width(800);
 				} else {
-					$('.img1').width(tmp);
+					$('.img1').width(-1);
 				}
-			}. 200);
+				
+			}, 200); 
+			*/
+			
 		}
+		
+		
+		$(".btnDelete").click(function() {
+			
+			//지금 보고 있는 이미지 파일명을 서버에 전송 -> 파일 삭제
+			//alert($(".img1").attr('src'));
+			
+			let img = $(".img1").attr('src').replace('/jsp/files/', '');
+			//alert(img);
+			
+			location.href = 'ex18_file_delete.jsp?img=' + img;
+			
+		});
+	
 	</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
 
 

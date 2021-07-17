@@ -95,7 +95,7 @@
 		
 		<div>num2 = ${num2 > 0 ? "양수": "음수"}</div>
 		<div>${"홍길동" == "홍길동"}</div> 사용(X)
-		<div>${"홍길동".equals("홍길동")}</div> 사용(O)
+		<%-- <div>${"홍길동".equals("홍길동")}</div> 사용(O) --%>
 		<hr>
 		
 		<h2>HashMap 출력 지원</h2>
@@ -113,7 +113,7 @@
 		<div>나이: <%= Integer.parseInt(map.get("age")) - 1 %></div>
 		<div>직업: <%= map.get("job") %></div>
 		<br>
-		<div>이름: ${pageContext.getAttribute("map").get("name")}</div>
+		<%-- <div>이름: ${pageContext.getAttribute("map").get("name")}</div> --%>
 		<div>이름: ${map}</div>
 		
 		<div>이름: ${map.get("name")}</div>

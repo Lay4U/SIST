@@ -14,24 +14,13 @@
 
 </head>
 <body>
-	<!-- editok.jsp -->
-	aaa
 	<div class="container">
-		<h1 class="page-header">EditOk</h1>
-				
+		<h1 class="page-header"></h1>		
+		
 	</div>	
-	
 	<script>
-	
-		
-		<c:if test="${result == 1}">
-			location.href = '/jsp/list.do';
-		</c:if>
-		
-		<c:if test="${result != 1}">
-			history.back();
-		</c:if>
-	
+		alert('등록 완료');
+		location.href = '/jsp/address/list.do';
 	</script>
 </body>
 </html>

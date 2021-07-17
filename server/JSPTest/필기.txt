@@ -289,10 +289,15 @@ JSTL 확장 액션 태그
 사용자 정의 액션 태그
 - JSP 기본 액션 태그 or JSTL 확장 액션 태그 > 부족하면 직접 설계 구현
 
+
+
+
+
+
 파일 업로드/다운로드
 
 업로드
-- 클라이언트측 자원 -> 서버측 전송(=파일 복사)
+- 클라이언트측 자원 -> 서버측 전송(=파일 복사) 
 
 다운로드
 - 서버측 자원 -> 클라이언트측 전송(=파일 복사)
@@ -303,75 +308,84 @@ JDK(JRE)
 파일 업로드 라이브러리
 - COS(http://www.servlets.com)
 
-파일 업로드
-- ex_17_file_form.jsp
-- ex_file_ok.jsp
 
-GET방식은 HEADER에 정보를 넣는다.
+파일 업로드
+- ex17_file_form.jsp
+- ex17_file_ok.jsp
+- webapp > "files" 폴더 생성(사용자가 업로드한 파일들을 저장할 서버측 폴더)
+
+
+이미지 파일 업로드
+- ex18_file_form.jsp //이미지 등록 페이지
+- ex18_file_ok.jsp //업로드 처리 페이지
+- ex18_view.jsp //이미지 목록 페이지
+
 
 
 JSP에서 코드를 작성하는 패턴
-
 1. JSP Model 1
 	- 지금까지 수업한 방식
 	- HTML + CSS + JavaScript + Java + JSP = *.jsp
 	- <% %>, <%= %> 사용
 	
 2. JSP Model 2
-	- MVC 디자인 패턴
+	- MVC Model 디자인 패턴
 	- Servlet + JSP = MVC
+	
 
 JSP MVC
 - Servlet
 	a. 자바 기반 + 웹 추가
 	b. 자바 작업이 수월하다.
 	c. 웹 작업이 불편하다.
-	
+
 - JSP
 	a. 웹 기반 + 자바 추가
-	b. 웹 작업이 수월하다.
+	b. 웹 작업 수월하다.
 	c. 자바 작업이 불편하다.
-	
+
 - Servlet + JSP
 	a. 자바 코드 -> Servlet 담당
 	b. 웹 코드 -> JSP 담당
+
+
 
 웹 페이지를 만드는 알바생
 1. Servlet
 	- 1개의 Servlet -> 1장의 웹페이지 생성
 2. JSP
 	- 1개의 JSP -> 1장의 웹페이지 생성
-	
 
+	
 
 JSP Model2 -> Hello 만들기
 - 알바생 2명 -> 협력 -> 1장의 웹페이지 생성 //********
 1. Servlet
 	- "com.test.mvc" > "Hello.java"
-	
+
 2. JSP
-	- webapp > "mvc" > "hello.jsp
-	
-- 알바생 2명의 업무 순서가 이미 정해져있다.(억지로 바꿀 순 있는데.. 절대 안바꾼다 == 공식)
+	- webapp > "mvc" > "hello.jsp"
+
+- 알바생 2명의 업무 순서가 이미 정해져있다.(억지로 바꿀 순 있는데.. 절대 안 바꾼다. == 공식)
 	a. 브라우저가 페이지를 달라고 서버에 먼저 요청한다.
-		-> Servlet에게 페이지를 달라고 요청한다.
-		
+		-> Servlet에게 페이지를 달라고 요청한다.	
 	b. Servlet이 먼저 일을 한다.
 		-> 할일 완료
-		-> JSP 호출한다.
-	c. JSP가 Servlet을 이어서 나머지 일을 한다.
+		-> JSP를 호출한다.
+	c. JPS가 Servlet을 이어서 나머지 일을 한다.
 		-> 할일 완료
 		-> 웹 페이지 완성
 	d. 완성된 페이지를 브라우저에게 돌려준다.
-		
-WEB-INF는 직원들만 들어갈 수 있음 (관계자외 출입금지)
+	
 
 
 주소록 MVC 버전
-1. 주소록 목록보기
-2. 주소록 추가하기
-3. 주소록 수정하기
-4. 주소록 삭제하기
+1. 주소록 목록보기(R)
+2. 주소록 추가하기(C)
+-----------------
+3. 주소록 수정하기(U)
+4. 주소록 삭제하기(D)
+-----------------
 
 파일 생성
 
@@ -380,17 +394,16 @@ select
  
 insert, update, delete
  : Add, AddOk -> Edit, EditOk, Del, DelOk
- 
- 
+
 - com.test.mvc
 	- List.java
 	- Add.java
 	- AddOk.java
 	- Edit.java
-	- EditOk.jva
+	- EditOk.java
 	- Del.java
 	- DelOk.java
-	
+
 - WEB-INF > views > "address" 폴더 생성
 	- list.jsp
 	- add.jsp
@@ -401,8 +414,33 @@ insert, update, delete
 	- delok.jsp
 	
 
-	
-	
+
+
+인증 + MVC Model
+
+웹 보안
+1. 인증, Authentication
+- 현재 접속자가 해당 사이트의 구성원인지를 확인하는 작업
+- 로그인, 로그아웃
+- 목적: 인증 과정을 거친 사용자를 인증 과정을 거치지 않은 사용자와 구분할 수 있다.(*************)
+- 일종의 보안카드 > 인증 정보 > 인증 티켓(***): 다른 사용자의 인증 티켓은 열람(조작)이 불가능하다. 모든 페이지에서 유효해야 한다.
+	-> 세션(session)에 인증 정보를 저장한다.
+
+2. 허가, Authorization
+- 어떤 업무에 대해서 현재 접속자가 권한이 있는지 확인하는 작업
+
+
+예제
+- "com.test.auth" > "Index.java"
+				  > "Login.java"
+				  > "LoginOk.java"
+				  > "LogoutOk.java"
+
+- views > "auth" > "index.jsp"
+				 > "login.jsp"
+				 > "loginok.jsp"
+				 > "logoutok.jsp"
+
 
 
 

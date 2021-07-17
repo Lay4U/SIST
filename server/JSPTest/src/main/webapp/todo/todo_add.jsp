@@ -54,7 +54,7 @@
 <body>
 	<!-- todo_list.jsp -->
 	<div class="container">
-		<h1 class="page-header">Todo List<small>Add</small></h1>		
+		<h1 class="page-header">Todo List <small>Add</small></h1>		
 		
 		<form method="POST" action="todo_addok.jsp">
 			<table class="table table-bordered">
