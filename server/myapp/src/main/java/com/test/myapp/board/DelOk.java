@@ -30,6 +30,12 @@ public class DelOk extends HttpServlet {
 		
 		HttpSession session = req.getSession();
 		
+		//2.5 현재 글에 달린 댓글부터 삭제하기(***) 그래야 글 삭제 가능
+		dao.delAllComment(seq);
+		
+		
+		
+		
 		int result = dao.del(seq);
 		
 		//3.

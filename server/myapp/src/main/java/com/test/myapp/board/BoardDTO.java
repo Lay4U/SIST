@@ -12,6 +12,7 @@ public class BoardDTO {
 	
 	private String name; //추가 멤버
 	private String isnew; //새글 표시
+	private String ccnt; //댓글 개수
 	
 	public String getIsnew() {
 		return isnew;
@@ -66,5 +67,11 @@ public class BoardDTO {
 	}
 	public void setTag(String tag) {
 		this.tag = tag;
+	}
+	public String getCcnt() {
+		return ccnt;
+	}
+	public void setCcnt(String ccnt) {
+		this.ccnt = ccnt;
 	}
 }

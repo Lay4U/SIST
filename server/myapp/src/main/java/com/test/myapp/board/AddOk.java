@@ -15,6 +15,8 @@ public class AddOk extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		CheckMember cm = new CheckMember();
+		cm.check(req, resp);
 		//ok jsp는 필요없이 자바에서 처리 후 리다이렉트
 		
 		//할일

@@ -1,6 +1,7 @@
 package com.test.myapp.board;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -25,6 +26,10 @@ public class View extends HttpServlet {
 		
 		// 1.
 		String seq = req.getParameter("seq");
+		String column = req.getParameter("column");
+		String search = req.getParameter("search");
+		
+		
 
 		// 2.
 		BoardDAO dao = new BoardDAO();
@@ -63,8 +68,21 @@ public class View extends HttpServlet {
 		content = content.replace("\r\n", "<br>");
 		dto.setContent(content);
 
+		//내용으로 검색 중일 때 검색어 부각 시키기
+		if (column != null && search != null && column.equals("content")) {
+			content = content.replace(search, "<span style='color:tomato;background-color:yellow;'>" + search + "</span>");
+			dto.setContent(content);
+		}
+		
+		//2.7 현재 보고 있는 글에 달리 댓글 목록 가져오기
+		ArrayList<CommentDTO> clist = dao.listComment(seq);
+		
 		// 3.
 		req.setAttribute("dto", dto);
+		req.setAttribute("column", column);
+		req.setAttribute("search", search);
+		req.setAttribute("clist", clist);
+		
 
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/board/view.jsp");
 		dispatcher.forward(req, resp);
