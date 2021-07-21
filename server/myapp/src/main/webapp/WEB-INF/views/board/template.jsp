@@ -14,7 +14,7 @@
 
 </head>
 <body>
-	<!-- board/template.jsp -->
+	<!-- template.jsp -->
 	<%@ include file="/inc/header.jsp" %>
 	
 	<section class="main-section">

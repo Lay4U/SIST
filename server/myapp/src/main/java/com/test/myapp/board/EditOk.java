@@ -18,15 +18,14 @@ public class EditOk extends HttpServlet {
 
 		//할일
 		//1. 데이터 가져오기
-		//2. DB 작업 > DAO 위임 > insert
-		//3. 결과 > 후처리
-		//1. 
-	
+		//2. DB 작업 > DAO 위임 > update
+		//3. 결과 처리
+		
+		//1.
 		String seq = req.getParameter("seq");
 		String subject = req.getParameter("subject");
 		String content = req.getParameter("content");
 		String tag = req.getParameter("tag");
-	
 		
 		//2.
 		BoardDAO dao = new BoardDAO();
@@ -34,7 +33,6 @@ public class EditOk extends HttpServlet {
 		
 		HttpSession session = req.getSession();
 		
-//		dto.setId(session.getAttribute("id").toString());
 		dto.setSeq(seq);
 		dto.setSubject(subject);
 		dto.setContent(content);
@@ -42,18 +40,26 @@ public class EditOk extends HttpServlet {
 		
 		int result = dao.edit(dto);
 		
-		//id를 넘기는 방법(세션에 존재하는) 위에 방법이 제일 좋음.
-		//메서드를 뜯어 고쳐야 돼서 설계가 잘못됨.
-		//dto만 주고받을수 있도록
-//		int result = dao.add(dto, req);
-//		int result = dao.add(dto, session);
-		
-		if(result==1) {
-			resp.sendRedirect("/myapp/board/view.do?seq="+seq);
+		//3.
+		if (result == 1) {
+			resp.sendRedirect("/myapp/board/view.do?seq=" + seq);
 		} else {
-			resp.sendRedirect("/myapp/board/edit.do?seq="+seq);
-		}
-		
+			resp.sendRedirect("/myapp/board/edit.do?seq=" + seq);
+		}	
+
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

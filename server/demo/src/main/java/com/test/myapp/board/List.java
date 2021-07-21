@@ -12,23 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 //@WebServlet(name = "helloServlet", value = "/hello-servlet")
 @WebServlet(name = "listServlet", value="/board/list")
+@WebServlet("/board/list.do")
 public class List extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		//날짜 자르는 업무
-		//1. SQL > 시분초 필요해서 선택 X
-		//2. DAO > 순수 데이터 입출력만 전담 : 서블릿에서 시분초 필요해서 선택 X, DAO에서도 데이터 가공은 안한다. 데이터 가공(처리, 작업)은 서블릿에게 맡긴다.
-		//3. Servlet > 선택 O > 데이터 가공 및 조작
-		//4. JSP > 선택 X > 출력에만 전담
-		
-		//할일
-		//1. DB작업 > DAO 위임 > select
-		//2. ArrayList<BoardDTO> 반환
-		//3. JSP 호출 + 2번 전달
-		
-		
+
 		//1.
 		BoardDAO dao = new BoardDAO();
 		

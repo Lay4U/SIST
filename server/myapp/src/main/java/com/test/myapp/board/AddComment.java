@@ -3,7 +3,6 @@ package com.test.myapp.board;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,13 +15,15 @@ public class AddComment extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
 		CheckMember cm = new CheckMember();
 		cm.check(req, resp);
+		
 		//할일
-		//1. 데이터 가져오기(content)
-		//2. DB 작업 > DAO위임 > insert
+		//1. 데이터 가져오기(content, pseq)
+		//2. DB 작업 > DAO 위임 > insert
 		//3. 돌아가기 > view.do?seq=10
-
+		
 		//1.
 		String pseq = req.getParameter("pseq"); //보고있던 글번호(= 작성중인 댓글의 부모 글번호)
 		String content = req.getParameter("content");
@@ -33,25 +34,21 @@ public class AddComment extends HttpServlet {
 		
 		HttpSession session = req.getSession();
 		
-		dto.setId(session.getAttribute("id").toString());	
+		dto.setId(session.getAttribute("id").toString()); //댓글 작성자 아이디(= 로그인한 사람 세션)
 		dto.setPseq(pseq);
 		dto.setContent(content);
 		
-		int result = dao.addComment(dto);
+		int result = dao.addComment(dto);//1, 0		
 		
 		//3.
-//		if (result == 1) {
-//			resp.sendRedirect("/myapp/board/view.do?seq=" + pseq); //보고있던 글번호를 가지고 돌아가기
-//		} else {
-//			resp.sendRedirect("/myapp/board/view.do?seq=" + pseq);
-//		}
-		
 		if (result == 1) {
-			resp.sendRedirect("/myapp/board/view.do?seq=" + pseq); //보고있던 글번호를 가지고 돌아가기
+			resp.sendRedirect("/myapp/board/view.do?seq=" + pseq); //보고 있던 글번호를 가지고 돌아가기
 		} else {
+			
 			resp.setCharacterEncoding("UTF-8");
 			
-			PrintWriter writer = resp.getWriter();
+			PrintWriter writer = resp.getWriter();			
+			
 			writer.print("<html>");
 			writer.print("<body>");
 			writer.print("<script>");
@@ -60,16 +57,23 @@ public class AddComment extends HttpServlet {
 			writer.print("</script>");
 			writer.print("</body>");
 			writer.print("</html>");
+			
 			writer.close();
-			
-			
-//			writer.print("<html><body><script>");
 		}
 		
-		
-		
-		
-
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

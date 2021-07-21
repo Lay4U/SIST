@@ -1,7 +1,8 @@
 package com.test.myapp.board;
 
-//보통 오라클 테이블 1개당 DTO 1개(이상)을 만든다.
+//보통 오라클 테이블 1개당 DTO 1개(이상)를 만든다.
 public class BoardDTO {
+	
 	private String seq;
 	private String id;
 	private String subject;
@@ -12,20 +13,12 @@ public class BoardDTO {
 	
 	private String name; //추가 멤버
 	private String isnew; //새글 표시
-	private String ccnt; //댓글 개수
+	private String ccnt; //댓글 갯수
 	
-	public String getIsnew() {
-		return isnew;
-	}
-	public void setIsnew(String isnew) {
-		this.isnew = isnew;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
+	private int thread;
+	private int depth;
+	
+	
 	public String getSeq() {
 		return seq;
 	}
@@ -68,10 +61,37 @@ public class BoardDTO {
 	public void setTag(String tag) {
 		this.tag = tag;
 	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getIsnew() {
+		return isnew;
+	}
+	public void setIsnew(String isnew) {
+		this.isnew = isnew;
+	}
 	public String getCcnt() {
 		return ccnt;
 	}
 	public void setCcnt(String ccnt) {
 		this.ccnt = ccnt;
 	}
+	public int getDepth() {
+		return depth;
+	}
+	public void setDepth(int depth) {
+		this.depth = depth;
+	}
+	public int getThread() {
+		return thread;
+	}
+	public void setThread(int thread) {
+		this.thread = thread;
+	}
+
+	
 }
+

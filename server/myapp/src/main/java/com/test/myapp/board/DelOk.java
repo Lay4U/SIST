@@ -21,31 +21,39 @@ public class DelOk extends HttpServlet {
 		//2. DB 작업 > DAO 위임 > delete where seq
 		//3. 결과 처리
 		
-		
 		//1.
 		String seq = req.getParameter("seq");
 		
 		//2.
 		BoardDAO dao = new BoardDAO();
-		
+				
 		HttpSession session = req.getSession();
 		
-		//2.5 현재 글에 달린 댓글부터 삭제하기(***) 그래야 글 삭제 가능
-		dao.delAllComment(seq);
-		
-		
-		
+		//2.5 현재 글에 달린 댓글부터 삭제하기(***)
+		dao.delAllComment(seq); //부모글번호
 		
 		int result = dao.del(seq);
 		
 		//3.
-		if(result==1) {
+		if (result == 1) {
 			resp.sendRedirect("/myapp/board/list.do");
 		} else {
-			resp.sendRedirect("/myapp/board/del.do?seq="+seq);
-		}
-		
+			resp.sendRedirect("/myapp/board/del.do?seq=" + seq);
+		}	
 		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

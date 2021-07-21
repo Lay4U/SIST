@@ -1,12 +1,14 @@
 package com.test.myapp.board;
 
 public class CommentDTO {
+	
 	private String seq;
 	private String id;
 	private String content;
 	private String regdate;
 	private String pseq;
 	private String name;
+	
 	public String getSeq() {
 		return seq;
 	}
