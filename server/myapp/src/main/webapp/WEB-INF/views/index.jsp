@@ -14,15 +14,16 @@
 
 </head>
 <body>
-	<!-- template.jsp -->
+	<!-- index.jsp -->
 	<%@ include file="/inc/header.jsp" %>
 	
 	<section class="main-section">
 		
-		<h1>시작 페이지</h1>	
+		<h1>시작 페이지</h1>
 		
-		<div>웹 응용 프로그램의 시작 페이지입니다.</div>
-		<!-- http://localhost:8099/myapp/index.do -->
+		http://localhost:8090/myapp/index.do
+		
+		<div>웹 응응 프로그램의 시작 페이지입니다.</div>
 		
 	</section>	
 	

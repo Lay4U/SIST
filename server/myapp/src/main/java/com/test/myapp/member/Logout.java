@@ -2,7 +2,6 @@ package com.test.myapp.member;
 
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,12 +19,26 @@ public class Logout extends HttpServlet {
 		//1. 인증 티켓 제거
 		//2. 부가 정보 제거
 		
-		 HttpSession session = req.getSession();
-		 
-		 session.removeAttribute("id");
-		 session.invalidate();
-		 
-		 resp.sendRedirect("/myapp/index.do");
+		HttpSession session = req.getSession();
+		
+		session.removeAttribute("id"); //로그아웃
+		session.removeAttribute("name");
+		session.removeAttribute("lv");
+		session.removeAttribute("regdate");
+		
+		resp.sendRedirect("/myapp/index.do");		
+
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+

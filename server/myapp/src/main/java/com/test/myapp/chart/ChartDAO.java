@@ -9,21 +9,28 @@ import java.util.ArrayList;
 import com.test.myapp.DBUtil;
 
 public class ChartDAO {
+	
 	private Connection conn;
 	private Statement stat;
 	private PreparedStatement pstat;
 	private ResultSet rs;
 	
 	public ChartDAO() {
+		
 		try {
 			conn = DBUtil.open();
 		} catch (Exception e) {
+			System.out.println("ChartDAO()");
 			e.printStackTrace();
 		}
 	}
+	
+		
 
 	public ArrayList<ChartDTO> list1() {
+		
 		try {
+
 			String sql = "select name, (select count(*) from tblBoard where id = tblUser.id) as cnt from tblUser";
 			
 			stat = conn.createStatement();
@@ -31,7 +38,7 @@ public class ChartDAO {
 			
 			ArrayList<ChartDTO> list = new ArrayList<ChartDTO>();
 			
-			while(rs. next()) {
+			while (rs.next()) {
 				ChartDTO dto = new ChartDTO();
 				dto.setName(rs.getString("name"));
 				dto.setCnt(rs.getString("cnt"));
@@ -40,14 +47,19 @@ public class ChartDAO {
 			
 			return list;
 			
+
 		} catch (Exception e) {
+			System.out.println("ChartDAO.list1()");
 			e.printStackTrace();
 		}
+		
 		return null;
 	}
 
 	public ArrayList<ChartDTO> list2() {
+		
 		try {
+
 			String sql = "select name, (select count(*) from tblComment where id = tblUser.id) as cnt from tblUser";
 			
 			stat = conn.createStatement();
@@ -55,7 +67,7 @@ public class ChartDAO {
 			
 			ArrayList<ChartDTO> list = new ArrayList<ChartDTO>();
 			
-			while(rs. next()) {
+			while (rs.next()) {
 				ChartDTO dto = new ChartDTO();
 				dto.setName(rs.getString("name"));
 				dto.setCnt(rs.getString("cnt"));
@@ -64,9 +76,32 @@ public class ChartDAO {
 			
 			return list;
 			
+
 		} catch (Exception e) {
+			System.out.println("ChartDAO.list1()");
 			e.printStackTrace();
 		}
+		
 		return null;
 	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

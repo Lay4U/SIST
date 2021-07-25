@@ -15,7 +15,7 @@ public class BoardDTO {
 	private String isnew; //새글 표시
 	private String ccnt; //댓글 갯수
 	
-	private int thread;
+	private int thread; //답변형 게시판
 	private int depth;
 	
 	

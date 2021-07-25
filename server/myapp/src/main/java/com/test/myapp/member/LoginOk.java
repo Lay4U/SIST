@@ -36,24 +36,35 @@ public class LoginOk extends HttpServlet {
 		//로그인 실패 -> null 반환
 		MemberDTO result = dao.login(dto);
 		
+		
 		//3.
 		if (result != null) {
 			//인증 -> 티켓 발급
 			HttpSession session = req.getSession();
 			
-			session.setAttribute("id", result.getId());
+			session.setAttribute("id", result.getId()); //인증 티켓
 			
-			session.setAttribute("name", result.getName());
+			session.setAttribute("name", result.getName()); //부가 정보
 			session.setAttribute("lv", result.getLv());
 			session.setAttribute("regdate", result.getRegdate());
 			
 			resp.sendRedirect("/myapp/index.do");
 			
-		}else {
+		} else {
 			//실패
-			resp.sendRedirect("/myapp/member/lonin.do");
+			resp.sendRedirect("/myapp/member/login.do");
 		}
 		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+

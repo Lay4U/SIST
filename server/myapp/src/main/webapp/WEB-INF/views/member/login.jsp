@@ -14,8 +14,7 @@
 
 </head>
 <body>
-	
-	<!-- login.jsp -->
+	<!-- views > member > login.jsp -->
 	<%@ include file="/inc/header.jsp" %>
 	
 	<section class="main-section">
@@ -23,12 +22,15 @@
 		<h1>User</h1>
 		
 		<div class="user-list">
+		
+			<!-- loginok.do?id=hong&pw=1111 -->
+		
 			<button type="button" class="btn btn-default" 
-			onclick="location.href='/myapp/member/loginok.do?id=hong&pw=1111';">홍길동</button>
+				onclick="location.href='/myapp/member/loginok.do?id=hong&pw=1111';">홍길동</button>
 			<button type="button" class="btn btn-default" 
-			onclick="location.href='/myapp/member/loginok.do?id=test&pw=1111';">테스트</button>
+				onclick="location.href='/myapp/member/loginok.do?id=test&pw=1111';">테스트</button>
 			<button type="button" class="btn btn-default" 
-			onclick="location.href='/myapp/member/loginok.do?id=admin&pw=1111';">아무개</button>
+				onclick="location.href='/myapp/member/loginok.do?id=admin&pw=1111';">관리자</button>
 		</div>
 		
 	</section>	

@@ -6,22 +6,41 @@
 <meta charset="UTF-8">
 <title></title>
 
-<%@ include file="/inc/asset.jsp"%>
+<%@ include file="/inc/asset.jsp" %>
 
 <style>
+	
 </style>
+
 </head>
 <body>
-   <!--  -->
-   <div class="container">
-      
-      <h1 class="page-header"></h1>
-      <input type="text">
-   </div>
-
-   <script>
-      
-   </script>
+	<!-- one.jsp -->
+	<div class="container">
+		<h1 class="page-header">첫번째 페이지</h1>		
+		
+		<input type="text" name="txt">
+		
+		<a href="two.jsp">두번째 페이지</a>
+		
+	</div>	
+	
+	<script>
+		
+	</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

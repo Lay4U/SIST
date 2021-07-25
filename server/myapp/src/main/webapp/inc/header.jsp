@@ -8,26 +8,31 @@
 				<li onclick="location.href='/myapp/index.do';" title="시작 페이지">Home</li>
 				<li>Something</li>
 				<li onclick="location.href='/myapp/board/list.do';" title="게시판">Board</li>
-				<li onclick="location.href='/myapp/chart/chart.do';" title="차트">chart</li>
+				<li onclick="location.href='/myapp/chart/chart.do';" title="차트">Chart</li>
 				<li onclick="location.href='/myapp/openapi/book.do';" title="OpenAPI">OpenAPI</li>
-				<li onclick="location.href='/myapp/map/map.do';" title="Map">Map</li>
 			</ul>
 		</nav>
 		<div class="auth">
-			
-			<c:if test="${not empty id }">
+		
+			<c:if test="${not empty id}">
 			<div>${name}(${id})</div>
 			<div class="btn-auth" onclick="location.href='/myapp/member/logout.do';" title="로그아웃">Logout</div>
 			</c:if>
 			
-			<c:if test="${ empty id }">
+			<c:if test="${empty id}">
 			<div class="btn-auth" onclick="location.href='/myapp/member/login.do';" title="로그인">Login</div>
 			</c:if>
-			
 			
 		</div>
 	</section>
 </header>
+
+
+
+
+
+
+
 
 
 

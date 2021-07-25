@@ -6,24 +6,40 @@
 <meta charset="UTF-8">
 <title></title>
 
-<%@ include file="/inc/asset.jsp"%>
+<%@ include file="/inc/asset.jsp" %>
 
 <style>
+	
 </style>
+
 </head>
 <body>
-   <!--  -->
-   <div class="container">
-      
-      <h1 class="page-header">두번째 페이지</h1>
-      
-      <input type="button" value="첫번재 페이지" onclick="location.href='one.jsp';">
-      <input type="button" value="첫번재 페이지" onclick="history.back();">
-   </div>
-
-   <script>
-      
-   </script>
+	<!-- two.jsp -->
+	<div class="container">
+		<h1 class="page-header">두번째 페이지</h1>		
+		
+		<input type="button" value="첫번째 페이지" onclick="location.href='one.jsp';">
+		<input type="button" value="첫번째 페이지" onclick="history.back();">
+		
+	</div>	
+	
+	<script>
+		
+	</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
