@@ -35,7 +35,7 @@
         .map_wrap, .map_wrap * {margin:0;padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
         .map_wrap a, .map_wrap a:hover, .map_wrap a:active{color:#000;text-decoration: none;}
         .map_wrap {position:relative;width:100%;height:500px;}
-        #menu_wrap {position:absolute;top:0;left:0;bottom:0;width:250px;margin:10px 0 30px 10px;padding:5px;overflow-y:auto;background:rgba(255, 255, 255, 0.7);z-index: 1;font-size:12px;border-radius: 10px;}
+        #menu_wrap {position:absolute;top:74px; height:600px;left:0;bottom:0;width:250px;margin:10px 0 30px 10px;padding:5px;overflow-y:auto;background:rgba(255, 255, 255, 0.7);z-index: 1;font-size:12px;border-radius: 10px;}
         .bg_white {background:#fff;}
         #menu_wrap hr {display: block; height: 1px;border: 0; border-top: 2px solid #5F5F5F;margin:3px 0;}
         #menu_wrap .option{text-align: center;}
@@ -77,17 +77,21 @@
     </em>
 </p>
 <div class="map_wrap">
-    <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
+    <div id="map" style="width:100%;height:70vh;position:relative;overflow:hidden;"></div>
     <ul id="category">
-        <li id="AD5" data-order="1">qm
+        <li id="all" data-order="1">
+            <span class="category_bg store"></span>
+            전체
+        </li>
+        <li id="AD5" data-order="2">
             <span class="category_bg store"></span>
             숙박시설
         </li>
-        <li id="AT4" data-order="2">
+        <li id="AT4" data-order="3">
             <span class="category_bg store"></span>
             관광명소
         </li>
-        <li id="FD6" data-order="3">
+        <li id="FD6" data-order="4">
             <span class="category_bg store"></span>
             음식점
         </li>
@@ -152,7 +156,7 @@
     // 카테고리 검색을 요청하는 함수입니다
     function searchPlaces() {
         if (!currCategory) {
-            return;
+            searchAll();
         }
 
         // 커스텀 오버레이를 숨깁니다
@@ -160,9 +164,23 @@
 
         // 지도에 표시되고 있는 마커를 제거합니다
         removeMarker();
-
+        // console.log(currCategory);
+        if(currCategory == 'all'){
+            ps.categorySearch(['AD5', 'AT4', 'FD6'], placesSearchCB, {useMapBounds:true});
+        }
         ps.categorySearch(currCategory, placesSearchCB, {useMapBounds:true});
     }
+    // function searchAll(){
+    //     // 커스텀 오버레이를 숨깁니다
+    //     placeOverlay.setMap(null);
+    //
+    //     // 지도에 표시되고 있는 마커를 제거합니다
+    //     removeMarker();
+    //
+    //     ps.categorySearch(['AD5', 'AT4', 'FD6'], placesSearchCB, {useMapBounds:true});
+    //     ps.categorySearch('AT4', placesSearchCB, {useMapBounds:true});
+    //     ps.categorySearch('FD6', placesSearchCB, {useMapBounds:true});
+    // }
 
     // 장소검색이 완료됐을 때 호출되는 콜백함수 입니다
     function placesSearchCB(data, status, pagination) {
@@ -181,7 +199,7 @@
 
     // 지도에 마커를 표출하는 함수입니다
     function displayPlaces(places) {
-
+        console.log(currCategory);
         // 몇번째 카테고리가 선택되어 있는지 얻어옵니다
         // 이 순서는 스프라이트 이미지에서의 위치를 계산하는데 사용됩니다
         var order = document.getElementById(currCategory).getAttribute('data-order');
