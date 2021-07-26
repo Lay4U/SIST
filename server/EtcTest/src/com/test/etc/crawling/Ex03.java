@@ -23,7 +23,7 @@ public class Ex03 {
 			String title = item.select(".tit > a").text();
 //			System.out.println(title);
 			
-			String outline = item.select("dd:nth-child(2) .link_txt").text();
+//			String outline = item.select("dd:nth-child(2) .link_txt").text();
 //			System.out.println(outline);
 			
 			String temp = item.select(".info_txt1 dd:nth-child(2)").text();
@@ -33,7 +33,30 @@ public class Ex03 {
 			
 			String[] templist = temp.split("\\|");
 			
-			System.out.println(Arrays.toString(templist));
+			
+			String outline = "";
+			String time = "";
+			String rdate = "";
+			
+			if(templist.length == 2) {
+				time = templist[0];
+				rdate = templist[1];
+			}else {
+				outline = templist[0];
+				time = templist[1];
+				rdate = templist[2];
+				
+			}
+//			System.out.println(outline);
+//			System.out.println(time);
+//			System.out.println(rdate);
+//			System.out.println(Arrays.toString(templist));
+			
+			String director = item.select("dd:nth-child(4) .link_txt").text();
+			String actor = item.select("dd:nth-child(6) .link_txt").text();
+			String poster = item.select(".thumb > a > img").attr("src");
+			
+			
 		}
 	}
 }
