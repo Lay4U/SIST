@@ -94,6 +94,9 @@ h3 {
 .main-section {
 	width: 800px;
 	margin: 35px auto;
+	position: relative;
+	left: 0;
+	top: 0;
 }
 
 

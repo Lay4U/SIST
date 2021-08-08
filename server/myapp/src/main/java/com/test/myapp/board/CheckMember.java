@@ -9,17 +9,17 @@ import javax.servlet.http.HttpSession;
 public class CheckMember {
 
 	public void check(HttpServletRequest req, HttpServletResponse resp) {
-				
+
 		try {
 			HttpSession session = req.getSession();
-			
-			//로그인 안한 사람
+
+			// 로그인 안한 사람
 			if (session.getAttribute("id") == null || session.getAttribute("id").toString().equals("")) {
-				
+
 				resp.setCharacterEncoding("UTF-8");
-				
+
 				PrintWriter writer = resp.getWriter();
-				
+
 				writer.print("<html>");
 				writer.print("<head>");
 				writer.print("<meta charset='utf-8'>");
@@ -30,37 +30,13 @@ public class CheckMember {
 				writer.print("location.href='/myapp/index.do';");
 				writer.print("</script>");
 				writer.print("</html>");
-				
-				writer.close();				
+
+				writer.close();
 			}
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		
+
 	}
 
-	
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
