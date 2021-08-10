@@ -417,7 +417,6 @@ public class BoardDAO {
 		try {
 
 			//a. 현존 모든 게시물의 thread값을 대상으로 현재 작성 중인 답변글의 부모글의 thread값보다 작고, 이전 새글의 thread값보다 큰 thread를 찾아서 모두 -1 한다.
-			
 			String sql = "update tblBoard set thread = thread - 1 where thread > ? and thread < ?";
 			pstat = conn.prepareStatement(sql);
 			

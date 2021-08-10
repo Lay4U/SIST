@@ -11,7 +11,6 @@ import travel.DBUtil;
 
 /**
  * 질문게시판 DAO
- * 
  * @author 이준희
  *
  */
@@ -61,8 +60,8 @@ public class BoardDAO {
 
 	/**
 	 * 질문게시판 게시글 리스트 메소드
-	 * 
-	 * @return list
+	 * @param map 검색 조건이 담긴 HashMap 
+	 * @return 검색 조건에 따른 결과가 담긴 ArrayList 
 	 */
 
 	public ArrayList<BoardDTO> list(HashMap<String, String> map) {
@@ -181,7 +180,6 @@ public class BoardDAO {
 	 * 질문게시판 게시글 조회수 증가 메소드
 	 * 
 	 * @param questionseq 게시글 번호
-	 * @return result 1, 0
 	 */
 	public void updateReadCount(String questionseq) {
 		try {
@@ -225,8 +223,8 @@ public class BoardDAO {
 	/**
 	 * 질문게시판 게시글에 달린 댓글 리스트 메소드
 	 * 
-	 * @param 게시글 번호
-	 * @return clist
+	 * @param questionseq 게시글 번호
+	 * @return listcomment 댓글리스트 반환
 	 */
 	public ArrayList<CommentDTO> listcomment(String questionseq) {
 		try {
@@ -317,8 +315,8 @@ public class BoardDAO {
 	/**
 	 * 질문게시판 게시글 삭제시 참조 중인 댓글 삭제 메소드
 	 * 
-	 * @param questionseq
-	 * @return 1, 0
+	 * @param questionseq 삭제 번호
+	 * 
 	 */
 
 	public void delAllComment(String questionseq) {
@@ -359,6 +357,11 @@ public class BoardDAO {
 		return 0;
 	}
 
+	/**
+	 * Thread 업데이트 메소드 
+	 * @param parentThread
+	 * @param previousThread
+	 */
 	public void updateThread(int parentThread, int previousThread) {
 		try {
 			// a. 현존 모든 게시물의 thread값을 대상으로 현재 작성 중인 답변글의 부모글의 thread값보다 작고, 이전 새글의 thread값보다
@@ -376,7 +379,11 @@ public class BoardDAO {
 		}
 
 	}
-
+	/**
+	 * 전체 게시글 수 구하기 
+	 * @param map
+	 * @return 게시글 수 
+	 */
 	public int getTotalCount(HashMap<String, String> map) {
 		try {
 			String where = "";
@@ -418,6 +425,11 @@ public class BoardDAO {
 		return 0;
 	}
 
+	/**
+	 * 게시글 추천수 증가 메소드 
+	 * @param questionseq
+	 * @return update 성공 여부 1 or 0 
+	 */
 	public int updateRecommcnt(String questionseq) {
 		
 		try {
