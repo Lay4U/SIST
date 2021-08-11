@@ -1,0 +1,150 @@
+
+STS -> Spring Project의 구조와 파일
+
+1. src > main > webapp > resources
+	- 클라이언트 작업을 위한 리소스 폴더
+	- CSS, JavaScript, Font, 이미지 등이 위치한다.
+
+2. WEB-INF > spring
+	- 스프링 전반에 걸친 여러가지 설정 파일들이 위치한다.
+
+3. WEB-INF > spring > root-context.xml
+	- 스프링 전반에 걸친 설정을 하는 XML
+
+4. WEB-INF > spring > appServlet > servlet-context.xml
+	- 클라이언트의 요청과 응답에 관련된 스프링 설정을 하는 XML 	
+
+5. pom.xml
+	- Project Object Model
+	- 메이븐(Maven) 설정 파일
+	- 프로젝트 필요한 라이브러리(*.jar)를 관리하는 용도
+
+
+스프링 프로젝트를 우리가 원하는 버전으로 설정!!
+- 프로젝트를 만들 때마다 설정
+- 자바 버전 변경
+- 스프링 버전 변경
+
+
+Servlet/JSP MVC -> 버전업(훌륭하게) -> Spring MVC
+
+Hello World!!
+- Controller: Servlet > Controller 
+- View: JSP
+- Model: Class(DTO)
+
+
+
+
+
+
+롬복(Lombok)
+- 파일 다운(*.jar) -> 참조
+
+
+
+
+
+Hello 다시 한번~
+
+- HiController.java
+- hi.jsp
+
+
+
+요청~응답
+
+1. URL 요청
+	- http://localhost:8090/spring/hi.action
+
+2. DispatcherServlet 응답(호출)
+	- web.xml
+	- *.action -> hi.action
+	- Front Controller
+	- 건물에 1층 입구에 있는 안내 데스크 직원 역할
+	
+3. Controller 호출
+	- hi.action
+	- HiController.java를 호출
+		
+4. 요청 메소드 호출
+	- @RequestMapping(value="/hi.action")
+
+5. JSP 호출
+	- return "hi"; ?????	
+	- ViewResolver 호출 -> "/WEB-INF/views/" + "hi" + ".jsp" -> "/WEB-INF/views/hi.jsp"
+	 
+6. JSP 페이지
+	- 전에 사용하던 Servlet/JSP에서의 JSP와 완벽하게 동일한 JSP 페이지를 사용한다.
+
+
+
+
+
+게시판 만들기[Servlet/JSP]
+1. list > List.java, list.jsp
+2. add > Add.java, add.jsp, AddOk.java, addok.jsp
+3. edit > Edit.java, edit.jsp, EditOk.java, editok.jsp
+4. del > Del.java, del.jsp, DelOk.java, delok.jsp
+5. view > View.do, view.do
+
+게시판 만들기[Spring]
+1. list > Controller.java, list.jsp
+2. add > Controller.java, add.jsp, Controller.java, addok.jsp
+3. edit > Controller.java, edit.jsp, Controller.java, editok.jsp
+4. del > Controller.java, del.jsp, Controller.java, delok.jsp
+5. view > Controller.java, view.jsp
+
+게시판 만들기[Spring]
+- Controller.java
+1. list > list.jsp
+2. add > add.jsp, addok.jsp
+3. edit > edit.jsp, editok.jsp
+4. del > del.jsp, delok.jsp
+5. view > view.jsp
+
+- com.test.spring > BoardController.java
+				  > BoardDAO.java
+- views > "board" > list.jsp
+				  > add.jsp
+				  > view.jsp
+
+
+
+
+데이터 전송 + 데이터 수신
+
+- "DataController.java"
+- "DataDAO.java"
+- "DataDTO.java"
+
+- views > "data" > "add.jsp"
+				 > "addok.jsp"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
