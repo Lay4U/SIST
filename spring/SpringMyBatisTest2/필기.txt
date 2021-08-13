@@ -1,0 +1,27 @@
+Mybatis(= iBatis)
+- 응용 프로그램 계층(자바) <-> 퍼시스턴스 계층(중간 계층, JDBC) <-> 데이터베이스 계층(오라클)
+- 중간 계층 기술 중 하나 (JDBC, MyBatis, JPA, Hibernate, Spring JDBC)
+
+Log4j
+- 데이터베이스 작업 중 관련된 로그를 출력하는 기능
+
+
+
+라이브러리
+	- poom.xml
+	- ojdbc6.jar
+	- mybatis x n개
+	- Log4j
+
+web.xml
+	- 확장자 변경
+	- 필터 추가
+	
+root-context.xml
+	- MyBatis 설정
+	- Log4j 설정
+
+servlet-context.xml
+	- 설정 없음
+	
+파일생성

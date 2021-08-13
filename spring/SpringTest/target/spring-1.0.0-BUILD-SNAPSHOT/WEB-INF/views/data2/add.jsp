@@ -29,23 +29,23 @@
         <table class="table table-bordered">
             <tr>
                 <th>이름</th>
-                <td><input type="text" name="name" class="form-control" required</td>
+                <td><input type="text" name="name" class="form-control" required></td>
             </tr>
             <tr>
                 <th>나이</th>
-                <td><input type="text" name="age" class="form-control" required</td>
+                <td><input type="text" name="age" class="form-control" required></td>
             </tr>
             <tr>
                 <th>주소</th>
-                <td><input type="text" name="address" class="form-control" required</td>
+                <td><input type="text" name="address" class="form-control" required></td>
             </tr>
             <tr>
                 <th>전화번호</th>
-                <td><input type="text" name="tel" class="form-control" required</td>
+                <td><input type="text" name="tel" class="form-control" required></td>
             </tr>
             <tr>
                 <th>이메일</th>
-                <td><input type="text" name="email" class="form-control" required</td>
+                <td><input type="text" name="email" class="form-control" required></td>
             </tr>
         </table>
         <div>

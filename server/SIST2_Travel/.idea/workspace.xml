@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26dba7c7-f49d-471f-be85-148390b88a28" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/travel/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/travel/Index.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/travel/community/clubboard/ClubBoardCommentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/travel/community/clubboard/ClubBoardCommentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/travel/management/DetailView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/travel/management/DetailView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/travel/management/WishTravel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/travel/management/WishTravel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/travel/mypage/BasketDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/travel/mypage/BasketDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +23,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring/SpringWebTest" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -40,7 +34,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628588216089</updated>
+      <workItem from="1628723366772" duration="1243000" />
+      <workItem from="1628728781877" duration="594000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

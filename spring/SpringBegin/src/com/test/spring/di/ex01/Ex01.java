@@ -1,4 +1,4 @@
-package src.com.test.spring.di.ex01;
+package com.test.spring.di.ex01;
 
 import java.util.Scanner;
 
