@@ -23,6 +23,11 @@
 		
 		<div>m2: ${result}</div>
 		
+		<div>m3.count: ${count}</div>
+		
+		<div>m4.memo: ${memo}</div>
+
+		<div>m5.dto: ${dto}</div>
 	</div>	
 	
 	<script>

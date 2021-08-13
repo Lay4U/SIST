@@ -1,0 +1,15 @@
+SpringTilesTest
+
+1. pom.xml
+	- <dependency> x 5개
+	
+2. web.xml
+	- 
+	
+3. servlet-context.xml
+	- tiles 설정 > <bean> x 2개
+	- tiles.xml
+	
+4. 파일 생성
+	- SpringNonTilesTest에서 복사
+	- 

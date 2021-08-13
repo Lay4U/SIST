@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configureation 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<!-- tiles는 모든 것이 이 파일 안에서 구현된다. -->
+<tiles-definitions>
+	<!-- 
+	<definition> 태그 1개당 레이아웃 페이지 1장
+	: <definition name="test"> => member.jsp(레이아웃 페이지)
+	
+	레이아웃 페이지의 역할
+	- 업무 구현(X)
+	- 틀 만들기(O) > 전체 구성을 디자인 하는  페이지
+	
+	<put-attribute>
+	-> 레이아웃 페이지(member.jsp)에서 상요할 조각 페이지에 대한 정의
+	 -->
+	
+	
+	<definition name="test" template="/WEB-INF/views/layout/member.jsp">
+		<put-attribute name="mainmenu" value="/WEB-INF/views/inc/mainmenu.jsp"></put-attribute>
+		<put-attribute name="submenu" value="/WEB-INF/views/inc/submenu_member.jsp"></put-attribute>
+		<put-attribute name="asset" value="/inc/asset.jsp"></put-attribute>
+		<put-attribute name="asset_member" value="/inc/asset_member.jsp"></put-attribute>
+		
+	</definition>
+	
+	
+</tiles-definitions>

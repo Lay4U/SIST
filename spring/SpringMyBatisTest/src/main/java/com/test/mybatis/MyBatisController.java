@@ -64,6 +64,38 @@ public class MyBatisController {
 		return "result";
 	}
 	
+	@RequestMapping(value = "/m3.action", method = { RequestMethod.GET })
+	public String m3(HttpServletRequest req, HttpServletResponse resp, HttpSession session) {
+		
+		int count = dao.m3();
+		
+		req.setAttribute("count", count);
+		return "result";
+	}
+	
+	@RequestMapping(value = "/m4.action", method = { RequestMethod.GET })
+	public String m4(HttpServletRequest req, HttpServletResponse resp, HttpSession session) {
+		
+		//단일값 매개변수 -> 단일값 반환(메모 내용)
+		String seq = "1";
+		
+		String memo = dao.m4(seq);
+		
+		req.setAttribute("memo", memo);
+		return "result";
+	}
+	
+	@RequestMapping(value = "/m5.action", method = { RequestMethod.GET })
+	public String m5(HttpServletRequest req, HttpServletResponse resp, HttpSession session) {
+		String seq = "1";
+		
+		MyBatisDTO dto = dao.m5(seq);
+		
+		req.setAttribute("dto", dto);
+		
+		return "result";
+	}
+	
 
 }
 

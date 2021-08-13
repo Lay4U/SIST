@@ -45,6 +45,22 @@ public class MyBatisDAO {
 		return template.update("test.m4", map);
 	}
 
+	public int m3() {
+		
+		return template.selectOne("test.m5");
+	}
+
+	public String m4(String seq) {
+		
+		return template.selectOne("test.m6",seq);
+	}
+
+	public MyBatisDTO m5(String seq) {
+		
+		
+		return template.selectOne("test.m7", seq);
+	}
+
 }
 
 

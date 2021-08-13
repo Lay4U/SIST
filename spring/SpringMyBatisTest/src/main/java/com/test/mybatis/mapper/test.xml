@@ -38,7 +38,20 @@
 			category = #{newcategory}
 				where category = #{category}
 	</update>
+	
+	<select id="m5" resultType="Integer">
+		select count(*) from tblMemo
+	</select>
 
+
+	<select id="m6" resultType="String" parameterType="String">
+		select memo from tblMemo where seq = #{seq}
+	</select>
+	
+	<!-- <select id="m7" parameterType="String" resultType="com.test.mybatis.MyBatisDTO">  </select> -->
+	<select id="m7" parameterType="String" resultType="dto"> 
+		select * from tblMemo where seq = #{seq}
+	</select>
 </mapper>
 
 
