@@ -30,7 +30,7 @@ public class MainController {
 		
 		//UrlBasedViewResolver
 		// -> <definition>을 검색
-		return "test";
+		return "member.info";
 	}
 	
 	@RequestMapping(value = "/member/point.action", method = { RequestMethod.GET })
@@ -38,7 +38,8 @@ public class MainController {
 
 		
 
-		return "member/point";
+//		return "member/point";
+		return "member.point";
 	}
 	
 	@RequestMapping(value = "/member/history.action", method = { RequestMethod.GET })
@@ -46,7 +47,8 @@ public class MainController {
 
 		
 
-		return "member/history";
+//		return "member/history";
+		return "member.history";
 	}
 	
 	
@@ -55,7 +57,8 @@ public class MainController {
 
 		
 
-		return "admin/log";
+//		return "admin/log";
+		return "member.log";
 	}
 	
 	@RequestMapping(value = "/admin/chart.action", method = { RequestMethod.GET })
@@ -63,7 +66,17 @@ public class MainController {
 
 		
 
-		return "admin/chart";
+//		return "admin/chart";
+		return "admin.log";
+	}
+	
+	@RequestMapping(value = "/admin/pic.action", method = { RequestMethod.GET })
+	public String pic(HttpServletRequest req, HttpServletResponse resp, HttpSession session) {
+
+		
+
+//		return "admin/chart";
+		return "admin.pic";
 	}
 	
 }

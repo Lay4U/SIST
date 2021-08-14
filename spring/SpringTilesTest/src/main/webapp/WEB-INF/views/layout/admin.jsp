@@ -15,10 +15,9 @@
 </head>
 <body>
    <!--  -->
-   <div class="container">
-      <h1 class="page-header"></h1>      
-      
-   </div>   
+   <main>
+   		<tiles:insertAttribute name="mainmenu"
+   </main>
    
    <script>
       

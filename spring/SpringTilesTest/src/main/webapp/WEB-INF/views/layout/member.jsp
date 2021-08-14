@@ -19,11 +19,12 @@
 <body>
 	<!-- member/info.jsp > layout/member.jsp -->
 	<main>
-		<%-- <%@ include file="/WEB-INF/views/inc/mainmenu.jsp" %> --%>
-
+		
+		<!--  Tiles 장점: 현재 페이지(레이아웃 페이지, 템플릿 페이지) > 레이아웃만 구성하는 전문 페이지 -->
 		<tiles:insertAttribute name="mainmenu"></tiles:insertAttribute>
 		<tiles:insertAttribute name="submenu"></tiles:insertAttribute>
-
+		<tiles:insertAttribute name="content"></tiles:insertAttribute>
+	
 
 
 		<div id="content">회원의 정보를 확인합니다.</div>
