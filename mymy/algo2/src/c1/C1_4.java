@@ -49,7 +49,7 @@ public class C1_4 {
                         temp = new char[inputStr.length()+1];
                         for(i=j; i<k+j; i++)
                             temp[i] = inputStr.charAt(i);
-                        temp[i] = '\0''
+                        temp[i] = '\0';
                             if(palindrome.check(temp, j)){
                                 char output[] = new char[k];
                                 for(i=0; i<k; i++)

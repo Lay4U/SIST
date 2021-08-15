@@ -25,7 +25,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring/SpringWebTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring/IJ/SpringTest" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -36,6 +36,7 @@
       <updated>1628588216089</updated>
       <workItem from="1628723366772" duration="1243000" />
       <workItem from="1628728781877" duration="594000" />
+      <workItem from="1629019190173" duration="396000" />
     </task>
     <servers />
   </component>
